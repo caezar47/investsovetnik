@@ -1,0 +1,39 @@
+<div class="table-responsive  {{mod}}">
+	<table class="table  {{mod}}">
+		{% if head %}
+		<thead>
+			<tr>
+				{% for h in head %}
+				<th {% if h.mod %}class="{{h.mod}}"{% endif %} {{h.attr}}>
+					{{h.name}}
+					{% if h.sort %}
+					<button type="button" class="btn__sort  is--xs">{% include "../svg-sprite/svg.twig" with {icon:"icon-sort"} %}</button>
+					{% endif %}
+				</th>
+				{% endfor %}
+			</tr>
+		</thead> 
+		{% endif %}
+		<tbody> 
+			{% for b in body %}	
+				{% for tr in b.tr %}	
+				<tr {% if tr.link %}onclick="window.location.href='{{tr.link}}'; return false"{% endif %}> 
+					{% for td in tr.td %}
+					<td>
+						{{td.name}}
+						{% if td.progress %}
+							{% include "../progress/tpl.twig" with {
+								prefix:"progress__", 
+								mod:'is--table',
+								group:'',
+								completed:td.progress,
+							} %}
+						{% endif %}
+					</td>
+					{% endfor %}
+				</tr>
+				{% endfor %}
+			{% endfor %}
+		</tbody>
+	</table>
+</div>

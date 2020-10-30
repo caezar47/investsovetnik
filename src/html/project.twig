@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	{% include "../block/common/head/head.twig" with {title:"Мои проекты"}  %}
+	</head>
+	<body>
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "header",
+            prefix:"navbar__", 
+            mod:"",
+            basket:"Корзина",
+            basket_qty:"999",
+            basket_cost:"15 900",
+        } %}
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "aside",
+            prefix:"navbar__",
+            collapse:"",  
+            mod:"",            
+            active:page.project,
+        } %} 
+
+        <main class="{{prefix.section}}wrap">
+            {% include "../block/page/project.twig" with {
+                view:"page", 
+                content_prefix:prefix.section, 
+                content_mod:"is--page-project", 
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"", 
+                heading_level:"h1", 
+                heading:"Мои проекты",              
+            } %}
+        </main>
+
+        {% include "../block/common/modals/include.twig"%}
+    	{% include "../block/common/script/script.twig"%}
+	</body>
+</html> 

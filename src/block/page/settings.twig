@@ -1,0 +1,83 @@
+{% if view == "page" %}
+	<section class="{{content_prefix}}content">
+		<div class="{{content_prefix}}container container">	
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}
+			{% include "../common/tabs/tpl.twig" with {
+				view:"base", 
+				prefix:'tabs__', 
+				mod:"is--sm",
+				group:content_mod,
+				dropdown:"true",
+				scroll:"true",
+				list: [
+					{
+						"id":"tabs1",  
+						"status":"", 
+						"name":"Основные",  
+					},
+					{
+						"id":"tabs2",  
+						"status":"", 
+						"name":"Главная",  
+					},
+					{
+						"id":"tabs3",  
+						"status":"", 
+						"name":"Сделки",  
+					},
+					{
+						"id":"tabs4",  
+						"status":"", 
+						"name":"Абонентские услуги",   
+					},
+					{
+						"id":"tabs5",  
+						"status":"", 
+						"name":"Компании",  
+					},
+					{
+						"id":"tabs6",  
+						"status":"", 
+						"name":"Сотрудники",  
+					},
+					{
+						"id":"tabs7",  
+						"status":"active", 
+						"name":"Каталог",  
+						"type":"form",
+						"form_view":"settings",
+						"form_id":"settings",
+						"form_mod":content_mod,
+						"form_color":"",
+					},
+					{
+						"id":"tabs8",  
+						"status":"", 
+						"name":"Задачи",  
+					},
+					{
+						"id":"tabs9",  
+						"status":"", 
+						"name":"Документы",  
+					},
+					{
+						"id":"tabs10",  
+						"status":"", 
+						"name":"Документы",  
+					},
+					{
+						"id":"tabs10",  
+						"status":"", 
+						"name":"Документы",  
+					},
+				]
+			} %}
+		</div>
+	</section>
+{% endif %}

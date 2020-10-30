@@ -1,0 +1,67 @@
+{% include "tpl.twig" with {
+	view: 			"form",
+	prefix: 		"modal__", 
+	mod: 			"", 
+	ID: 			"modal-edit",
+	heading: 		'Расчётный счёт',
+	heading_level: 	'h2',
+	heading_mod: 	'is--h1  is--modal',
+	form_view: 		"infocard_edit",
+} %} 
+{% include "tpl.twig" with {
+	view: 			"form",
+	prefix: 		"modal__", 
+	mod:			"", 
+	ID: 			"modal-profile-edit",	
+	heading: 		'Ваши данные',
+	heading_level: 	'h2',
+	heading_mod: 	'is--h1  is--modal',
+	form_view: 		"profile_edit",
+	form_id: 		"fm_profile_edit",
+} %} 
+{% include "tpl.twig" with {
+	view: 			"form",
+	prefix: 		"modal__", 
+	mod:			"", 
+	ID: 			"modal-pass-edit",	
+	heading: 		'Смена пароля',
+	heading_level: 	'h2',
+	heading_mod: 	'is--h1  is--modal',
+	form_view: 		"pass_edit",
+	form_id: 		"fm_pass_edit",
+} %} 
+{% include "tpl.twig" with {
+	prefix: 		"modal__", 
+	mod:			"", 
+	ID: 			"modal-add-basket",	
+	heading: 		'Услуги по ликвидации юридического лица',
+	heading_level: 	'h2',
+	heading_mod: 	'is--h1  is--modal',
+} %} 
+{% include "tpl.twig" with {
+	prefix: 		"modal__", 
+	mod:			"", 
+	ID: 			"modal-select-basket",	
+	heading: 		'Услуги по ликвидации юридического лица',
+	heading_level: 	'h2',
+	heading_mod: 	'is--h1  is--modal',
+} %} 
+{# {% include "tpl.twig" with {
+	prefix:"modal__", 
+	mod:"", 
+	ID: "modal-events", 
+	list: events_list,
+	heading_level: 'h2',
+	heading_mod: 'is--h1  is--modal',
+	heading: 'Лента событий',
+} %}
+{% include "tpl.twig" with {
+	prefix:"modal__", 
+	mod:"is--chat", 
+	ID: "modal-chat", 
+	heading_level: 'h2',
+	heading_mod: 'is--h1  is--modal',
+	heading: 'Чат с менеджером',
+	chat: chat
+} %} 
+#}

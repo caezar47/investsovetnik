@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	{% include "../block/common/head/head.twig" with {title:"Главная страница"}  %}
+	</head>
+	<body>
+       {#  {% include "../block/common/navbar/navbar.twig" with {
+            view: "header",
+            prefix:"navbar__", 
+            mod:"",
+        } %} #}
+        
+        <main class="{{prefix.section}}wrap">
+            {% include "../block/page/index.twig" with {
+                view:"header", 
+                prefix:prefix.section, 
+                mod:"is--page-index-header",
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"ff--custom  is--page-index-header", 
+                heading_level:"h1", 
+                heading:"Наша работа - ваша финансовая свобода",
+
+                note_group:"", 
+                note_attr:"",
+                note_mod:"is--h4  fw--400  is--page-index-header-note", 
+                note_level:"h2", 
+                note:"Инвестиционное консультирование и финансовое планирование.",
+
+                bg: [path.img,"/default/index-header-bg.png"].join(""),
+
+                btn_view:"btn", 
+                btn_attr:'',
+                btn_mod:'', 
+                btn_link:'',
+                btn_name:"Наши услуги",
+
+                btn_def_view:"btn", 
+                btn_def_attr:'',
+                btn_def_mod:'is--primary', 
+                btn_def_link:'',
+                btn_def_name:"Раскрытие информации"
+            } %}
+
+            {% include "../block/page/index.twig" with {
+                view:"blockquote", 
+                prefix:prefix.section, 
+                mod:"is--page-index-blockquote",
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"is--h4  is--page-index-blockquote-note", 
+                heading_level:"p", 
+                heading:"«Если вы&nbsp;не&nbsp;найдете способ зарабатывать деньги, пока спите, вы&nbsp;будете работать, пока не&nbsp;умрете».",
+
+                autor_group:"", 
+                autor_attr:"",
+                autor_mod:"is--h3  fw--700  ", 
+                autor_level:"p", 
+                autor:"Уоррен Баффет",
+
+                bg: [path.img,"/default/index-blockquote-bg.jpg"].join(""),
+            } %}
+
+            {% include "../block/page/index.twig" with {
+                view:"adv", 
+                prefix:prefix.section, 
+                mod:"is--page-index-adv",
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"is--h1  ff--custom  is--line-bottom", 
+                heading_level:"h2", 
+                heading:"Когда нужен инвестиционный советник?",
+
+                bg: [path.img,"/default/index-adv-bg.png"].join(""),
+                img: [path.img,"/default/index-adv.svg"].join(""),
+            } %}
+
+            {% include "../block/page/index.twig" with {
+                view:"about", 
+                prefix:prefix.section, 
+                mod:"is--page-index-about",
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"is--h1  ff--custom  is--line-bottom", 
+                heading_level:"h2", 
+                heading:"Кто мы?",
+
+                note_group:"", 
+                note_attr:"",
+                note_mod:"is--page-index-about-note", 
+                note_level:"p", 
+                note:"Индивидуальное инвестиционное консультирование – услуга, которую могут оказывать только профессиональные участники фондового рынка, вошедшие в реестр инвестиционных советников Банка России. ",
+
+                bg: [path.img,"/default/index-about-bg.png"].join(""),
+
+                team_view: 'team',
+                team_mod: 'is--team',
+                team_list: [
+                    {
+                        "name":'Леонид Полотовский',
+                        "position":'Предприниматель, инвестор, инвестиционный советник',
+                        "note":'
+                            <ul>
+                                <li>Работаю на рынке ценных бумаг с 2014 года</li>
+                                <li>Являюсь квалифицированным инвестором</li>
+                                <li>Включен в Единый реестр инвестиционных советников Банка России 05.10.2020 года</li>
+                                <li>Член Национальной ассоциации участников фондового рынка (НАУФОР)</li>
+                            </ul>
+                        ',
+                        "img": [path.img,"/default/team-counselor.jpg"].join(""), 
+                        "tabs":[
+                            {
+                                "id":"counselor1",
+                                "status":"active",
+                                "name":"Направления деятельности",
+                                "note":"
+                                    <ul>
+                                        <li>Индивидуальное инвестиционное консультирование </li>
+                                        <li>Разработка персонального финансового планирования</li>
+                                        <li>Формирование и сопровождение инвестиционного портфеля</li>
+                                        <li>Создание инвестиционных стратегий</li>
+                                    </ul>
+                                ",
+                            },
+                            {
+                                "id":"counselor2",
+                                "name":"Образование",
+                                "note":"
+                                    <ul>
+                                        <li>Специалист экономики (Орловский государственный университет)</li>
+                                        <li>Квалификационный аттестат о присвоении квалификации специалиста финансового рынка по управлению инвестиционными фондами, паевыми инвестиционными фондами и негосударственными пенсионными фондами</li>
+                                        <li>Квалификационный аттестат о присвоении квалификации специалиста финансового рынка по брокерской, дилерской деятельности и деятельности по управлению ценными бумагами</li>
+                                    </ul>
+                                ",
+                            },
+                        ]
+                    },
+                    {
+                        "name":'Елена Полотовская ',
+                        "position":'Юрист, кандидат юридических наук',
+                        "note":'
+                            <ul>
+                                <li>Профессиональная деятельность - с 2011 года</li>
+                                <li>Участник и спикер многочисленных конференций по актуальным проблемам юриспруденции</li>
+                                <li>Автор научных статей и прочих публикаций </li>
+                            </ul>
+                        ',
+                        "img": [path.img,"/default/team-lawyer.jpg"].join(""),
+                        "tabs":[
+                            {
+                                "id":"lawyer1",
+                                "name":"Направления деятельности",
+                                "status":"active",
+                                "note":"
+                                    <ul>
+                                        <li>Юридическое сопровождение инвестиционной деятельности</li>
+                                        <li>Налоговое консультирование в сфере инвестиций</li>
+                                    </ul>
+                                ",
+                            },
+                            {
+                                "id":"lawyer2",
+                                "name":"Образование",
+                                "note":"
+                                    <ul>
+                                        <li>Специалист направления «Юриспруденция» (Орловский государственный университет)</li>
+                                        <li>Кандидат юридических наук (Российский университет дружбы народов)</li>
+                                    </ul>
+                                ",
+                            },
+                        ]
+                    },
+                ]
+            } %}
+
+            {% include "../block/page/index.twig" with {
+                view:"promo", 
+                prefix:prefix.section, 
+                mod:"is--page-index-promo",
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"ff--custom  fw--700  is--page-index-promo",
+                heading_level:"p", 
+                heading:"Мы можем, сделать так, чтобы Ваши деньги работали на вас!",
+
+                btn_view:"btn", 
+                btn_attr:'',
+                btn_mod:'', 
+                btn_link:'',
+                btn_name:"Начать работать",
+
+                bg: [path.img,"/default/index-promo-bg.jpg"].join(""),
+            } %}
+
+            {% include "../block/page/index.twig" with {
+                view:"services", 
+                prefix:prefix.section, 
+                mod:"is--page-index-services",
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"is--h1  ff--custom  is--line-bottom", 
+                heading_level:"p", 
+                heading:"Как мы можем вам помочь?",
+
+                bg: [path.img,"/default/index-services-bg.png"].join(""),
+
+                card_view:'services',
+                card_mod:'is--services-card',
+                card_list:[
+                    {
+                        link: '',
+                        num: '01.',
+                        name: 'Персональный финансовый план',
+                        img: [path.img,"/default/services-item1.jpg"].join(""),
+                    },
+                    {
+                        link: '',
+                        num: '02.',
+                        name: 'Создание и сопровождение инвестиционного портфеля ',
+                        img: [path.img,"/default/services-item2.jpg"].join(""),
+                    },
+                    {
+                        link: '',
+                        num: '03.',
+                        name: 'Налоговое консультирование',
+                        img: [path.img,"/default/services-item3.jpg"].join(""),
+                    },
+                ]
+            } %}
+
+            {% include "../block/page/index.twig" with {
+                view:"step", 
+                prefix:prefix.section, 
+                mod:"is--page-index-step",
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"is--h1  ff--custom  is--line-bottom", 
+                heading_level:"h2", 
+                heading:"Как мы будем с Вами работать",
+
+                bg: [path.img,"/default/index-step-bg.png"].join(""),
+                bg_card: [path.img,"/default/index-step-bg-wave.png"].join(""), 
+
+                card_view:'step',
+                card_mod:'is--step',
+                card_list:[
+                    {
+                        num: '01',
+                        name: 'Заявка',
+                        note: 'Вы оставляете онлайн заявку на сайте',
+                    },
+                    {
+                        num: '02',
+                        name: 'Звонок',
+                        note: 'Наш менеджер связывается с вами, уточняет детали и помогает с оплатой',
+                    },
+                    {
+                        num: '03',
+                        name: 'Оплата',
+                        note: 'Вы оплачиваете услугу',
+                    },
+                    {
+                        num: '04',
+                        name: 'Заполнение анкеты',
+                        note: 'Менеджер помогает вам заполнить анкету и подготовить пакет документов для анализа',
+                    },
+                    {
+                        num: '05',
+                        name: 'Анализ',
+                        note: 'После получения документов и анкеты мы проводим анализ и готовим отчет',
+                    },
+                    {
+                        num: '06',
+                        name: 'Консультация',
+                        note: 'Мы обсуждаем результаты работы на консультации',
+                    },
+                ],
+
+                promo_group:"is--block-promo", 
+                promo_attr:"",
+                promo_mod:"ff--custom  fw--700  is--block-promo",
+                promo_level:"p", 
+                promo:"Подайте заявку и начните зарабатывать прямо сейчас!",
+
+                promo_btn_view:"btn", 
+                promo_btn_attr:'',
+                promo_btn_mod:'', 
+                promo_btn_link:'',
+                promo_btn_name:"Подать заявку",
+
+                promo_bg: [path.img,"/default/index-promo-bg.jpg"].join(""),
+            } %}
+
+            {% include "../block/page/index.twig" with {
+                view:"faq", 
+                prefix:prefix.section, 
+                mod:"is--page-index-faq",
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"is--h1  ff--custom  is--line-bottom", 
+                heading_level:"h2", 
+                heading:"Вопрос - ответ",
+
+                bg: [path.img,"/default/index-faq-bg.png"].join(""),
+                
+                btn_view:"btn", 
+                btn_attr:'',
+                btn_mod:'', 
+                btn_link:'',
+                btn_name:"Больше ответов",
+                
+                card_id:'faq',
+                card_view:'faq',
+                card_mod:'is--faq',
+                card_list: [
+                    {
+                        "list": [
+                            {
+                                id: '0',
+                                name: 'Что входит в услугу?',
+                                note: 'Входит опрос целей и задач клиента, анализ его инвестиционного портфеля, проверка его на эффективность, описание рисков портфеля и обсуждение результатов на консультации.',
+                            },
+                            {
+                                id: '1',
+                                name: 'Что можно проанализировать?',
+                                note: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque soluta, placeat officia ipsam dicta officiis nam magnam assumenda ducimus in!',
+                            },
+                            {
+                                id: '2',
+                                name: 'Насколько глубоким будет анализ в рамках консультации?',
+                                note: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque soluta, placeat officia ipsam dicta officiis nam magnam assumenda ducimus in!',
+                            }
+                        ]
+                    },
+                    {
+                        "list": [                            
+                            {
+                                id: '3',
+                                name: 'Сколько времени занимает работа?',
+                                note: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque soluta, placeat officia ipsam dicta officiis nam magnam assumenda ducimus in!',
+                            },
+                            {
+                                id: '4',
+                                name: 'Где я могу ознакомиться с договором, в соответствии с которым оказывается услуга?',
+                                note: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque soluta, placeat officia ipsam dicta officiis nam magnam assumenda ducimus in!',
+                            },
+                            {
+                                id: '5',
+                                name: 'Что входит в услугу?',
+                                note: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque soluta, placeat officia ipsam dicta officiis nam magnam assumenda ducimus in!',
+                            },
+                        ]
+                    },
+                ]
+            } %}
+        </main>
+
+
+        {% include "../block/common/modals/include.twig"%}
+    	{% include "../block/common/script/script.twig"%}
+	</body>
+</html> 

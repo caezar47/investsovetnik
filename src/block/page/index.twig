@@ -1,0 +1,236 @@
+{% if view == "header" %}
+	<section class="{{prefix}}content  {{mod}}">
+		<div class="{{prefix}}container container  {{mod}}">
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:note_mod,
+				attr:note_attr, 
+				level:note_level, 
+				heading:note
+			} %}
+			<div class="{{prefix}}row  {{mod}}  row  is--gutter">
+				<div class="cols">
+					{% include "../common/button/btn.twig" with {
+						view:btn_view,
+						prefix:"btn__",
+						attr:btn_attr,
+						mod:btn_mod,  
+						link:btn_link,
+						icon:btn_icon,  
+						name:btn_name
+					} %}
+				</div>
+				<div class="cols">
+					{% include "../common/button/btn.twig" with {
+						view:btn_view,
+						prefix:"btn__",
+						attr:btn_def_attr,
+						mod:btn_def_mod,  
+						link:btn_def_link,
+						icon:btn_def_icon,  
+						name:btn_def_name
+					} %}					
+				</div>
+			</div>
+		</div>
+		{% if bg %}<div class="{{prefix}}bg  {{mod}}"><img src="{{bg}}" class="img-responsive" alt=""></div>{% endif %}
+	</section>
+{% endif %}
+
+{% if view == "blockquote" %}
+	<section class="{{prefix}}content  {{mod}}" {% if bg %} style="background-image: url({{bg}})"{% endif %}>
+		<blockquote class="{{prefix}}container container  {{mod}}">
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:autor_mod,
+				attr:autor_attr, 
+				level:autor_level, 
+				heading:autor
+			} %}
+		</blockquote>
+	</section>
+{% endif %}
+
+{% if view == "adv" %}
+	<section class="{{prefix}}content  {{mod}}" {% if bg %} style="background-image: url({{bg}})"{% endif %}>
+		<div class="{{prefix}}container container  {{mod}}">
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}
+			{% if img %}
+			<picture class="{{prefix}}img  {{mod}}">
+				<img src="{{img}}" class="img-responsive" alt="{{heading}}">
+			</picture>
+			{% endif %}
+		</div>
+	</section>
+{% endif %}
+
+{% if view == "about" %}
+	<section class="{{prefix}}content  {{mod}}" {% if bg %} style="background-image: url({{bg}})"{% endif %}>
+		<div class="{{prefix}}container container  {{mod}}">
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:note_mod,
+				attr:note_attr, 
+				level:note_level, 
+				heading:note
+			} %}
+			<div class="grid__row">
+				{% include "../common/card/card.twig" with {
+					view:team_view,
+					prefix:"card__", 
+					mod:team_mod,
+					list: team_list
+				} %}
+			</div>
+		</div>
+	</section>
+{% endif %}
+
+{% if view == "promo" %}
+	<section class="{{prefix}}content  {{mod}}" {% if bg %} style="background-image: url({{bg}})"{% endif %}>
+		<div class="{{prefix}}container container  {{mod}}">
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}
+			{% include "../common/button/btn.twig" with {
+				view:btn_view,
+				prefix:"btn__",
+				attr:btn_attr,
+				mod:btn_mod,  
+				link:btn_link,
+				icon:btn_icon,  
+				name:btn_name
+			} %}
+		</div>
+	</section>
+{% endif %}
+
+{% if view == "services" %}
+	<section class="{{prefix}}content  {{mod}}" {% if bg %} style="background-image: url({{bg}})"{% endif %}>
+		<div class="{{prefix}}container container  {{mod}}">
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}
+
+			<div class="{{prefix}}grid  {{mod}}  grid__row">
+				{% include "../common/card/card.twig" with {
+					view:card_view,
+					prefix:"card__", 
+					mod:card_mod,
+					list: card_list
+				} %}
+			</div>
+		</div>
+	</section>
+{% endif %}
+
+{% if view == "step" %}
+	<section class="{{prefix}}content  {{mod}}" {% if bg %} style="background-image: url({{bg}})"{% endif %}
+	>
+		<div class="{{prefix}}container container  {{mod}}">
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}
+
+			<ul class="card__group  {{card_mod}}"  {% if bg_card %} style="background-image: url({{bg_card}})"{% endif %}>
+				{% include "../common/card/card.twig" with {
+					view:card_view,
+					prefix:"card__", 
+					mod:card_mod,
+					list: card_list
+				} %}
+			</ul>
+			<div class="{{prefix}}content  {{promo_group}}" {% if promo_bg %} style="background-image: url({{promo_bg}})"{% endif %}>
+				<div class="{{prefix}}container container  {{promo_group}}">
+					{% include "../common/page-header/elem.twig" with {
+						prefix:"page-header__", 
+						mod:promo_mod,
+						attr:promo_attr, 
+						level:promo_level, 
+						heading:promo
+					} %}
+					{% include "../common/button/btn.twig" with {
+						view:promo_btn_view,
+						prefix:"btn__",
+						attr:promo_btn_attr,
+						mod:promo_btn_mod,  
+						link:promo_btn_link,
+						icon:promo_btn_icon,  
+						name:promo_btn_name
+					} %}
+				</div>
+			</div>
+		</div>
+	</section>
+{% endif %}
+
+{% if view == "faq" %}
+	<section class="{{prefix}}content  {{mod}}" {% if bg %} style="background-image: url({{bg}})"{% endif %}
+	>
+		<div class="{{prefix}}container container  {{mod}}">
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}
+			{% include "../common/card/card.twig" with {
+				view:card_view,
+				prefix:"card__", 
+				mod:card_mod,
+				list: card_list
+			} %}
+			<div class="{{prefix}}btn   {{mod}}">
+				{% include "../common/button/btn.twig" with {
+					view:btn_view,
+					prefix:"btn__",
+					attr:btn_attr,
+					mod:btn_mod,  
+					link:btn_link,
+					icon:btn_icon,  
+					name:btn_name
+				} %}
+			</div>
+		</div>
+	</section>
+{% endif %}

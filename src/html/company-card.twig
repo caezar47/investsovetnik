@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	{% include "../block/common/head/head.twig" with {title:"Карточка компании"}  %}
+	</head>
+	<body>
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "header",
+            prefix:"navbar__", 
+            mod:"",
+            basket:"Корзина",
+            basket_qty:"999",
+            basket_cost:"15 900",
+        } %}
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "aside",
+            prefix:"navbar__",
+            collapse:"",  
+            mod:"",            
+            active:page.company_card,
+        } %} 
+
+        <main class="{{prefix.section}}wrap">
+            {% include "../block/page/company.twig" with {
+                view:"card", 
+                content_prefix:prefix.section, 
+                content_mod:"is--page-company-card", 
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"is--page-default", 
+                heading_level:"h1", 
+                heading:"Ecobags", 
+                back_link: page.company,             
+                back_name: "К компаниям"            
+            } %}
+        </main>
+
+        {% include "../block/common/modals/include.twig"%}
+    	{% include "../block/common/script/script.twig"%}
+	</body>
+</html> 

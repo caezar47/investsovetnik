@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	{% include "../block/common/head/head.twig" with {title:"Карточка проекта"}  %}
+	</head>
+	<body>
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "header",
+            prefix:"navbar__", 
+            mod:"",
+            basket:"Корзина",
+            basket_qty:"999",
+            basket_cost:"15 900",
+        } %}
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "aside",
+            prefix:"navbar__",
+            collapse:"",  
+            mod:"",            
+            active:page.project_card,
+        } %} 
+
+        <main class="{{prefix.section}}wrap">
+            {% include "../block/page/project.twig" with {
+                view:"card", 
+                content_prefix:prefix.section, 
+                content_mod:"is--page-project-card", 
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"", 
+                heading_level:"h1", 
+                heading:"Проект №07-10/2020", 
+                back_link: page.project,             
+                back_name: "К проектам",                
+                events_list:[
+                    {
+                        "name": 'Выполнили работы',
+                        "date": '10.10.2020',
+                        "date_iso": '2020-10-10',
+                        "time": '18:26',
+                        "gallery":[
+                            {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                            {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                            {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                            {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                            {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                            {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                        ],
+                        "docs":[
+                            {
+                                'name': 'Последовательность действий по продвижению сайта',
+                                'type': '.docx',
+                                'size': '2,5 МБ'
+                            },
+                            {
+                                'name': 'Бухгалтерский баланс за 2020 год',
+                                'type': '.xls',
+                                'size': '5,5 МБ'
+                            },
+                        ]                                       
+                    },
+                    {
+                        "name": 'По проекту начаты работы. В ходе выполнения работ в ленту новостей будут добавляться отчёты.',
+                        "date": '10.10.2020',
+                        "date_iso": '2020-10-10',
+                        "time": '18:26'             
+                    },
+                ],                
+                chat: [
+                    {                   
+                        'day': '8 Сентября',
+                        'message': [
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:26',
+                                'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                            },
+                            {
+                                'status':'to',
+                                'name':'Иван петров',
+                                'time':'15:27',
+                                'note':'Привет! Могу поставить 1',
+                            },
+                            {
+                                'status':'to',
+                                'name':'Иван петров',
+                                'time':'15:27',
+                                'note':'',
+                                'docs': [
+                                    {
+                                        'name': 'Последовательность действий по продвижению сайта',
+                                        'type': '.docx',
+                                        'size': '2.5 мб',
+                                    },
+                                ],
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:28',
+                                'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:26',
+                                'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                            },
+                            {
+                                'status':'to',
+                                'name':'Иван петров',
+                                'time':'15:27',
+                                'note':'Привет! Могу поставить 1',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:28',
+                                'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:26',
+                                'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                            },
+                            {
+                                'status':'to',
+                                'name':'Иван петров',
+                                'time':'15:27',
+                                'note':'Привет! Могу поставить 1',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:28',
+                                'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:26',
+                                'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                            },
+                            {
+                                'status':'to',
+                                'name':'Иван петров',
+                                'time':'15:27',
+                                'note':'Привет! Могу поставить 1',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:28',
+                                'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                            },
+                        ],
+                    }
+                ]          
+            } %}
+        </main>
+
+        {% include "../block/common/modals/include.twig" with {
+            events_list:[
+                {
+                    "name": 'Выполнили работы',
+                    "date": '10.10.2020',
+                    "date_iso": '2020-10-10',
+                    "time": '18:26',
+                    "gallery":[
+                        {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                        {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                        {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                        {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                        {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                        {'preview':[path.img,"/default/catalog-lock.jpg"].join(""),},
+                    ],
+                    "docs":[
+                        {
+                            'name': 'Последовательность действий по продвижению сайта',
+                            'type': '.docx',
+                            'size': '2,5 МБ'
+                        },
+                        {
+                            'name': 'Бухгалтерский баланс за 2020 год',
+                            'type': '.xls',
+                            'size': '5,5 МБ'
+                        },
+                    ]                                       
+                },
+                {
+                    "name": 'По проекту начаты работы. В ходе выполнения работ в ленту новостей будут добавляться отчёты.',
+                    "date": '10.10.2020',
+                    "date_iso": '2020-10-10',
+                    "time": '18:26'             
+                },
+            ] ,
+            chat: [
+                {                   
+                    'day': '8 Сентября',
+                    'message': [
+                        {
+                            'status':'from',
+                            'name':'Максим грудев',
+                            'time':'15:26',
+                            'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                        },
+                        {
+                            'status':'to',
+                            'name':'Иван петров',
+                            'time':'15:27',
+                            'note':'Привет! Могу поставить 1',
+                        }, 
+                        {
+                            'status':'to',
+                            'name':'Иван петров',
+                            'time':'15:27',
+                            'note':'',
+                            'docs': [
+                                {
+                                    'name': 'Последовательность действий по продвижению сайта',
+                                    'type': '.docx',
+                                    'size': '2.5 мб',
+                                },
+                            ],
+                        },
+                        {
+                            'status':'from',
+                            'name':'Максим грудев',
+                            'time':'15:28',
+                            'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                        },
+                        {
+                            'status':'from',
+                            'name':'Максим грудев',
+                            'time':'15:26',
+                            'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                        },
+                        {
+                            'status':'to',
+                            'name':'Иван петров',
+                            'time':'15:27',
+                            'note':'Привет! Могу поставить 1',
+                        },
+                        {
+                            'status':'from',
+                            'name':'Максим грудев',
+                            'time':'15:28',
+                            'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                        },
+                        {
+                            'status':'from',
+                            'name':'Максим грудев',
+                            'time':'15:26',
+                            'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                        },
+                        {
+                            'status':'to',
+                            'name':'Иван петров',
+                            'time':'15:27',
+                            'note':'Привет! Могу поставить 1',
+                        },
+                        {
+                            'status':'from',
+                            'name':'Максим грудев',
+                            'time':'15:28',
+                            'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                        },
+                        {
+                            'status':'from',
+                            'name':'Максим грудев',
+                            'time':'15:26',
+                            'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                        },
+                        {
+                            'status':'to',
+                            'name':'Иван петров',
+                            'time':'15:27',
+                            'note':'Привет! Могу поставить 1',
+                        },
+                        {
+                            'status':'from',
+                            'name':'Максим грудев',
+                            'time':'15:28',
+                            'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                        },
+                    ],
+                }
+            ]              
+        }%}
+    	{% include "../block/common/script/script.twig"%}
+	</body>
+</html> 

@@ -1,0 +1,198 @@
+<div class="{{prefix}}block modals  fade  {{mod}}" id="{{ID}}" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="{{prefix}}dialog  {{mod}}">
+		<div class="{{prefix}}body  {{mod}}" >
+			<button type="button" class="{{prefix}}btn-close  {{mod}}" data-dismiss="modal" aria-hidden="true">
+				{% include "../svg-sprite/svg.twig" with {icon:"icon-close"} %}
+			</button>
+			{# <div class="{{prefix}}content  {{mod}}"> #}
+				{% if view == "form" %}
+					{% include "../form/form.twig" with {
+						view: 			form_view, 
+						prefix:			"form__",
+						mod:			"is--modal", 
+						color:			"", 
+						ID: 			form_id,
+						heading:		heading, 
+						heading_level:	heading_level, 
+						heading_mod:	heading_mod,
+					} %}
+				{% endif %}
+				{% if ID == "modal-add-basket" %}
+					{% include "../page-header/elem.twig" with {
+						prefix:"page-header__", 
+						mod:heading_mod,
+						attr:heading_attr, 
+						level:heading_level, 
+						heading:heading
+					} %}
+					{% include "../card/card.twig" with {
+						view:"catalog_modal",
+						prefix:"card__", 
+						mod:"is--catalog", 
+						group:"is--view-modal", 
+						list: [
+							{					
+								"size":[
+									{
+										"name":"S",
+									},
+									{
+										"name":"M",
+									},
+									{
+										"name":"L",
+									},
+									{
+										"name":"XL",
+									},
+									{
+										"name":"XXL",
+									},
+								],
+								"color":[
+									{
+										"name":"Orange",
+										"color":"orange",
+									},
+									{
+										"name":"Yellow",
+										"color":"yellow",
+									},
+									{
+										"name":"Green",
+										"color":"green",
+									},
+									{
+										"name":"Blue",
+										"color":"blue",
+									},
+									{
+										"name":"Purple",
+										"color":"purple",
+									},
+								],
+								"qty":"5",
+								"qty_color":"#EB5757",
+								"btn": "В корзину"
+							},
+						]
+					} %}
+				{% endif %}
+				{% if ID == "modal-events" %}
+					{% include "../page-header/elem.twig" with {
+						prefix:"page-header__", 
+						mod:heading_mod,
+						attr:heading_attr, 
+						level:heading_level, 
+						heading:heading
+					} %}
+					{% include "../events/tpl.twig" with {
+						prefix:"events__", 
+						mod: '',
+						list: list 
+					} %}
+				{% endif %}
+				{% if ID == "modal-chat" %}
+					{% include "../page-header/elem.twig" with {
+						prefix:"page-header__", 
+						mod:heading_mod,
+						attr:heading_attr, 
+						level:heading_level, 
+						heading:heading
+					} %}
+					{% include "../chat/tpl.twig" with {
+						prefix:"chat__",
+						chat: chat
+					} %}
+				{% endif %}
+				{% if view == "basket_order" %}
+					{% include "../page-header/elem.twig" with {
+						prefix:"page-header__", 
+						mod:heading_mod,
+						attr:heading_attr, 
+						level:heading_level, 
+						heading:heading
+					} %}
+					<div class="{{content_prefix}}section  {{content_mod}}  is--order">
+						<div class="{{content_prefix}}card  {{content_mod}}">
+							<div class="grid__row  is--gap-sm">
+								{% include "../card/card.twig" with {
+									view:"basket",
+									prefix:"card__", 
+									mod:"is--basket", 
+									group:"is--view-order", 
+									list: [
+										{					
+											"link":"#",
+											"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+											"heading":"Услуги по ликвидации юридического&nbsp;лица",
+											"decs":'S, жёлтый',
+											"cost":'19 000 ₽',
+											"qty":"19",
+										},
+										{					
+											"link":"#",
+											"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+											"heading":"Регистрация ИП",
+											"decs":'S, жёлтый',
+											"cost":'500 ₽',
+											"qty":"19",
+										},
+										{					
+											"link":"#",
+											"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+											"heading":"Услуги по ликвидации юридического&nbsp;лица",
+											"decs":'S, жёлтый',
+											"cost":'19 000 ₽',
+											"qty":"19",
+										},
+										{					
+											"link":"#",
+											"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+											"heading":"Регистрация ИП",
+											"decs":'S, жёлтый',
+											"cost":'500 ₽',
+											"qty":"19",
+										},
+										{					
+											"link":"#",
+											"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+											"heading":"Услуги по ликвидации юридического&nbsp;лица",
+											"decs":'S, жёлтый',
+											"cost":'19 000 ₽',
+											"qty":"19",
+										},
+										{					
+											"link":"#",
+											"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+											"heading":"Регистрация ИП",
+											"decs":'S, жёлтый',
+											"cost":'500 ₽',
+											"qty":"19",
+										},
+										{					
+											"link":"#",
+											"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+											"heading":"Услуги по ликвидации юридического&nbsp;лица",
+											"decs":'S, жёлтый',
+											"cost":'19 000 ₽',
+											"qty":"19",
+										},
+										{					
+											"link":"#",
+											"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+											"heading":"Регистрация ИП",
+											"decs":'S, жёлтый',
+											"cost":'500 ₽',
+											"qty":"19",
+										},
+									]
+								} %}
+							</div>
+						</div>
+					</div>
+				{% endif %}
+			{# </div>  #}
+		</div>
+	</div>
+</div>

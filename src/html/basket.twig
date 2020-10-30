@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	{% include "../block/common/head/head.twig" with {title:"Корзина"}  %}
+	</head>
+	<body>
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "header",
+            prefix:"navbar__", 
+            mod:"",
+            basket:"Корзина",
+            basket_qty:"999",
+            basket_cost:"15 900",
+        } %}
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "aside",
+            prefix:"navbar__",
+            collapse:"",  
+            mod:"",            
+            active:page.basket,
+        } %} 
+
+        <main class="{{prefix.section}}wrap">
+            {% include "../block/page/basket.twig" with {
+                view:"page", 
+                content_prefix:prefix.section, 
+                content_mod:"is--page-basket", 
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"", 
+                heading_level:"h1", 
+                heading:"В вашей корзине 26 товаров",              
+            } %}
+        </main>
+
+        {% include "../block/common/modals/include.twig"%}
+    	{% include "../block/common/script/script.twig"%}
+        <script>
+            var del = $('[data-del]');
+            del.on('click', function(e) {
+                e.preventDefault();
+                $(this).closest('.card__item.is--basket').remove();
+            });
+        </script>
+	</body>
+</html> 

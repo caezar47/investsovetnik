@@ -1,0 +1,33 @@
+{% for d in list %}
+<div class="{{prefix}}card  {{mod}}">	
+	<div class="{{prefix}}item  {{mod}}" title="{{d.name}}">
+		<a href="{{d.link}}" class="{{prefix}}icon">
+			{% include "../svg-sprite/svg.twig" with {icon:"icon-docs"} %}
+		</a>
+		<div class="{{prefix}}group"> 
+			<a href="{{d.link}}" class="{{prefix}}name">
+				<span>{{d.name}}</span>
+				<i>{{d.type}}</i>
+			</a>
+			{% if d.size %}
+			<div class="{{prefix}}size">{{d.size}}</div>
+			{% endif %}
+			{% if d.progress %}
+			<div class="{{prefix}}progress">
+				{% include "../progress/tpl.twig" with {
+					prefix:"progress__", 
+					mod:d.progress_mod,
+					group:'',
+					completed:d.progress,
+				} %}
+			</div>
+			{% endif %}
+		</div> 
+		{% if d.del %}
+		<button type="button" class="{{prefix}}del">
+			{% include "../svg-sprite/svg.twig" with {icon:"icon-close"} %}
+		</button>
+		{% endif %}
+	</div>
+</div>
+{% endfor %}

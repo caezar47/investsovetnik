@@ -1,0 +1,286 @@
+//===== url =====//
+@url-site 					: 	'';
+@url-path 					: 	'/wp-content/themes/azbn7theme'; 
+@url-path 					: 	'..';
+@url-path-css 				: 	'@{url-path}/css';
+@url-path-fonts 			: 	'@{url-path}/fonts';
+@url-path-img 				: 	'@{url-path}/img';
+@url-path-js 				: 	'@{url-path}/js';
+
+//===== color =====//
+//= social
+@color-vk 					: 	#4d7198;
+@color-inst 				: 	#f26798;
+
+//= default
+@white 						:	#fff;
+@white-ed 					:	#EDEDFA;
+@black 						: 	#000;
+@black-23 					: 	#232736;
+@black-54 					: 	#545E69;
+@blue-light 				: 	#5AB0FF;
+@blue-dark 					:	#14538D;
+@gr1 						:	linear-gradient(93.73deg, #3562FF 0%, #3DB7FC 100%);
+@gr2 						:	linear-gradient(180deg, #3D458D 0%, #58CDFF 100%);
+
+@primary 					:	@blue-light;
+@default 					:	@black-54;
+@warning 					:	@white-ed;
+@success 					:	@blue-dark;
+@info 						:	@black-23;
+@danger 					:	fadeout(@white, 100%);
+@custom 					: 	fadeout(@white, 100%);
+
+//===== fonts =====//
+@open 						:	open-sans-400; 
+@open-700 					:	open-sans-700; 
+
+@montserrat 				:	montserrat;
+@montserrat-700 			:	montserrat-700;
+
+//===== base =====//
+@xs 						:	0px;
+@sm 						:	575px;
+@md 						:	768px;
+@lg 						:	992px;
+@xl 						:	1200px;
+@xxl 						:	1600px;
+
+@site_bg 					: 	@white;
+@site_ff 					: 	@open;
+@site_ff_custom 			: 	@montserrat;
+@site_fs 					: 	18px;
+@site_lh 					: 	133.3%; //24px
+@site_br 					: 	0px;
+@site_shadow 				: 	0px 10px 25px rgba(53, 219, 255, 0.25);
+@site_color 				: 	@default;
+@site_color_a 				: 	@primary;
+@site_color_a_hover 		: 	@success;
+
+@trs-site 					: 	all 0.35s ease; 
+@trs-option 				: 	0.35s ease; 
+
+@container_gap 				:	15px;
+@container  				:	1510px;
+@container_default  		:	1035px;
+
+
+//===== navbar =====//
+
+//== header ==//
+@header_size 			:	97px;
+@header_bg 				:	@white;
+@header_shadow 			:	10px 10px 30px 0px fadeout(#362E2E, 95%);
+;
+
+@header_humb_width 			:	20px;
+@header_humb_height 		:	16px;
+@header_humb_color 			:	@default;
+
+//== aside ==//
+@aside_size 			:	242px;
+@aside_bg 				:	@warning;
+
+//===== end's navbar =====//
+
+//===== breadcrumb =====//
+@bread_color 				: 	@default;
+@bread_gutter 				: 	13px;
+@bread_color_active 		: 	@danger;
+//===== end's breadcrumb =====//
+
+//===== tabs =====//
+@tabs_panel_bg 		 		:	@warning;
+@tabs_panel_radius 		 	:	@site_br;
+
+@tabs_color 				:	@default;
+@tabs_bg 		 			:	fadeout(@white, 100%);
+@tabs_border 		 		:	fadeout(@primary, 100%);
+
+@tabs_hover_color 			: 	fadeout(@default, 50%);
+
+@tabs_active_color 			:	@primary;
+@tabs_active_border 		:	@primary;
+@tabs_active_bg 			:	@white;
+@tabs_active_shadow 		:	0px 3px 7px fadeout(@black, 90%);
+//===== end's tabs =====//
+
+//===== button =====//
+@btn_radius 				:	35px;
+@btn_color 					:	@white;
+@btn_bg 					:	@success;
+@btn_border 				:	@success;
+@btn_shadow					:	0px 10px 25px 0px fadeout(#5988FF, 75%);
+
+@btn_hover_color 			:	@primary;
+@btn_hover_bg 				:	fadeout(@primary, 100%);
+@btn_hover_border 			:	@primary;
+
+@btn_focus_shadow 			:	@site_shadow;	
+//===== end's button =====//
+
+//===== button next =====//
+@next_radius 				:	@site_br;
+@next_width 				:	42px;
+@next_height 				:	22px;
+@next_color 				: 	@white;
+@next_bg 					:	@primary;
+
+@next_hover_bg 				:	fadeout(@primary, 50%);
+//===== end's button next =====//
+
+//===== button icon =====//
+@icon_radius 				:	@site_br;
+@icon_width 				:	50px;
+@icon_height 				:	50px;
+@icon_bg 					:	@warning;
+@icon_border_width 			:	2px;
+@icon_border_color			:	@warning;
+@icon_color					:	@danger;
+
+@icon_hover_color			:	@primary;
+
+@icon_focus_shadow 			: 	0px 2px 4px fadeout(@black, 75%);
+//===== end's button icon =====//
+
+//===== button more =====//
+@more_width 				:	25px;
+@more_height 				:	25px;
+@more_color 				: 	@default;
+
+@more_menu_shadow 			: 	10px 10px 30px fadeout(@default, 90%);
+@more_menu_radius 			: 	@site_br;
+@more_menu_pos_left 		: 	10px;
+@more_menu_pos_right 		: 	~"calc(100% - (@{more_width} - 10px))";
+
+@more_hover_color			:	fadeout(@default, 50%);
+@more_open_color			:	fadeout(@default, 70%);
+//===== end's button more =====//
+
+//===== button view =====//
+@view_color					:	@default;
+@view_gutter				:	10px;
+
+@view_hover_color			:	fadeout(@default, 50%);
+@view_active_color			:	fadeout(@default, 70%);
+//===== end's button view =====//
+
+//===== input =====//	
+@input_bg					:	@white;
+@input_height				:	52px;
+@input_height_textarea		:	95px;
+@input_radius				:	@site_br;
+@input_border_color			:	@info;
+@input_border_width			:	2px;
+@input_color				:	@default;
+@input_plh_color			:	@danger;
+
+@input_focus_border_color	:	@default;
+
+@input_error_border_color	:	@custom;
+@input_error_color			:	@custom;
+
+@input_disabled_border_color:	@success;
+@input_disabled_bg			:	@warning;
+@input_disabled_color		:	fadeout(@input_color, 50%);
+//===== end's input =====//
+
+//===== checkbox =====//
+@check_fs					:	@site_fs;
+@check_lh					:	@site_lh;
+@check_size					:	26px;
+@check_color				:	@default;
+@check_border_width			:	2px;
+@check_border_color			:	@info;
+@check_bg					:	@white;
+@check_radius				:	@site_br;
+
+@check_focus_shadow 		: 	0px 2px 4px fadeout(@black, 75%);
+
+@check_active_border_color	:	@primary;
+@check_active_bg			:	@primary;
+//===== end's checkbox =====//	
+
+//===== radio panel =====//	
+@radio_panel_radius 				: 		@site_br;
+@radio_panel_border_color 			: 		@info;
+@radio_panel_border_width 			: 		2px;
+@radio_panel_bg 					: 		@white;
+
+@radio_panel_hover_shadow 			: 		10px 10px 30px fadeout(@default, 90%);
+@radio_panel_hover_border_color 	: 		@white;
+
+@radio_panel_checked_border_color 	: 		@primary;
+//===== end's radio panel =====//
+
+//===== qty =====//
+@qty_radius 						: 		@site_br;
+@qty_border_color 					: 		@info;
+@qty_border_width 					: 		2px;
+@qty_btn_width 						: 		52px;
+@qty_btn_height 					: 		52px;	
+//===== end's qty =====//	
+
+//===== modals =====//
+@modal_backdrop 					:	@default;
+@modal_backdrop_fade 				:	0.9;
+@modal_bg 							:	@white;
+@modal_border_rad 					:	@site_br;
+@modal_width 						:	665px;
+
+@modal_btn_width 					: 	32px;
+@modal_btn_color 					:	@default;
+@modal_btn_color_hover 				:	fadeout(@default, 50%);
+//===== end's modals =====//
+
+//===== table =====//
+@table_color 						:	@default;
+@table_border_color 				:	@warning;
+@table_padding_tb 					:	10px;
+@table_padding_lr					:	15px;
+
+@table_head_color 					:	fadeout(@default, 50%);
+@table_head_bg 						:	@info;
+@table_head_padding_tb 				:	5px;
+@table_head_padding_lr				:	15px;
+@table_head_border_color 			:	@warning;
+//===== end's table =====//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//===== slider slick =====//
+@slider_btn_width 			: 	40px;
+@slider_btn_padding 		: 	0px;
+@slider_btn_color 			: 	@default;
+@slider_btn_bg 				: 	@white;
+@slider_btn_border 			: 	0px;
+@slider_btn_border_color 	: 	@primary;
+@slider_btn_radius 			: 	0;
+
+@slider_btn_color_hover 	: 	@white;
+@slider_btn_bg_hover 		: 	@primary;
+@slider_btn_border_color_hover:	@primary;
+
+@slider_dots_bottom 		: 	1.5vw;
+@slider_dots_width 			: 	10px;
+@slider_dots_gutter 		: 	10px;
+@slider_dots_bg 			: 	@success;
+@slider_dots_radius 		: 	50%;
+
+@slider_dots_bg_active 		: 	@primary;
+//===== end's slider slick =====//

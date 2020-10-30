@@ -1,0 +1,3479 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	<meta charset="utf-8">	
+<title>UiKit | investsovetnik.net</title>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#F24F00">
+<link rel="shortcut icon" href="./favicon/favicon.ico">
+<meta name="msapplication-config" content="./favicon/browserconfig.xml">
+<meta name="apple-mobile-web-app-title" content="investsovetnik.net">
+<meta name="application-name" content="investsovetnik.net">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<link href="./css/style.css" rel="stylesheet">	</head>
+	<body>
+        	<header class="navbar__header">
+		<div class="navbar__header-container container">
+			<div class="navbar__header-row row">
+				<div class="navbar__header-cols cols  is--hamburger">
+					<button class="navbar__header-hamburger" data-hamburger>
+						<span class="navbar__header-hamburger-line  is--left"></span>
+						<span class="navbar__header-hamburger-line  is--center"></span>
+						<span class="navbar__header-hamburger-line  is--right"></span>
+					</button>
+				</div>
+				<div class="navbar__header-cols cols  is--logotip">
+					<a class="navbar__header-logotip" href="./">MWS Agency</a>
+				</div>
+				<div class="navbar__header-cols cols  is--right">
+					<div class="navbar__header-flex-row row">
+						<div class="navbar__header-flex-cols cols">
+							<div class="navbar__header-user  dropdown">
+								<a class="navbar__header-user-dropdown" data-toggle="dropdown" href="#">
+									<span>Семён Вишневский</span>
+									<svg class="icon-svg icon-icon-user" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-user"></use>
+</svg>								</a>
+								<ul class="navbar__header-user-menu  dropdown-menu">
+									<li><a href="./profile.html">Мой профиль</a></li>
+									<li><a href="#" class="is--logout">Выйти</a></li>
+								</ul>
+							</div>
+						</div>
+												<div class="navbar__header-flex-cols cols">
+							<a class="navbar__header-basket" href="./basket.html">
+								<span class="navbar__header-basket-name">Корзина</span>
+								<span class="navbar__header-basket-icon">
+									<svg class="icon-svg icon-icon-basket" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-basket"></use>
+</svg>								</span>
+																<span class="navbar__header-basket-qty">999</span>
+																								<span class="navbar__header-basket-cost">15 900 ₽</span>
+															</a>
+						</div>
+												<div class="navbar__header-flex-cols cols  is--resize">
+							<button type="button" class="navbar__header-resize" data-resize></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+        	<aside class="navbar__aside">
+		<div class="navbar__aside-inner">
+			<div class="navbar__aside-container container">
+				<div class="navbar__aside-row row">
+					<div class="navbar__aside-wrap-cols  is--nav" data-aside-nav>
+						<div class="navbar__aside-cols cols  is--nav">
+							<nav class="navbar__aside-nav">
+								<li class="navbar__aside-nav-item      ">
+	<a href="./project.html" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-projects" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-projects"></use>
+</svg>			</div>
+				<span>Мои проекты</span>		
+	</a>  
+	</li>
+<li class="navbar__aside-nav-item      ">
+	<a href="./orders.html" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-orders" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-orders"></use>
+</svg>			</div>
+				<span>Мои заказы</span>		
+	</a>  
+	</li>
+<li class="navbar__aside-nav-item      ">
+	<a href="./company-card.html" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-company" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-company"></use>
+</svg>			</div>
+				<span>Мои компании</span>		
+	</a>  
+	</li>
+<li class="navbar__aside-nav-item      ">
+	<a href="./requests.html" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-requests" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-requests"></use>
+</svg>			</div>
+				<span>Мои обращения</span>		
+	</a>  
+	</li>
+<li class="navbar__aside-nav-item dropdown     ">
+	<a data-toggle="collapse" href="#page-catalog" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-catalog" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-catalog"></use>
+</svg>			</div>
+				<span>Каталог</span>		
+	</a>  
+		<div id="page-catalog" class="collapse  ">		
+		<ul class="navbar__aside-nav-sublist">
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="./catalog-cat.html" class="navbar__aside-nav-sublist-link  "><span>Регистрационные услуги</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Внесение изменений</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Бухгалтерские услуги</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Услуги по ликвидации юридического лица</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Юридические услуги</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Товары Instagram</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Композитные панели Mattisto</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Hyndai</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Timberk</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Scarlett</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Ортопедия</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Туторы</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>DPK</span>
+				</a>
+			</li>
+		    		</ul>
+	</div>
+	</li>
+<li class="navbar__aside-nav-item      ">
+	<a href="./settings.html" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-settings" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-settings"></use>
+</svg>			</div>
+				<span>Настройки</span>		
+	</a>  
+	</li>
+							</nav> 	
+						</div>
+					</div>
+					<div class="navbar__aside-cols cols  is--manager" data-aside-manager>
+						<div class="manager__panel  is--aside">
+	<div class="manager__group  is--aside">
+		<picture class="manager__preview  is--aside"><img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="Максим Грудев"></picture>
+		<div>			
+			<p class="manager__heading  is--aside">Ваш менеджер</p>
+			<p class="manager__name  is--aside">Максим Грудев</p>
+		</div>
+	</div>
+	<p class="manager__contacts  is--aside"><a href="tel:+79636925026">+79636925026</a></p>
+	<p class="manager__contacts  is--aside"><a href="email:m.grudev@playhard.agency">m.grudev@playhard.agency</a></p>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+ 
+
+        <main class="section__wrap">
+            	<section class="section__content">
+		<div class="section__container container">
+			<h1 class="page-header__heading  is--page-default  " >UiKit</h1>			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 50px;">Хлебные крошки</h2>
+				<ul class="breadcrumb__list  ">
+		
+				<li class="breadcrumb__item">
+			<a href="./catalog.html" class="breadcrumb__link">Каталог</a>
+		</li>
+				
+				<li class="breadcrumb__item  is--active">Регистрационные услуги</li>
+			</ul>			</div> 
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 40px;">Типографика</h2>
+				<h1 style="margin-bottom: 20px;">Заголовок 1</h1>
+				<h2 style="margin-bottom: 20px;">Заголовок 2</h2>
+				<p style="margin-bottom: 20px;">Основной текст</p>
+				<h6>Маленький текст</h6>
+			</div> 
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 59px;">Кнопки</h2>
+				<div class="row  is--gutter"  style="margin-bottom: 20px;">
+					<div class="cols">
+						<a href="#" class="btn__item  is--primary">Повторить</a>
+					</div>
+					<div class="cols">
+						<button type="button" class="btn__item">Отменить</button>
+					</div>
+				</div>
+				<div class="row  is--gutter"  style="margin-bottom: 20px;">
+					<div class="cols">
+						<a href="#" class="btn__item  is--primary  is--hover">Повторить</a>
+					</div>
+					<div class="cols">
+						<button type="button" class="btn__item  is--hover">Отменить</button>
+					</div>
+				</div>
+				<div class="row  is--gutter"  style="margin-bottom: 20px;">
+					<div class="cols">
+						<a href="#" class="btn__item  is--primary  is--disabled">Повторить</a>
+					</div>
+					<div class="cols">
+						<button disabled type="button" class="btn__item">Отменить</button>
+					</div>
+				</div>
+				<div class="row  is--gutter"  style="margin-bottom: 20px;">
+					<div class="cols">
+						<a href="#" class="btn__item  is--primary  is--focus">Повторить</a>
+					</div>
+					<div class="cols">
+						<button type="button" class="btn__item  is--focus">Отменить</button>
+					</div>
+				</div>
+				<div class="row  is--gutter"  style="margin-bottom: 20px;">
+					<div class="cols">
+						
+<button type="" class="btn__item  is--full" data-toggle="modal" data-target="#modal-edit">
+			<svg class="icon-svg icon-icon-add" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-add"></use>
+</svg>		<span>Реквизиты</span>
+</button>
+
+
+					</div>
+					<div class="cols">
+						
+<button type="" class="btn__item  is--full  is--primary" data-toggle="modal" data-target="#modal-edit">
+			<svg class="icon-svg icon-icon-add" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-add"></use>
+</svg>		<span>Реквизиты</span>
+</button>
+
+
+					</div>
+				</div>
+			</div> 
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Кнопки перехода</h2>
+				
+
+
+<a href="#" class="btn__next  ">
+	<svg class="icon-svg icon-icon-next" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-next"></use>
+</svg></a>  
+			</div> 
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 59px;">Чекбоксы</h2>
+				<div class="row  is--gutter"  style="margin-bottom: 20px;">
+					<div class="cols">
+								<div class="form__item    ">
+		<label class="form__checkbox      ">
+			<input class="form__checkbox-input    " type="checkbox" id="[agreement]" name="f[]" >
+			<span class="form__checkbox-icon    "></span>
+					</label>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+					<div class="cols">
+								<div class="form__item    ">
+		<label class="form__checkbox      ">
+			<input class="form__checkbox-input    " type="checkbox" id="[agreement]" name="f[]" checked>
+			<span class="form__checkbox-icon    "></span>
+					</label>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+				<div class="row  is--gutter"  style="margin-bottom: 20px;">
+					<div class="cols">
+								<div class="form__item    ">
+		<label class="form__checkbox      ">
+			<input class="form__checkbox-input    " type="checkbox" id="[agreement]" name="f[]" disabled>
+			<span class="form__checkbox-icon    "></span>
+					</label>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+					<div class="cols">
+								<div class="form__item    ">
+		<label class="form__checkbox      ">
+			<input class="form__checkbox-input    " type="checkbox" id="[agreement]" name="f[]" checked  disabled>
+			<span class="form__checkbox-icon    "></span>
+					</label>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Табы</h2>
+				<div style="max-width: 435px; margin-bottom: 30px">
+					<h2 style="margin-bottom: 20px;">Вариант 1</h2>
+					<div class="tabs__panel    ">			
+	<ul class="tabs__nav  ">
+				<li class="tabs__item    ">
+			<a class="tabs__link  " href="#tabs1" data-toggle="tab">Чат с менеджером</a>
+		</li>
+				<li class="tabs__item    active">
+			<a class="tabs__link  " href="#tabs2" data-toggle="tab">Лента событий</a>
+		</li>
+			</ul>
+</div>
+<div class="tabs__pane    " id="tabs1">
+			<div class="text__block"></div>
+
+		
+</div>
+<div class="tabs__pane  active  " id="tabs2">
+			<div class="text__block"></div>
+
+		
+</div>
+				</div> 
+				<div style="max-width: 435px;">
+					<h2 style="margin-bottom: 20px;">Вариант 2</h2>
+					<div class="tabs__panel    ">			
+	<ul class="tabs__nav  is--sm">
+				<li class="tabs__item  is--sm  ">
+			<a class="tabs__link  is--sm" href="#tabs1" data-toggle="tab">Чат с менеджером</a>
+		</li>
+				<li class="tabs__item  is--sm  active">
+			<a class="tabs__link  is--sm" href="#tabs2" data-toggle="tab">Лента событий</a>
+		</li>
+			</ul>
+</div>
+<div class="tabs__pane    " id="tabs1">
+			<div class="text__block"></div>
+
+		
+</div>
+<div class="tabs__pane  active  " id="tabs2">
+			<div class="text__block"></div>
+
+		
+</div>
+				</div>
+			</div>  
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Инпуты</h2>
+				<div class="grid__row" style="max-width: 435px; grid-gap: 21px 20px">
+					
+
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Название</p>
+				<input type="text" class="form__control            "   required placeholder="Плейсхолдер"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Название</p>
+				<input type="text" class="form__control            "   required placeholder="Плейсхолдер"  value="Введенный текст">
+	</label>
+		
+	<label class="form__item    is--focus"  data-error="Обязательно к заполнению">
+					<p class="form__label    is--focus">Название</p>
+				<input type="text" class="form__control        is--focus    "   required placeholder="Плейсхолдер"  value="Вводит текст">
+	</label>
+		
+	<label class="form__item    is--error"  data-error="Название ошибки">
+					<p class="form__label    is--error">Название</p>
+				<input type="text" class="form__control        is--error    "   required placeholder="Плейсхолдер"  value="Текст с ошибкой">
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Название</p>
+				<input type="text" class="form__control            " disabled  required placeholder="Залоченный инпут без возможности ввода"  value="Залоченный инпут без возможности ввода">
+	</label>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div> 
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 50px;">Дропдауны и комбобоксы</h2>
+				<div style="max-width: 434px;">
+					<div style="margin-bottom: 30px">
+						<h2 style="margin-bottom: 20px;">Дропдаун</h2>
+						<select data-selectize-default>
+							<option>Артикул</option>
+							<option>Производство</option>
+							<option>Характеристики</option>
+							<option>Материал</option>
+							<option>Цвет</option>
+							<option>Артикул1</option>
+							<option>Производство2</option>
+							<option>Характеристики3</option>
+							<option>Материал4</option>
+							<option>Цвет5</option> 
+						</select>
+					</div>
+
+					<div>
+						<h2 style="margin-bottom: 20px;">Комбобокс</h2>
+						<select data-selectize-multiple multiple="multiple">
+							<option>Артикул</option>
+							<option>Производитель</option>
+							<option>Характеристики</option>
+							<option>Материал</option>
+							<option>Цвет</option>
+							<option>Артикул1</option>
+							<option>Производство2</option>
+							<option>Характеристики3</option>
+							<option>Материал4</option>
+							<option>Цвет5</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Поиск</h2>
+				<div class="grid__row" style="max-width: 435px; grid-gap: 21px 20px">
+					
+
+
+	<form action="" class="form__item  is--search  ">
+		<input type="text" class="form__control  is--search    " placeholder="Поиск по каталогу" >
+		<button type="submit" class="form__btn  is--search  ">
+			<svg class="icon-svg icon-icon-search" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-search"></use>
+</svg>		</button>
+		<button type="reset" class="form__btn  is--del  ">
+			<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>		</button>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+	<form action="" class="form__item  is--search  ">
+		<input type="text" class="form__control  is--search    is--focus" placeholder="Поиск по каталогу" >
+		<button type="submit" class="form__btn  is--search  ">
+			<svg class="icon-svg icon-icon-search" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-search"></use>
+</svg>		</button>
+		<button type="reset" class="form__btn  is--del  ">
+			<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>		</button>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div> 
+			</div> 
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Кнопки с иконкой</h2>
+				<div class="row  is--gutter">
+					<div class="cols">
+						
+
+
+<a href="#"  class="btn__icon  ">
+	<svg class="icon-svg icon-icon-upload" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-upload"></use>
+</svg></a>  
+					</div>
+					<div class="cols">
+						
+
+
+<a href="#"  class="btn__icon  ">
+	<svg class="icon-svg icon-icon-print" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-print"></use>
+</svg></a>  
+					</div>
+					<div class="cols">
+						
+
+
+<a href="#"  class="btn__icon  is--outline">
+	<svg class="icon-svg icon-icon-del" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-del"></use>
+</svg></a>  
+					</div>
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Большое радио</h2>
+				<div class="grid__row" style="max-width: 435px; grid-gap: 10px 20px">
+					
+		<div class="form__item  is--panel  ">
+		<label class="form__radio  is--panel  ">
+			<input class="form__radio-input" type="radio" id="base[radio1]" name="f[base]" checked>
+			<p class="form__radio-wrap  is--panel ">
+																<span class="form__radio-name">Большой красивый радио селект</span>
+												<span class="form__radio-note">Пояснение</span>
+											</p>
+		</label>
+	</div>
+		<div class="form__item  is--panel  ">
+		<label class="form__radio  is--panel  ">
+			<input class="form__radio-input" type="radio" id="base[radio2]" name="f[base]" >
+			<p class="form__radio-wrap  is--panel ">
+																<span class="form__radio-name">Большой красивый радио селект</span>
+												<span class="form__radio-note">Пояснение</span>
+											</p>
+		</label>
+	</div>
+		<div class="form__item  is--panel  ">
+		<label class="form__radio  is--panel  ">
+			<input class="form__radio-input" type="radio" id="base[radio3]" name="f[base]" >
+			<p class="form__radio-wrap  is--panel is--hover">
+																<span class="form__radio-name">Большой красивый радио селект</span>
+												<span class="form__radio-note">Пояснение</span>
+											</p>
+		</label>
+	</div>
+		<div class="form__item  is--panel  ">
+		<label class="form__radio  is--panel  ">
+			<input class="form__radio-input" type="radio" id="base[radio4]" name="f[base]" disabled>
+			<p class="form__radio-wrap  is--panel ">
+																<span class="form__radio-name">Большой красивый радио селект</span>
+												<span class="form__radio-note">Пояснение</span>
+											</p>
+		</label>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Селектор количества</h2>
+				<div class="grid__row" style="max-width: 158px; grid-gap: 20px">
+					
+
+
+
+	<div class="form__item  is--qty">
+		<div class="form__qty">
+			<button type="button"  class="form__qty-btn  is--minus"></button>		
+			<input type="number"  class="form__qty-input" value="19">
+			<button type="button"  class="form__qty-btn  is--plus"></button>		
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+
+	<div class="form__item  is--qty">
+		<div class="form__qty">
+			<button type="button" disabled class="form__qty-btn  is--minus"></button>		
+			<input type="number" disabled class="form__qty-input" value="19">
+			<button type="button" disabled class="form__qty-btn  is--plus"></button>		
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Назад и крошки</h2>
+				
+
+
+<a href="#" class="btn__link-back  ">
+	<svg class="icon-svg icon-icon-back" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-back"></use>
+</svg>	<span>К корзине</span>
+</a>  
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Кнопка Еще</h2>
+				<div style="display: flex; max-width: 300px; justify-content: flex-end; ">				
+					
+
+
+<div class="btn__more-dropdown  dropdown">
+	<a class="btn__more" data-toggle="dropdown" href="#">
+		<svg class="icon-svg icon-icon-more" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-more"></use>
+</svg>	</a>
+	<ul class="btn__more-menu  dropdown-menu  ">
+				<li>
+			<button  type="button" class="btn__item  is--primary  is--sm">Повторить</button>
+		</li>
+				<li>
+			<button  type="button" class="btn__item  is--sm">Отменить</button>
+		</li>
+			</ul>
+</div>
+					<div style="margin-left: auto;">				
+						
+
+
+<div class="btn__more-dropdown  dropdown">
+	<a class="btn__more" data-toggle="dropdown" href="#">
+		<svg class="icon-svg icon-icon-more" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-more"></use>
+</svg>	</a>
+	<ul class="btn__more-menu  dropdown-menu  is--right">
+				<li>
+			<button  type="button" class="btn__item  is--primary  is--sm">Повторить</button>
+		</li>
+				<li>
+			<button  type="button" class="btn__item  is--sm">Отменить</button>
+		</li>
+			</ul>
+</div>
+					</div>
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Переключатели вида каталога</h2>
+				
+
+
+<ul class="btn__view-list  ">
+		<li class="btn__view-item  ">
+		<a href="" class="btn__view  is--active">Таблицей</a>
+	</li>
+		<li class="btn__view-item  ">
+		<a href="./catalog-cat.html" class="btn__view  ">Плиткой</a>
+	</li>
+	</ul>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 40px;">Таблицы</h2>
+				<div class="table-responsive  ">
+	<table class="table  ">
+				<thead>
+			<tr>
+								<th class="is--account-name" >
+					Название
+									</th>
+								<th  >
+					Детально
+									</th>
+								<th  >
+					Сумма
+									</th>
+								<th class="is--status" >
+					Статус
+									</th>
+							</tr>
+		</thead> 
+				<tbody> 
+				
+					
+				<tr > 
+										<td>
+						Счёт №30 от 12.01.2020
+											</td>
+										<td>
+						Заказ №108
+											</td>
+										<td>
+						8 180 ₽
+											</td>
+										<td>
+						Не оплачен
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Счёт №30 от 12.01.2020
+											</td>
+										<td>
+						Заказ №108
+											</td>
+										<td>
+						8 180 ₽
+											</td>
+										<td>
+						Не оплачен
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Счёт №30 от 12.01.2020
+											</td>
+										<td>
+						Заказ №108
+											</td>
+										<td>
+						8 180 ₽
+											</td>
+										<td>
+						Не оплачен
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Счёт №30 от 12.01.2020
+											</td>
+										<td>
+						Заказ №108
+											</td>
+										<td>
+						8 180 ₽
+											</td>
+										<td>
+						Не оплачен
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Счёт №30 от 12.01.2020
+											</td>
+										<td>
+						Заказ №108
+											</td>
+										<td>
+						8 180 ₽
+											</td>
+										<td>
+						Не оплачен
+											</td>
+									</tr>
+									</tbody>
+	</table>
+</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Каталог - Карточки</h2>
+				
+
+				<div class="grid__row" style="grid-template-columns: repeat(3, 1fr); max-width: 1010px; grid-gap: 30px; margin-bottom: 30px;">				
+					
+
+
+		
+	<table class="card__item  is--catalog  is--view-card">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Услуги по ликвидации юридического лица</h5></a>
+								<p class="card__code  is--catalog">Артикул: 051456</p>
+												<dl class="card__decs  is--catalog">
+											<div>
+							<dt>Гарантия:</dt>
+							<dd>1 год</dd>
+						</div>
+											<div>
+							<dt>Срок службы:</dt>
+							<dd>5 лет</dd>
+						</div>
+											<div>
+							<dt>Производитель:</dt>
+							<dd>Россия</dd>
+						</div>
+									</dl>
+							</td>
+			<td class="card__wrap  is--param  is--catalog">
+								<div class="card__group  is--param  is--catalog">
+										<div class="card__size-wrap  is--catalog">
+						<p class="card__size-heading  is--catalog">Выберите размер</p>
+						<ul class="card__size-list  is--catalog">
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="S" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">S</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="M" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">M</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="L" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">L</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XL</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XXL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XXL</span>
+								</label>
+							</li>
+												</ul>
+					</div>
+																				<div class="card__color-wrap  is--catalog">
+						<p class="card__color-heading  is--catalog">Выберите цвет</p>
+						<ul class="card__color-list  is--catalog">
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Orange">
+									<input type="radio" name="color_" id="Orange" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: orange"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Yellow">
+									<input type="radio" name="color_" id="Yellow" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: yellow"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Green">
+									<input type="radio" name="color_" id="Green" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: green"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Blue">
+									<input type="radio" name="color_" id="Blue" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: blue"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Purple">
+									<input type="radio" name="color_" id="Purple" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: purple"></span>
+								</label>
+							</li>
+												</ul>
+					</div>
+									</div>	
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								<dl class="card__cost-list  is--catalog">
+											<div class="card__cost-item  is--catalog">
+							<dt>От 500 шт.</dt>
+							<dd>7 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 000 шт.</dt>
+							<dd>6 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 500 шт.</dt>
+							<dd>5 900 ₽</dd>						
+						</div>
+									</dl>
+								
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<p class="card__qty  is--catalog" style="color: #EB5757">
+						В наличие 5 шт.
+					</p>
+										<button type="button" class="btn__item  is--primary">В корзину</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+		
+	<table class="card__item  is--catalog  is--view-card">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Регистрация ИП</h5></a>
+								<p class="card__code  is--catalog">Артикул: 051456</p>
+												<dl class="card__decs  is--catalog">
+											<div>
+							<dt>Гарантия:</dt>
+							<dd>1 год</dd>
+						</div>
+											<div>
+							<dt>Срок службы:</dt>
+							<dd>5 лет</dd>
+						</div>
+									</dl>
+							</td>
+			<td class="card__wrap  is--param  is--catalog">
+								<div class="card__group  is--param  is--catalog">
+										<div class="card__size-wrap  is--catalog">
+						<p class="card__size-heading  is--catalog">Выберите размер</p>
+						<ul class="card__size-list  is--catalog">
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="S" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">S</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="M" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">M</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="L" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">L</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XL</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XXL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XXL</span>
+								</label>
+							</li>
+												</ul>
+					</div>
+																			</div>	
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								<dl class="card__cost-list  is--catalog">
+											<div class="card__cost-item  is--catalog">
+							<dt>От 500 шт.</dt>
+							<dd>7 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 000 шт.</dt>
+							<dd>6 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 500 шт.</dt>
+							<dd>5 900 ₽</dd>						
+						</div>
+									</dl>
+								
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<p class="card__qty  is--catalog" style="color: #219653">
+						В наличие 100 шт.
+					</p>
+										<button type="button" class="btn__item  is--primary">В корзине 15 шт</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+		
+	<table class="card__item  is--catalog  is--view-card">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Услуги по ликвидации юридического лица</h5></a>
+								<p class="card__code  is--catalog">Артикул: 051456</p>
+												<dl class="card__decs  is--catalog">
+											<div>
+							<dt>Гарантия:</dt>
+							<dd>1 год</dd>
+						</div>
+											<div>
+							<dt>Срок службы:</dt>
+							<dd>5 лет</dd>
+						</div>
+											<div>
+							<dt>Производитель:</dt>
+							<dd>Россия</dd>
+						</div>
+									</dl>
+							</td>
+			<td class="card__wrap  is--param  is--catalog">
+								<div class="card__group  is--param  is--catalog">
+										<div class="card__size-wrap  is--catalog">
+						<p class="card__size-heading  is--catalog">Выберите размер</p>
+						<ul class="card__size-list  is--catalog">
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="S" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">S</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="M" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">M</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="L" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">L</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XL</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XXL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XXL</span>
+								</label>
+							</li>
+												</ul>
+					</div>
+																			</div>	
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								
+								<dl class="card__cost-group  is--catalog">	
+										<div class="card__cost-value  is--catalog  is--old">
+						<dt>Старая цена</dt>
+						<dd>6 900 ₽</dd>						
+					</div>
+						
+					<div class="card__cost-value  is--catalog">
+						<dt>Цена со скидкой</dt>
+						<dd>5 900 ₽</dd>						
+					</div>
+				</dl>
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<p class="card__qty  is--catalog" style="color: ">
+						В наличие 50 шт.
+					</p>
+										<button type="button" class="btn__item  is--primary">В корзине</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+	
+
+
+
+
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Каталог - Список</h2>
+				<div class="section__grid  grid__row  is--page-catalog  is--list">
+					
+
+
+		
+	<table class="card__item  is--catalog  is--view-list">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Услуги по ликвидации юридического лица</h5></a>
+								<p class="card__code  is--catalog">Артикул: 051456</p>
+												<dl class="card__decs  is--catalog">
+											<div>
+							<dt>Гарантия:</dt>
+							<dd>1 год</dd>
+						</div>
+											<div>
+							<dt>Срок службы:</dt>
+							<dd>5 лет</dd>
+						</div>
+											<div>
+							<dt>Производитель:</dt>
+							<dd>Россия</dd>
+						</div>
+									</dl>
+							</td>
+			<td class="card__wrap  is--param  is--catalog">
+								<div class="card__group  is--param  is--catalog">
+										<div class="card__size-wrap  is--catalog">
+						<p class="card__size-heading  is--catalog">Выберите размер</p>
+						<ul class="card__size-list  is--catalog">
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="S" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">S</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="M" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">M</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="L" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">L</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XL</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XXL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XXL</span>
+								</label>
+							</li>
+												</ul>
+					</div>
+																				<div class="card__color-wrap  is--catalog">
+						<p class="card__color-heading  is--catalog">Выберите цвет</p>
+						<ul class="card__color-list  is--catalog">
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Orange">
+									<input type="radio" name="color_" id="Orange" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: orange"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Yellow">
+									<input type="radio" name="color_" id="Yellow" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: yellow"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Green">
+									<input type="radio" name="color_" id="Green" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: green"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Blue">
+									<input type="radio" name="color_" id="Blue" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: blue"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Purple">
+									<input type="radio" name="color_" id="Purple" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: purple"></span>
+								</label>
+							</li>
+												</ul>
+					</div>
+									</div>	
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								<dl class="card__cost-list  is--catalog">
+											<div class="card__cost-item  is--catalog">
+							<dt>От 500 шт.</dt>
+							<dd>7 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 000 шт.</dt>
+							<dd>6 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 500 шт.</dt>
+							<dd>5 900 ₽</dd>						
+						</div>
+									</dl>
+								
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<p class="card__qty  is--catalog" style="color: #EB5757">
+						В наличие 5 шт.
+					</p>
+										<button type="button" class="btn__item  is--primary">В корзину</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+		
+	<table class="card__item  is--catalog  is--view-list">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Регистрация ИП</h5></a>
+								<p class="card__code  is--catalog">Артикул: 051456</p>
+												<dl class="card__decs  is--catalog">
+											<div>
+							<dt>Гарантия:</dt>
+							<dd>1 год</dd>
+						</div>
+											<div>
+							<dt>Срок службы:</dt>
+							<dd>5 лет</dd>
+						</div>
+									</dl>
+							</td>
+			<td class="card__wrap  is--param  is--catalog">
+								<div class="card__group  is--param  is--catalog">
+																				<div class="card__color-wrap  is--catalog">
+						<p class="card__color-heading  is--catalog">Выберите цвет</p>
+						<ul class="card__color-list  is--catalog">
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Orange">
+									<input type="radio" name="color_" id="Orange" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: orange"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Yellow">
+									<input type="radio" name="color_" id="Yellow" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: yellow"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Green">
+									<input type="radio" name="color_" id="Green" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: green"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Blue">
+									<input type="radio" name="color_" id="Blue" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: blue"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Purple">
+									<input type="radio" name="color_" id="Purple" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: purple"></span>
+								</label>
+							</li>
+												</ul>
+					</div>
+									</div>	
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								<dl class="card__cost-list  is--catalog">
+											<div class="card__cost-item  is--catalog">
+							<dt>От 500 шт.</dt>
+							<dd>7 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 000 шт.</dt>
+							<dd>6 900 ₽</dd>						
+						</div>
+									</dl>
+								
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<p class="card__qty  is--catalog" style="color: #219653">
+						В наличие 100 шт.
+					</p>
+										<button type="button" class="btn__item  is--primary">В корзине 15 шт</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+		
+	<table class="card__item  is--catalog  is--view-list">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Услуги по ликвидации юридического лица</h5></a>
+												<dl class="card__decs  is--catalog">
+											<div>
+							<dt>Гарантия:</dt>
+							<dd>1 год</dd>
+						</div>
+											<div>
+							<dt>Срок службы:</dt>
+							<dd>5 лет</dd>
+						</div>
+											<div>
+							<dt>Производитель:</dt>
+							<dd>Россия</dd>
+						</div>
+									</dl>
+							</td>
+			<td class="card__wrap  is--param  is--catalog">
+								<div class="card__group  is--param  is--catalog">
+										<div class="card__size-wrap  is--catalog">
+						<p class="card__size-heading  is--catalog">Выберите размер</p>
+						<ul class="card__size-list  is--catalog">
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="S" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">S</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="M" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">M</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="L" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">L</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XL</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XXL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XXL</span>
+								</label>
+							</li>
+												</ul>
+					</div>
+																			</div>	
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								
+								<dl class="card__cost-group  is--catalog">	
+										<div class="card__cost-value  is--catalog  is--old">
+						<dt>Старая цена</dt>
+						<dd>6 900 ₽</dd>						
+					</div>
+						
+					<div class="card__cost-value  is--catalog">
+						<dt>Цена со скидкой</dt>
+						<dd>5 900 ₽</dd>						
+					</div>
+				</dl>
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<p class="card__qty  is--catalog" style="color: ">
+						В наличие 50 шт.
+					</p>
+										<button type="button" class="btn__item  is--primary">В корзине</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+		
+	<table class="card__item  is--catalog  is--view-list">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Услуги по ликвидации юридического лица</h5></a>
+												<dl class="card__decs  is--catalog">
+											<div>
+							<dt>Гарантия:</dt>
+							<dd>1 год</dd>
+						</div>
+											<div>
+							<dt>Срок службы:</dt>
+							<dd>5 лет</dd>
+						</div>
+											<div>
+							<dt>Производитель:</dt>
+							<dd>Россия</dd>
+						</div>
+									</dl>
+							</td>
+			<td class="card__wrap  is--param  is--catalog">
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								
+								<dl class="card__cost-group  is--catalog">	
+						
+					<div class="card__cost-value  is--catalog">
+						<dt>Цена со скидкой</dt>
+						<dd>5 900 ₽</dd>						
+					</div>
+				</dl>
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<button type="button" class="btn__item  is--primary">В корзине</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+	
+
+
+
+
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Каталог - Подкатегории</h2>
+				<div class="section__grid  grid__row  is--page-catalog  is--card">
+					
+
+
+		
+	<table class="card__item  is--catalog  is--view-cat">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Услуги по ликвидации юридического лица</h5></a>
+								<p class="card__code  is--catalog">Артикул: 051456</p>
+												<dl class="card__decs  is--catalog">
+											<div>
+							<dt>Гарантия:</dt>
+							<dd>1 год</dd>
+						</div>
+											<div>
+							<dt>Срок службы:</dt>
+							<dd>5 лет</dd>
+						</div>
+											<div>
+							<dt>Производитель:</dt>
+							<dd>Россия</dd>
+						</div>
+									</dl>
+							</td>
+			<td class="card__wrap  is--param  is--catalog">
+								<div class="card__group  is--param  is--catalog">
+										<div class="card__size-wrap  is--catalog">
+						<p class="card__size-heading  is--catalog">Выберите размер</p>
+						<ul class="card__size-list  is--catalog">
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="S" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">S</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="M" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">M</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="L" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">L</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XL</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XXL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XXL</span>
+								</label>
+							</li>
+												</ul>
+					</div>
+																				<div class="card__color-wrap  is--catalog">
+						<p class="card__color-heading  is--catalog">Выберите цвет</p>
+						<ul class="card__color-list  is--catalog">
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Orange">
+									<input type="radio" name="color_" id="Orange" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: orange"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Yellow">
+									<input type="radio" name="color_" id="Yellow" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: yellow"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Green">
+									<input type="radio" name="color_" id="Green" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: green"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Blue">
+									<input type="radio" name="color_" id="Blue" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: blue"></span>
+								</label>
+							</li>
+													<li class="card__color-item  is--catalog">
+								<label class="card__color-radio  is--catalog" title="Purple">
+									<input type="radio" name="color_" id="Purple" class="card__color-input  is--catalog">
+									<span class="card__color-radio-view  is--catalog" style="background-color: purple"></span>
+								</label>
+							</li>
+												</ul>
+					</div>
+									</div>	
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								<dl class="card__cost-list  is--catalog">
+											<div class="card__cost-item  is--catalog">
+							<dt>От 500 шт.</dt>
+							<dd>7 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 000 шт.</dt>
+							<dd>6 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 500 шт.</dt>
+							<dd>5 900 ₽</dd>						
+						</div>
+									</dl>
+								
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<p class="card__qty  is--catalog" style="color: #EB5757">
+						В наличие 5 шт.
+					</p>
+										<button type="button" class="btn__item  is--primary">В корзину</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+		
+	<table class="card__item  is--catalog  is--view-cat">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Регистрация ИП</h5></a>
+								<p class="card__code  is--catalog">Артикул: 051456</p>
+												<dl class="card__decs  is--catalog">
+											<div>
+							<dt>Гарантия:</dt>
+							<dd>1 год</dd>
+						</div>
+											<div>
+							<dt>Срок службы:</dt>
+							<dd>5 лет</dd>
+						</div>
+									</dl>
+							</td>
+			<td class="card__wrap  is--param  is--catalog">
+								<div class="card__group  is--param  is--catalog">
+										<div class="card__size-wrap  is--catalog">
+						<p class="card__size-heading  is--catalog">Выберите размер</p>
+						<ul class="card__size-list  is--catalog">
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="S" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">S</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="M" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">M</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="L" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">L</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XL</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XXL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XXL</span>
+								</label>
+							</li>
+												</ul>
+					</div>
+																			</div>	
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								<dl class="card__cost-list  is--catalog">
+											<div class="card__cost-item  is--catalog">
+							<dt>От 500 шт.</dt>
+							<dd>7 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 000 шт.</dt>
+							<dd>6 900 ₽</dd>						
+						</div>
+											<div class="card__cost-item  is--catalog">
+							<dt>От 1 500 шт.</dt>
+							<dd>5 900 ₽</dd>						
+						</div>
+									</dl>
+								
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<p class="card__qty  is--catalog" style="color: #219653">
+						В наличие 100 шт.
+					</p>
+										<button type="button" class="btn__item  is--primary">В корзине 15 шт</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+		
+	<table class="card__item  is--catalog  is--view-cat">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Услуги по ликвидации юридического лица</h5></a>
+								<p class="card__code  is--catalog">Артикул: 051456</p>
+												<dl class="card__decs  is--catalog">
+											<div>
+							<dt>Гарантия:</dt>
+							<dd>1 год</dd>
+						</div>
+											<div>
+							<dt>Срок службы:</dt>
+							<dd>5 лет</dd>
+						</div>
+											<div>
+							<dt>Производитель:</dt>
+							<dd>Россия</dd>
+						</div>
+									</dl>
+							</td>
+			<td class="card__wrap  is--param  is--catalog">
+								<div class="card__group  is--param  is--catalog">
+										<div class="card__size-wrap  is--catalog">
+						<p class="card__size-heading  is--catalog">Выберите размер</p>
+						<ul class="card__size-list  is--catalog">
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="S" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">S</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="M" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">M</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="L" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">L</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XL</span>
+								</label>
+							</li>
+													<li class="card__size-item  is--catalog">
+								<label class="card__size-radio  is--catalog">
+									<input type="radio" name="size_" id="XXL" class="card__size-input  is--catalog">
+									<span class="card__size-radio-name  is--catalog">XXL</span>
+								</label>
+							</li>
+												</ul>
+					</div>
+																			</div>	
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								
+								<dl class="card__cost-group  is--catalog">	
+										<div class="card__cost-value  is--catalog  is--old">
+						<dt>Старая цена</dt>
+						<dd>6 900 ₽</dd>						
+					</div>
+						
+					<div class="card__cost-value  is--catalog">
+						<dt>Цена со скидкой</dt>
+						<dd>5 900 ₽</dd>						
+					</div>
+				</dl>
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<p class="card__qty  is--catalog" style="color: ">
+						В наличие 50 шт.
+					</p>
+										<button type="button" class="btn__item  is--primary">В корзине</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+		
+	<table class="card__item  is--catalog  is--view-cat">
+		<tr>
+									<td class="card__wrap  is--prev  is--catalog">
+				<a href="#">
+				<picture class="card__preview  is--catalog">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+				</a>
+			</td>
+				
+			<td class="card__wrap  is--decs  is--catalog">
+				<a href="#"><h5 class="card__heading  is--catalog">Смена наименования организации</h5></a>
+								<p class="card__code  is--catalog">Артикул: 051456</p>
+											</td>
+			<td class="card__wrap  is--param  is--catalog">
+							</td>	
+			<td class="card__wrap  is--cost  is--catalog">				
+								
+								<dl class="card__cost-group  is--catalog">	
+						
+					<div class="card__cost-value  is--catalog">
+						<dt>Цена со скидкой</dt>
+						<dd>5 900 ₽</dd>						
+					</div>
+				</dl>
+					
+			</td>
+			<td class="card__wrap  is--modal  is--catalog">
+				
+<button type="" class="btn__item  is--primary" data-toggle="modal" data-target="#modal-add-basket">
+		<span>Выбрать</span>
+</button>
+
+
+			</td>	
+			<td class="card__wrap  is--btn  is--catalog">
+				<div class="card__group  is--btn  is--catalog">
+										<button type="button" class="btn__item  is--primary">В корзине</button>
+				</div>
+			</td>
+					</tr>
+	</table>
+	
+
+
+
+
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Товары в корзине</h2>
+				<div class="grid__row" style="grid-template-columns: repeat(1, 1fr); max-width: 1130px; grid-gap: 10px;">
+					
+
+
+
+
+
+
+		
+	<table class="card__item  is--basket  is--view-card">
+		<tr>			
+			<td class="card__wrap  is--prev  is--basket">
+				<picture class="card__preview  is--basket">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+			</td>
+			<td class="card__wrap  is--heading  is--basket">
+				<h5 class="card__heading  is--basket">Услуги по ликвидации юридического лица</h5>
+			</td>
+			<td class="card__wrap  is--decs  is--basket">
+				<p class="card__decs  is--basket">S, жёлтый</p>
+			</td>	
+			<td class="card__wrap  is--cost  is--basket">
+								<p class="card__cost-value  is--basket">
+					19 000 ₽					
+				</p>
+					
+			</td>
+			<td class="card__wrap  is--qty  is--basket">
+				
+
+
+
+	<div class="form__item  is--qty">
+		<div class="form__qty">
+			<button type="button"  class="form__qty-btn  is--minus"></button>		
+			<input type="number"  class="form__qty-input" value="19">
+			<button type="button"  class="form__qty-btn  is--plus"></button>		
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</td>	
+			<td class="card__wrap  is--del  is--basket">
+				
+
+
+<a href="#"  class="btn__icon  is--outline">
+	<svg class="icon-svg icon-icon-del" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-del"></use>
+</svg></a>  
+				
+			</td>
+		</tr>
+	</table>
+		
+	<table class="card__item  is--basket  is--view-card">
+		<tr>			
+			<td class="card__wrap  is--prev  is--basket">
+				<picture class="card__preview  is--basket">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+			</td>
+			<td class="card__wrap  is--heading  is--basket">
+				<h5 class="card__heading  is--basket">Регистрация ИП</h5>
+			</td>
+			<td class="card__wrap  is--decs  is--basket">
+				<p class="card__decs  is--basket">S, жёлтый</p>
+			</td>	
+			<td class="card__wrap  is--cost  is--basket">
+								<p class="card__cost-value  is--basket">
+					500 ₽					
+				</p>
+					
+			</td>
+			<td class="card__wrap  is--qty  is--basket">
+				
+
+
+
+	<div class="form__item  is--qty">
+		<div class="form__qty">
+			<button type="button"  class="form__qty-btn  is--minus"></button>		
+			<input type="number"  class="form__qty-input" value="19">
+			<button type="button"  class="form__qty-btn  is--plus"></button>		
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</td>	
+			<td class="card__wrap  is--del  is--basket">
+				
+
+
+<a href="#"  class="btn__icon  is--outline">
+	<svg class="icon-svg icon-icon-del" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-del"></use>
+</svg></a>  
+				
+			</td>
+		</tr>
+	</table>
+	
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Товары в заказе</h2>
+				<div class="grid__row" style="grid-template-columns: repeat(1, 1fr); max-width: 549px; grid-gap: 10px;">
+					
+
+
+
+
+
+
+		
+	<table class="card__item  is--basket  is--view-order">
+		<tr>			
+			<td class="card__wrap  is--prev  is--basket">
+				<picture class="card__preview  is--basket">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+			</td>
+			<td class="card__wrap  is--heading  is--basket">
+				<h5 class="card__heading  is--basket">Услуги по ликвидации юридического&nbsp;лица</h5>
+			</td>
+			<td class="card__wrap  is--decs  is--basket">
+				<p class="card__decs  is--basket">S, жёлтый</p>
+			</td>	
+			<td class="card__wrap  is--cost  is--basket">
+								<p class="card__cost-value  is--basket">
+					19 000 ₽					
+				</p>
+					
+			</td>
+			<td class="card__wrap  is--qty  is--basket">
+				
+
+
+
+	<div class="form__item  is--qty">
+		<div class="form__qty">
+			<button type="button"  class="form__qty-btn  is--minus"></button>		
+			<input type="number"  class="form__qty-input" value="19">
+			<button type="button"  class="form__qty-btn  is--plus"></button>		
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</td>	
+			<td class="card__wrap  is--del  is--basket">
+				
+
+
+<a href="#"  class="btn__icon  is--outline">
+	<svg class="icon-svg icon-icon-del" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-del"></use>
+</svg></a>  
+				
+			</td>
+		</tr>
+	</table>
+		
+	<table class="card__item  is--basket  is--view-order">
+		<tr>			
+			<td class="card__wrap  is--prev  is--basket">
+				<picture class="card__preview  is--basket">
+					<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+				</picture>
+			</td>
+			<td class="card__wrap  is--heading  is--basket">
+				<h5 class="card__heading  is--basket">Регистрация ИП</h5>
+			</td>
+			<td class="card__wrap  is--decs  is--basket">
+				<p class="card__decs  is--basket">S, жёлтый</p>
+			</td>	
+			<td class="card__wrap  is--cost  is--basket">
+								<p class="card__cost-value  is--basket">
+					500 ₽					
+				</p>
+					
+			</td>
+			<td class="card__wrap  is--qty  is--basket">
+				
+
+
+
+	<div class="form__item  is--qty">
+		<div class="form__qty">
+			<button type="button"  class="form__qty-btn  is--minus"></button>		
+			<input type="number"  class="form__qty-input" value="19">
+			<button type="button"  class="form__qty-btn  is--plus"></button>		
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</td>	
+			<td class="card__wrap  is--del  is--basket">
+				
+
+
+<a href="#"  class="btn__icon  is--outline">
+	<svg class="icon-svg icon-icon-del" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-del"></use>
+</svg></a>  
+				
+			</td>
+		</tr>
+	</table>
+	
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Информеры</h2>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Для товаров</h2>
+					<div class="informer__panel  is--catalog  is--open">
+			<p class="informer__name  is--catalog">Выбрано 2 товара</p>
+					<div class="informer__btn  is--catalog">
+		
+
+<a href="#" class="btn__item  is--sm">
+	<span>Удалить</span>
+</a>  
+
+	</div>
+	</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Для корзины</h2>
+						<div class="informer__panel  is--basket  ">
+			<p class="informer__name  is--basket">Итого: <span>21 580 ₽</span></p>
+					<div class="informer__btn  is--basket">
+		
+
+<a href="" class="btn__item  is--primary">
+	<span>Перейти к оформлению</span>
+</a>  
+
+	</div>
+	</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Для Оформление заказа</h2>
+					<div class="informer__panel  is--order  ">
+			<p class="informer__name  is--order">Итого: <span>21 580 ₽</span></p>
+			<div class="informer__modal  is--order">		
+		
+<button type="" class="item  " type="button" data-toggle="modal" data-target="#modal-order">
+		<span>Ваш заказ</span>
+</button>
+
+
+	</div>
+				<div class="informer__btn  is--order">
+		
+
+<a href="#" class="btn__item  is--primary">
+	<span>Оформить заказ</span>
+</a>  
+
+	</div>
+	</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Для карточки каталога - вариант 1</h2>
+					
+					<div class="informer__panel  is--catalog-card  is--open">
+			
+
+
+
+	
+	<dl class="card__cost-list  is--catalog-card">
+					<div class="card__cost-item  is--catalog-card">
+				<dt>От 500 шт.</dt>
+				<dd>7 900 ₽</dd>						
+			</div>
+					<div class="card__cost-item  is--catalog-card">
+				<dt>От 1 000 шт.</dt>
+				<dd>6 900 ₽</dd>						
+			</div>
+					<div class="card__cost-item  is--catalog-card">
+				<dt>От 1 500 шт.</dt>
+				<dd>5 900 ₽</dd>						
+			</div>
+			</dl>
+
+
+
+
+ 
+				<div class="informer__modal  is--catalog-card">		
+		
+<button type="" class="btn__item  is--primary  is--full" type="button" data-toggle="modal" data-target="#modal-select-basket">
+		<span>Выбрать</span>
+</button>
+
+
+	</div>
+				
+
+
+
+	<div class="form__item  is--qty">
+		<div class="form__qty">
+			<button type="button" is--open class="form__qty-btn  is--minus"></button>		
+			<input type="number" is--open class="form__qty-input" value="19">
+			<button type="button" is--open class="form__qty-btn  is--plus"></button>		
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="informer__btn  is--catalog-card">
+		
+
+<a href="#" class="btn__item  is--primary">
+	<span>В корзину</span>
+</a>  
+
+	</div>
+	</div>				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Карточка менеджера</h2>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 1</h2>
+					<div class="manager__panel  is--company">
+	<p class="manager__heading  is--company">Ответственный менеджер</p>
+	<div class="manager__group  is--company">
+		<picture class="manager__preview  is--company"><img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="Мария Вишневская"></picture>
+		<div>			
+			<p class="manager__name  is--company">Мария Вишневская</p>
+			<p class="manager__contacts  is--company"><a href="tel:+79991234567">+79991234567</a></p>
+			<p class="manager__contacts  is--company"><a href="email:wishnewsky@gmail.com">wishnewsky@gmail.com</a></p>
+		</div>
+	</div>
+</div>
+				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 2</h2>
+					<div class="manager__panel  is--aside">
+	<div class="manager__group  is--aside">
+		<picture class="manager__preview  is--aside"><img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="Максим Грудев"></picture>
+		<div>			
+			<p class="manager__heading  is--aside">Ваш менеджер</p>
+			<p class="manager__name  is--aside">Максим Грудев</p>
+		</div>
+	</div>
+	<p class="manager__contacts  is--aside"><a href="tel:+79636925026">+79636925026</a></p>
+	<p class="manager__contacts  is--aside"><a href="email:m.grudev@playhard.agency">m.grudev@playhard.agency</a></p>
+</div>
+				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Карточка реквизитов</h2>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 1</h2>
+					<div class="infocard__panel">
+	<div class="infocard__header">		
+				<p class="infocard__heading">Грудев Максим Андреевич</p>
+		
+		<div class="infocard__more">
+			
+
+
+<div class="btn__more-dropdown  dropdown">
+	<a class="btn__more" data-toggle="dropdown" href="#">
+		<svg class="icon-svg icon-icon-more" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-more"></use>
+</svg>	</a>
+	<ul class="btn__more-menu  dropdown-menu  is--right">
+				<li>
+			<button  type="button"  data-toggle="modal" data-target="#modal-edit" class="btn__item  is--primary  is--sm">Повторить</button>
+		</li>
+				<li>
+			<button  type="button" class="btn__item  is--sm">Отменить</button>
+		</li>
+			</ul>
+</div>
+		</div>
+	</div>
+	<dl class="infocard__list">
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">ИНН</dt>
+	  		<dd class="infocard__list-def">032625174652</dd>
+					</div>
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">ОГРНИП</dt>
+	  		<dd class="infocard__list-def">316032700050157</dd>
+					</div>
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">ОКПО</dt>
+	  		<dd class="infocard__list-def">0200885960</dd>
+					</div>
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">ОКВЭД</dt>
+	  		<dd class="infocard__list-def">62.01</dd>
+					</div>
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">Дата регистрации</dt>
+	  		<dd class="infocard__list-def">13.01.2016 в 00:00:00+03:00</dd>
+					</div>
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">Сокращённое название организации</dt>
+	  		<dd class="infocard__list-def">MWS Agency</dd>
+					</div>
+			</dl>
+</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 2</h2>
+					<div class="infocard__panel">
+	<div class="infocard__header">		
+				<picture class="infocard__preview">
+			<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+		</picture>		
+				<p class="infocard__heading">Банковские реквизиты</p>
+		
+		<div class="infocard__more">
+			
+
+
+<div class="btn__more-dropdown  dropdown">
+	<a class="btn__more" data-toggle="dropdown" href="#">
+		<svg class="icon-svg icon-icon-more" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-more"></use>
+</svg>	</a>
+	<ul class="btn__more-menu  dropdown-menu  is--right">
+				<li>
+			<button  type="button"  data-toggle="modal" data-target="#modal-edit" class="btn__item  is--primary  is--sm">Повторить</button>
+		</li>
+				<li>
+			<button  type="button" class="btn__item  is--sm">Отменить</button>
+		</li>
+			</ul>
+</div>
+		</div>
+	</div>
+	<dl class="infocard__list">
+				<div class="infocard__list-item is--preview">
+						<picture class="infocard__preview">
+				<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+			</picture>
+			<div>
+				  		<dt class="infocard__list-term">Наименование банка</dt>
+	  		<dd class="infocard__list-def">Альфабанк</dd>
+						</div>
+					</div>
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">Адрес банка</dt>
+	  		<dd class="infocard__list-def">АО «Альфа-банк» г. Москва</dd>
+					</div>
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">Расчётный счёт</dt>
+	  		<dd class="infocard__list-def">4080 2810 5026 8000 0412</dd>
+					</div>
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">Валюта счёта</dt>
+	  		<dd class="infocard__list-def">RUB</dd>
+					</div>
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">БИК</dt>
+	  		<dd class="infocard__list-def">044525593</dd>
+					</div>
+				<div class="infocard__list-item ">
+				  		<dt class="infocard__list-term">Кор. счёт</dt>
+	  		<dd class="infocard__list-def">3010 1810 2000 0000 0593</dd>
+					</div>
+			</dl>
+</div>				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Прогресс</h2>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 1</h2>
+					<div class="progress__panel    ">
+	<progress max="100" value="50"></progress>
+		<p class="progress__text">Текущий статус: <span>В работе</span></p>
+		<div class="progress__item  " data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+		<p class="progress__text">Дата окончания работ: <span>30.10.2020</span></p>
+	</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 1 - с сеткой</h2>
+					<div class="progress__panel    ">
+	<progress max="100" value="50"></progress>
+		<p class="progress__text">Текущий статус: <span>В работе</span></p>
+		<div class="progress__item  " data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+					<div class="progress__grid  ">
+									<div>
+						<span class="sr-only">Статус 1%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 2%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 3%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 4%</span>
+					</div>
+							</div>
+			</div>
+		<p class="progress__text">Дата окончания работ: <span>30.10.2020</span></p>
+	</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 2</h2>
+					<div class="progress__panel    ">
+	<progress max="100" value="25"></progress>
+		<div class="progress__item  " data-completed="25">
+		<div class="progress__bar" style="width: 25%"></div>
+		<span class="sr-only">Выполнено на 25%</span>
+			</div>
+	</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 2 - с сеткой</h2>
+					<div class="progress__panel    ">
+	<progress max="100" value="25"></progress>
+		<div class="progress__item  " data-completed="25">
+		<div class="progress__bar" style="width: 25%"></div>
+		<span class="sr-only">Выполнено на 25%</span>
+					<div class="progress__grid  ">
+									<div>
+						<span class="sr-only">Статус 1%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 2%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 3%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 4%</span>
+					</div>
+							</div>
+			</div>
+	</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 3</h2>
+					<div class="progress__panel  is--table  ">
+	<progress max="100" value="25"></progress>
+		<div class="progress__item  is--table" data-completed="25">
+		<div class="progress__bar" style="width: 25%"></div>
+		<span class="sr-only">Выполнено на 25%</span>
+			</div>
+	</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 3 - с сеткой</h2>
+					<div class="progress__panel  is--table  ">
+	<progress max="100" value="40"></progress>
+		<div class="progress__item  is--table" data-completed="40">
+		<div class="progress__bar" style="width: 40%"></div>
+		<span class="sr-only">Выполнено на 40%</span>
+					<div class="progress__grid  is--table">
+									<div>
+						<span class="sr-only">Статус 1%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 2%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 3%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 4%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 5%</span>
+					</div>
+							</div>
+			</div>
+	</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 4</h2>
+					<div class="progress__panel  is--xs  ">
+	<progress max="100" value="25"></progress>
+		<div class="progress__item  is--xs" data-completed="25">
+		<div class="progress__bar" style="width: 25%"></div>
+		<span class="sr-only">Выполнено на 25%</span>
+			</div>
+	</div>				</div>
+				<div style="margin-bottom: 30px">
+					<h2 style="margin-bottom: 10px;">Вариант 4 - с сеткой</h2>
+					<div class="progress__panel  is--xs  ">
+	<progress max="100" value="25"></progress>
+		<div class="progress__item  is--xs" data-completed="25">
+		<div class="progress__bar" style="width: 25%"></div>
+		<span class="sr-only">Выполнено на 25%</span>
+					<div class="progress__grid  is--xs">
+									<div>
+						<span class="sr-only">Статус 1%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 2%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 3%</span>
+					</div>
+									<div>
+						<span class="sr-only">Статус 4%</span>
+					</div>
+							</div>
+			</div>
+	</div>				</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Документы</h2> 
+				<div class="docs__card  ">	
+	<div class="docs__item  " title="Последовательность действий по продвижению сайта">
+		<a href="" class="docs__icon">
+			<svg class="icon-svg icon-icon-docs" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-docs"></use>
+</svg>		</a>
+		<div class="docs__group"> 
+			<a href="" class="docs__name">
+				<span>Последовательность действий по продвижению сайта</span>
+				<i>.docx</i>
+			</a>
+						<div class="docs__size">2,5 МБ</div>
+								</div> 
+			</div>
+</div>
+<div class="docs__card  ">	
+	<div class="docs__item  " title="Бухгалтерский баланс за 2020 год">
+		<a href="" class="docs__icon">
+			<svg class="icon-svg icon-icon-docs" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-docs"></use>
+</svg>		</a>
+		<div class="docs__group"> 
+			<a href="" class="docs__name">
+				<span>Бухгалтерский баланс за 2020 год</span>
+				<i>.xls</i>
+			</a>
+						<div class="docs__size">5,5 МБ</div>
+								</div> 
+			</div>
+</div>
+			</div>
+			<div style="margin-bottom: 50px; max-width: 450px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 30px;">Лента событий</h2> 
+				<div class="events__card  ">
+	<p class="events__heading  ">
+		Выполнили работы
+	</p>
+		<div class="events__gallery-group  ">
+					<picture class="events__gallery-item  ">
+				<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+			</picture>
+					<picture class="events__gallery-item  ">
+				<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+			</picture>
+					<picture class="events__gallery-item  ">
+				<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+			</picture>
+					<picture class="events__gallery-item  ">
+				<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+			</picture>
+					<picture class="events__gallery-item  ">
+				<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+			</picture>
+					<picture class="events__gallery-item  ">
+				<img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="">
+			</picture>
+			</div>
+	 
+		<div class="events__docs-group  ">
+		<div class="docs__card  ">	
+	<div class="docs__item  " title="Последовательность действий по продвижению сайта">
+		<a href="" class="docs__icon">
+			<svg class="icon-svg icon-icon-docs" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-docs"></use>
+</svg>		</a>
+		<div class="docs__group"> 
+			<a href="" class="docs__name">
+				<span>Последовательность действий по продвижению сайта</span>
+				<i>.docx</i>
+			</a>
+						<div class="docs__size">2,5 МБ</div>
+								</div> 
+			</div>
+</div>
+<div class="docs__card  ">	
+	<div class="docs__item  " title="Бухгалтерский баланс за 2020 год">
+		<a href="" class="docs__icon">
+			<svg class="icon-svg icon-icon-docs" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-docs"></use>
+</svg>		</a>
+		<div class="docs__group"> 
+			<a href="" class="docs__name">
+				<span>Бухгалтерский баланс за 2020 год</span>
+				<i>.xls</i>
+			</a>
+						<div class="docs__size">5,5 МБ</div>
+								</div> 
+			</div>
+</div>
+	</div>
+			<time class="events__date  " datetime="2020-10-10 18:26">
+		10.10.2020
+				<span>18:26</span> 
+			</time>
+	</div>
+<div class="events__card  ">
+	<p class="events__heading  ">
+		По проекту начаты работы. В ходе выполнения работ в ленту новостей будут добавляться отчёты.
+	</p>
+	 
+			<time class="events__date  " datetime="2020-10-10 18:26">
+		10.10.2020
+				<span>18:26</span> 
+			</time>
+	</div>
+			</div>
+			<div style="margin-bottom: 50px;">
+				<h2 class="page-header__heading  is--uikit" style="margin-bottom: 60px;">Чат</h2>
+				<div class="row  is--gutter">
+					<div class="cols" style="max-width: 451px;  width: 100%;">
+						<div style="height: 670px;" >
+							<div class="chat__block">
+	<div class="chat__body">
+				<div class="chat__card">
+						<div class="chat__date">
+				<span>8 Сентября</span>
+			</div>
+									<div class="chat__message  is--from" >
+				<div class="chat__message-header is--from">
+					<p>Максим грудев</p>
+					<p>15:26</p>
+				</div>
+				<div class="chat__message-note  is--from">
+					Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо
+									</div>
+			</div>
+						<div class="chat__message  is--to" >
+				<div class="chat__message-header is--to">
+					<p>Иван петров</p>
+					<p>15:27</p>
+				</div>
+				<div class="chat__message-note  is--to">
+					Привет! Могу поставить 1
+									</div>
+			</div>
+						<div class="chat__message  is--from" >
+				<div class="chat__message-header is--from">
+					<p>Максим грудев</p>
+					<p>15:28</p>
+				</div>
+				<div class="chat__message-note  is--from">
+					Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.
+									</div>
+			</div>
+						<div class="chat__message  is--from" >
+				<div class="chat__message-header is--from">
+					<p>Максим грудев</p>
+					<p>15:26</p>
+				</div>
+				<div class="chat__message-note  is--from">
+					Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо
+									</div>
+			</div>
+						<div class="chat__message  is--to" >
+				<div class="chat__message-header is--to">
+					<p>Иван петров</p>
+					<p>15:27</p>
+				</div>
+				<div class="chat__message-note  is--to">
+					Привет! Могу поставить 1
+									</div>
+			</div>
+						<div class="chat__message  is--from" >
+				<div class="chat__message-header is--from">
+					<p>Максим грудев</p>
+					<p>15:28</p>
+				</div>
+				<div class="chat__message-note  is--from">
+					Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.
+									</div>
+			</div>
+						<div class="chat__message  is--from" >
+				<div class="chat__message-header is--from">
+					<p>Максим грудев</p>
+					<p>15:26</p>
+				</div>
+				<div class="chat__message-note  is--from">
+					Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо
+									</div>
+			</div>
+						<div class="chat__message  is--to" >
+				<div class="chat__message-header is--to">
+					<p>Иван петров</p>
+					<p>15:27</p>
+				</div>
+				<div class="chat__message-note  is--to">
+					Привет! Могу поставить 1
+									</div>
+			</div>
+						<div class="chat__message  is--from" >
+				<div class="chat__message-header is--from">
+					<p>Максим грудев</p>
+					<p>15:28</p>
+				</div>
+				<div class="chat__message-note  is--from">
+					Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.
+									</div>
+			</div>
+						<div class="chat__message  is--from" >
+				<div class="chat__message-header is--from">
+					<p>Максим грудев</p>
+					<p>15:26</p>
+				</div>
+				<div class="chat__message-note  is--from">
+					Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо
+									</div>
+			</div>
+						<div class="chat__message  is--to" >
+				<div class="chat__message-header is--to">
+					<p>Иван петров</p>
+					<p>15:27</p>
+				</div>
+				<div class="chat__message-note  is--to">
+					Привет! Могу поставить 1
+									</div>
+			</div>
+						<div class="chat__message  is--from" >
+				<div class="chat__message-header is--from">
+					<p>Максим грудев</p>
+					<p>15:28</p>
+				</div>
+				<div class="chat__message-note  is--from">
+					Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.
+									</div>
+			</div>
+					</div>
+			</div>
+	<div class="chat__control">
+		<div class="chat__control-flex">
+			<label class="chat__file-btn">
+				<input type="file" class="chat__file-input">
+				<svg class="icon-svg icon-icon-docs-add" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-docs-add"></use>
+</svg>			</label>	
+			<div class="chat__textarea" placeholder="Новое сообщение" contenteditable="true"></div>
+			<button type="button" class="chat__submit">			
+				<svg class="icon-svg icon-icon-submit" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-submit"></use>
+</svg> 
+			</button>
+		</div>
+			</div>
+</div>						</div>
+					</div>
+					<div class="cols" style="max-width: 451px; width: 100%;">
+						<div style="height: 670px;" >
+							<div class="chat__block">
+	<div class="chat__body">
+				<div class="chat__card">
+						<div class="chat__date">
+				<span>8 Сентября</span>
+			</div>
+									<div class="chat__message  is--from" >
+				<div class="chat__message-header is--from">
+					<p>Максим грудев</p>
+					<p>15:26</p>
+				</div>
+				<div class="chat__message-note  is--from">
+					Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо
+									</div>
+			</div>
+						<div class="chat__message  is--to" data-info="Прочитано">
+				<div class="chat__message-header is--to">
+					<p>Иван петров</p>
+					<p>15:27</p>
+				</div>
+				<div class="chat__message-note  is--to">
+					Привет! Могу поставить 1
+									</div>
+			</div>
+						<div class="chat__message  is--to" >
+				<div class="chat__message-header is--to">
+					<p>Иван петров</p>
+					<p>15:27</p>
+				</div>
+				<div class="chat__message-note  is--to">
+					
+										<div class="chat__message-docs">
+						<div class="docs__card  ">	
+	<div class="docs__item  " title="Последовательность действий по продвижению сайта">
+		<a href="" class="docs__icon">
+			<svg class="icon-svg icon-icon-docs" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-docs"></use>
+</svg>		</a>
+		<div class="docs__group"> 
+			<a href="" class="docs__name">
+				<span>Последовательность действий по продвижению сайта</span>
+				<i>.docx</i>
+			</a>
+						<div class="docs__size">2.5 мб</div>
+								</div> 
+			</div>
+</div>
+					</div>
+									</div>
+			</div>
+						<div class="chat__message  is--from" >
+				<div class="chat__message-header is--from">
+					<p>Иван петров</p>
+					<p>15:27</p>
+				</div>
+				<div class="chat__message-note  is--from">
+					
+										<div class="chat__message-docs">
+						<div class="docs__card  ">	
+	<div class="docs__item  " title="Последовательность действий по продвижению сайта">
+		<a href="" class="docs__icon">
+			<svg class="icon-svg icon-icon-docs" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-docs"></use>
+</svg>		</a>
+		<div class="docs__group"> 
+			<a href="" class="docs__name">
+				<span>Последовательность действий по продвижению сайта</span>
+				<i>.docx</i>
+			</a>
+						<div class="docs__size">2.5 мб</div>
+								</div> 
+			</div>
+</div>
+					</div>
+									</div>
+			</div>
+					</div>
+			</div>
+	<div class="chat__control">
+		<div class="chat__control-flex">
+			<label class="chat__file-btn">
+				<input type="file" class="chat__file-input">
+				<svg class="icon-svg icon-icon-docs-add" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-docs-add"></use>
+</svg>			</label>	
+			<div class="chat__textarea" placeholder="Новое сообщение" contenteditable="true"></div>
+			<button type="button" class="chat__submit">			
+				<svg class="icon-svg icon-icon-submit" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-submit"></use>
+</svg> 
+			</button>
+		</div>
+				<div class="chat__control-docs">
+			<div class="docs__card  ">	
+	<div class="docs__item  " title="Последовательность действий по продвижению сайта">
+		<a href="" class="docs__icon">
+			<svg class="icon-svg icon-icon-docs" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-docs"></use>
+</svg>		</a>
+		<div class="docs__group"> 
+			<a href="" class="docs__name">
+				<span>Последовательность действий по продвижению сайта</span>
+				<i>.docx</i>
+			</a>
+									<div class="docs__progress">
+				<div class="progress__panel  is--xs  ">
+	<progress max="100" value="40"></progress>
+		<div class="progress__item  is--xs" data-completed="40">
+		<div class="progress__bar" style="width: 40%"></div>
+		<span class="sr-only">Выполнено на 40%</span>
+			</div>
+	</div>			</div>
+					</div> 
+				<button type="button" class="docs__del">
+			<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>		</button>
+			</div>
+</div>
+		</div>
+			</div>
+</div>						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</section>
+        </main>
+
+        <div class="modal__block modals  fade  " id="modal-edit" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  ">
+		<div class="modal__body  " >
+			<button type="button" class="modal__btn-close  " data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>			</button>
+			
+										<form action="#" class="form__panel  is--modal">
+		<h2 class="page-header__heading  is--h1  is--modal  " >Расчётный счёт</h2>		<div class="form__grid  grid__row  is--modal">
+			
+
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Название</p>
+				<input type="text" class="form__control            "   required placeholder="Название"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Наименование банка</p>
+				<input type="text" class="form__control            "   required placeholder="Наименование банка"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Адрес банка</p>
+				<input type="text" class="form__control            "   required placeholder="Адрес банка"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Расчётный счёт</p>
+				<input type="text" class="form__control            "   required placeholder="Расчётный счёт"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Валюта счёта</p>
+				<input type="text" class="form__control            "   required placeholder="Валюта счёта"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">БИК</p>
+				<input type="text" class="form__control            "   required placeholder="БИК"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Кор. счёт</p>
+				<input type="text" class="form__control            "   required placeholder="Кор. счёт"  >
+	</label>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<div class="form__row  row  is--gutter-sm  is--gap-lg  is--modal">
+			<div class="cols">				
+				
+<button type="submit" class="btn__item  is--full  is--primary" >
+		<span>Сохранить</span>
+</button>
+
+
+			</div>
+			<div class="cols">				
+				
+<button type="button" class="btn__item  is--full" >
+		<span>Отменить</span>
+</button>
+
+
+			</div>
+		</div>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+																							
+		</div>
+	</div>
+</div> 
+<div class="modal__block modals  fade  " id="modal-profile-edit" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  ">
+		<div class="modal__body  " >
+			<button type="button" class="modal__btn-close  " data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>			</button>
+			
+										<form action="#" class="form__panel  is--modal">
+		<h2 class="page-header__heading  is--h1  is--modal  " >Ваши данные</h2>		<div class="form__grid  grid__row  is--modal">
+			
+
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Имя</p>
+				<input type="text" class="form__control            "   required placeholder="Имя"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Фамилия</p>
+				<input type="text" class="form__control            "   required placeholder="Фамилия"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Название компании</p>
+				<input type="text" class="form__control            "   required placeholder="Название компании"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Телефон</p>
+				<input type="text" class="form__control            "   required placeholder="Телефон"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Email</p>
+				<input type="text" class="form__control            "   required placeholder="Email"  >
+	</label>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<div class="form__row  row  is--gutter-sm  is--gap-lg  is--modal">
+			<div class="cols">				
+				
+<button type="submit" class="btn__item  is--full  is--primary" >
+		<span>Сохранить</span>
+</button>
+
+
+			</div>
+			<div class="cols">	
+			</div>
+		</div>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+																							
+		</div>
+	</div>
+</div> 
+<div class="modal__block modals  fade  " id="modal-pass-edit" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  ">
+		<div class="modal__body  " >
+			<button type="button" class="modal__btn-close  " data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>			</button>
+			
+										<form action="#" class="form__panel  is--modal">
+		<h2 class="page-header__heading  is--h1  is--modal  " >Смена пароля</h2>		<div class="form__grid  grid__row  is--modal">
+			
+
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Новый пароль</p>
+				<input type="password" class="form__control            "   required placeholder="Новый пароль"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Повторите новый пароль</p>
+				<input type="password" class="form__control            "   required placeholder="Повторите новый пароль"  >
+	</label>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<div class="form__row  row  is--gutter-sm  is--gap-lg  is--modal">
+			<div class="cols">				
+				
+<button type="submit" class="btn__item  is--full  is--primary" >
+		<span>Сохранить</span>
+</button>
+
+
+			</div>
+			<div class="cols">	
+			</div>
+		</div>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+																							
+		</div>
+	</div>
+</div> 
+<div class="modal__block modals  fade  " id="modal-add-basket" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  ">
+		<div class="modal__body  " >
+			<button type="button" class="modal__btn-close  " data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>			</button>
+			
+													<h2 class="page-header__heading  is--h1  is--modal  " >Услуги по ликвидации юридического лица</h2>					
+
+
+
+
+
+		
+	<div class="card__item  is--catalog  is--view-modal">
+				<div class="card__size-wrap  is--catalog">
+			<p class="card__size-heading  is--catalog">Выберите размер</p>
+			<ul class="card__size-list  is--catalog">
+							<li class="card__size-item  is--catalog">
+					<label class="card__size-radio  is--catalog">
+						<input type="radio" name="size_" id="S" class="card__size-input  is--catalog">
+						<span class="card__size-radio-name  is--catalog">S</span>
+					</label>
+				</li>
+							<li class="card__size-item  is--catalog">
+					<label class="card__size-radio  is--catalog">
+						<input type="radio" name="size_" id="M" class="card__size-input  is--catalog">
+						<span class="card__size-radio-name  is--catalog">M</span>
+					</label>
+				</li>
+							<li class="card__size-item  is--catalog">
+					<label class="card__size-radio  is--catalog">
+						<input type="radio" name="size_" id="L" class="card__size-input  is--catalog">
+						<span class="card__size-radio-name  is--catalog">L</span>
+					</label>
+				</li>
+							<li class="card__size-item  is--catalog">
+					<label class="card__size-radio  is--catalog">
+						<input type="radio" name="size_" id="XL" class="card__size-input  is--catalog">
+						<span class="card__size-radio-name  is--catalog">XL</span>
+					</label>
+				</li>
+							<li class="card__size-item  is--catalog">
+					<label class="card__size-radio  is--catalog">
+						<input type="radio" name="size_" id="XXL" class="card__size-input  is--catalog">
+						<span class="card__size-radio-name  is--catalog">XXL</span>
+					</label>
+				</li>
+						</ul>
+		</div>
+						<div class="card__color-wrap  is--catalog">
+			<p class="card__color-heading  is--catalog">Выберите цвет</p>
+			<ul class="card__color-list  is--catalog">
+							<li class="card__color-item  is--catalog">
+					<label class="card__color-radio  is--catalog" title="Orange">
+						<input type="radio" name="color_" id="Orange" class="card__color-input  is--catalog">
+						<span class="card__color-radio-view  is--catalog" style="background-color: orange"></span>
+					</label>
+				</li>
+							<li class="card__color-item  is--catalog">
+					<label class="card__color-radio  is--catalog" title="Yellow">
+						<input type="radio" name="color_" id="Yellow" class="card__color-input  is--catalog">
+						<span class="card__color-radio-view  is--catalog" style="background-color: yellow"></span>
+					</label>
+				</li>
+							<li class="card__color-item  is--catalog">
+					<label class="card__color-radio  is--catalog" title="Green">
+						<input type="radio" name="color_" id="Green" class="card__color-input  is--catalog">
+						<span class="card__color-radio-view  is--catalog" style="background-color: green"></span>
+					</label>
+				</li>
+							<li class="card__color-item  is--catalog">
+					<label class="card__color-radio  is--catalog" title="Blue">
+						<input type="radio" name="color_" id="Blue" class="card__color-input  is--catalog">
+						<span class="card__color-radio-view  is--catalog" style="background-color: blue"></span>
+					</label>
+				</li>
+							<li class="card__color-item  is--catalog">
+					<label class="card__color-radio  is--catalog" title="Purple">
+						<input type="radio" name="color_" id="Purple" class="card__color-input  is--catalog">
+						<span class="card__color-radio-view  is--catalog" style="background-color: purple"></span>
+					</label>
+				</li>
+						</ul>
+		</div>
+				<div class="card__group  is--btn  is--catalog">
+			<button type="button" class="btn__item  is--primary">В корзину</button>
+						<p class="card__qty  is--catalog" style="color: #EB5757">
+				В наличие 5 шт.
+			</p>
+					</div>
+	</div>
+	
+
+																			
+		</div>
+	</div>
+</div> 
+<div class="modal__block modals  fade  " id="modal-select-basket" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  ">
+		<div class="modal__body  " >
+			<button type="button" class="modal__btn-close  " data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>			</button>
+			
+																							
+		</div>
+	</div>
+</div> 
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="./js/jquery-3.2.1.min.js" ></script>
+<script src="./js/document-ready.js" ></script>
+<script src="./js/svg4everybody.min.js" ></script>
+<script>
+svg4everybody();
+document.createElement("picture");
+</script> 	</body>
+</html>

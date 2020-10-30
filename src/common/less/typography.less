@@ -1,0 +1,73 @@
+html {
+	font-size: @site_fs;
+	line-height: @site_lh;
+	font-family: @site_ff;	
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+h6{
+	font-weight: 400;
+}
+//p{margin: 0 0 10px;}
+i, em{font-style: italic;}
+b, strong{font-weight: 700}
+h1,
+.is--h1{
+	.heading1();	
+}
+h2,
+.is--h2{
+	.heading2();
+}
+h3,
+.is--h3{
+	.heading3();
+}
+h4,
+.is--h4{
+	.heading4();
+}
+h5,
+.is--h5{
+	.heading5();
+}
+h6,
+.is--h6{
+	.heading6();
+}
+ol{
+	margin-left: 30px;
+	li{padding-left: 5px;}
+}
+ul{
+	margin-left: 20px;
+	&.ul-site{
+		li{
+			margin-bottom: 10px; 
+			&:last-child{margin-bottom: 0;}			
+		}
+	}
+}
+.fw--{
+	&300{
+		font-weight: 300;
+	}
+	&400{
+		font-weight: 400;
+	}
+	&500{
+		font-weight: 500;
+	}
+	&700{
+		font-weight: 700;
+	}
+	&900{
+		font-weight: 900;
+	}
+}
+.ff--{
+	&custom{
+		font-family: @site_ff_custom;
+	}
+}

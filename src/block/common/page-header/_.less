@@ -1,0 +1,125 @@
+.page-header__{
+	&heading{
+		&.is--line{
+			&-bottom{
+				position: relative;
+				padding-bottom: 30px;
+				margin-bottom: 35px;
+				.media-breakpoint-up(@lg; {
+					padding-bottom: 50px;
+					margin-bottom: 55px;
+				});
+				&::after{
+					content: '';
+					position: absolute;
+					width: 140px;
+					height: 8px;
+					bottom: 0;
+					left: 0;
+					background-image: @gr1;
+					border-radius: 10px;
+				}
+			}
+		}
+		&.is--page{
+			&-default{				
+				margin-bottom: 20px;
+				&-lg{
+					margin-bottom: 20px;
+					.media-breakpoint-up(@md; {
+						margin-bottom: 40px;
+					});
+				}
+				&-sm{
+					margin-bottom: 20px;
+					.media-breakpoint-up(@md; {
+						margin-bottom: 13px;
+					});
+				}
+				&-xs{
+					margin-bottom: 10px;
+					.media-breakpoint-up(@md; {
+						margin-bottom: 20px;
+					});
+				}
+			}
+			&-index{
+				&-header{
+					&{
+						font-size: 1.65rem;
+						line-height: 121%;
+						max-width: 500px;
+						margin-bottom: 20px;
+						.media-breakpoint-up(@md; {						
+							font-size: 2.2rem;
+						});
+						.media-breakpoint-up(@lg; {
+							margin-bottom: 35px;
+							font-size: 3.333rem;
+							max-width: 600px;
+						});
+					}
+					&-note{
+						max-width: 450px;
+						margin-bottom: 30px;
+						.media-breakpoint-up(@lg; {
+							max-width: 550px;
+							margin-bottom: 64px;
+						});
+					}
+				}
+				&-blockquote{
+					&-note{
+						margin-bottom: 25px;
+					}
+					&-autor{}
+				}
+				&-about{
+					&-note{
+						margin-bottom: 35px;
+						.media-breakpoint-up(@lg; {
+							margin-top: -15px;
+							max-width: 850px;
+							margin-bottom: 42px;
+						});
+					}
+				}
+				&-promo{
+					font-size: 1.5em;
+					line-height: 120%;
+					margin-bottom: 30px;
+					.media-breakpoint-up(@lg; {
+						font-size: 2.222em;
+						margin-bottom: 55px;
+					});
+				}
+			}
+		}
+		&.is--block{
+			&-promo{
+				font-size: 1.5em;
+				line-height: 120%;
+				margin-bottom: 30px;
+				.media-breakpoint-up(@lg; {
+					font-size: 2.222em;
+					margin-bottom: 55px;
+				});
+			}
+		}
+		&.is--modal{
+			margin-bottom: 20px;
+			padding-right: 30px;
+			.media-breakpoint-up(@md; {
+				margin-bottom: 40px;
+				padding-right: 0;
+				&.is--page-basket-order{
+					margin-bottom: 13px;
+				}
+			});
+		}
+		&.is--uikit{
+			font-size: 2.571em;
+			line-height: 140%;
+		}
+	}
+}

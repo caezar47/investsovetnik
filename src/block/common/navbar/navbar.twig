@@ -1,0 +1,191 @@
+{% if view=="header" %}
+	<header class="{{prefix}}header">
+		<div class="{{prefix}}header-container container">
+			<div class="{{prefix}}header-row row">
+				<div class="{{prefix}}header-cols cols  is--hamburger">
+					<button class="{{prefix}}header-hamburger" data-hamburger>
+						<span class="{{prefix}}header-hamburger-line  is--left"></span>
+						<span class="{{prefix}}header-hamburger-line  is--center"></span>
+						<span class="{{prefix}}header-hamburger-line  is--right"></span>
+					</button>
+				</div>
+				<div class="{{prefix}}header-cols cols  is--logotip">
+					<a class="{{prefix}}header-logotip" href="{{page.index}}">MWS Agency</a>
+				</div>
+				<div class="{{prefix}}header-cols cols  is--right">
+					<div class="{{prefix}}header-flex-row row">
+						<div class="{{prefix}}header-flex-cols cols">
+							<div class="{{prefix}}header-user  dropdown">
+								<a class="{{prefix}}header-user-dropdown" data-toggle="dropdown" href="#">
+									<span>Семён Вишневский</span>
+									{% include "../svg-sprite/svg.twig" with {icon:"icon-user"} %}
+								</a>
+								<ul class="{{prefix}}header-user-menu  dropdown-menu">
+									<li><a href="{{page.profile}}">Мой профиль</a></li>
+									<li><a href="#" class="is--logout">Выйти</a></li>
+								</ul>
+							</div>
+						</div>
+						{% if basket %}
+						<div class="{{prefix}}header-flex-cols cols">
+							<a class="{{prefix}}header-basket" href="{{page.basket}}">
+								<span class="{{prefix}}header-basket-name">{{basket}}</span>
+								<span class="{{prefix}}header-basket-icon">
+									{% include "../svg-sprite/svg.twig" with {icon:"icon-basket"} %}
+								</span>
+								{% if basket_qty %}
+								<span class="{{prefix}}header-basket-qty">{{basket_qty}}</span>
+								{% endif %}
+								{% if basket_cost %}
+								<span class="{{prefix}}header-basket-cost">{{basket_cost}} ₽</span>
+								{% endif %}
+							</a>
+						</div>
+						{% endif %}
+						<div class="{{prefix}}header-flex-cols cols  is--resize">
+							<button type="button" class="{{prefix}}header-resize" data-resize></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+{% endif %}
+{% if view=="aside" %}
+	<aside class="{{prefix}}aside">
+		<div class="{{prefix}}aside-inner">
+			<div class="{{prefix}}aside-container container">
+				<div class="{{prefix}}aside-row row">
+					<div class="{{prefix}}aside-wrap-cols  is--nav" data-aside-nav>
+						<div class="{{prefix}}aside-cols cols  is--nav">
+							<nav class="{{prefix}}aside-nav">
+								{% include "item.twig" with {
+									prefix:prefix, 
+									mod:"",
+									list : [
+										{
+											"icon":"icon-projects", 
+											"name":"Мои проекты", 
+											"link":page.project, 
+											"mod":""
+										},
+										{
+											"icon":"icon-orders", 
+											"name":"Мои заказы", 
+											"link":page.orders, 
+											"mod":""
+										},
+										{
+											"icon":"icon-company", 
+											"name":"Мои компании", 
+											"link":page.company_card, 
+											"mod":""
+										},
+										{
+											"icon":"icon-requests", 
+											"name":"Мои обращения", 
+											"link":page.requests, 
+											"mod":""
+										},
+										{
+											"id":"catalog",
+											"icon":"icon-catalog",
+											"name":"Каталог", 
+											"link":page.catalog, 
+											"mod":"",
+											"sublist" : [
+												{
+													"name":"Регистрационные услуги", 
+													"link":page.catalog_cat, 
+													"mod":""
+												},
+												{
+													"name":"Внесение изменений",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"Бухгалтерские услуги",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"Услуги по ликвидации юридического лица",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"Юридические услуги",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"Товары Instagram",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"Композитные панели Mattisto",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"Hyndai",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"Timberk",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"Scarlett",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"Ортопедия",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"Туторы",
+													"link":"#", 
+													"mod":""
+												},
+												{
+													"name":"DPK",
+													"link":"#", 
+													"mod":""
+												},
+											]
+										},
+										{
+											"icon":"icon-settings", 
+											"name":"Настройки", 
+											"link":page.settings, 
+											"mod":""
+										}
+									]
+								} %}
+							</nav> 	
+						</div>
+					</div>
+					<div class="{{prefix}}aside-cols cols  is--manager" data-aside-manager>
+						{% include "../manager/tpl.twig" with {
+							view:"aside", 
+							prefix:"manager__", 
+							mod:"is--aside",  
+							heading: 'Ваш менеджер',
+							preview: [path.img,"/default/catalog-lock.jpg"].join(""),
+							name: 'Максим Грудев',
+							phone: '+79636925026',
+							email: 'm.grudev@playhard.agency',
+						} %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+{% endif %}

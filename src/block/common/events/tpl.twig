@@ -1,0 +1,33 @@
+{% for value in list %}
+<div class="{{prefix}}card  {{mod}}">
+	<p class="{{prefix}}heading  {{mod}}">
+		{{value.name}}
+	</p>
+	{% if value.gallery %}
+	<div class="{{prefix}}gallery-group  {{mod}}">
+		{% for g in value.gallery %}
+			<picture class="{{prefix}}gallery-item  {{mod}}">
+				<img src="{{g.preview}}" class="img-responsive" alt="">
+			</picture>
+		{% endfor %}
+	</div>
+	{% endif %} 
+	{% if value.docs %}
+	<div class="{{prefix}}docs-group  {{mod}}">
+		{% include "../docs/tpl.twig" with {
+			prefix:"docs__", 
+			mod: '',
+			list: value.docs 
+		} %}
+	</div>
+	{% endif %}
+	{% if value.date %}
+	<time class="{{prefix}}date  {{mod}}" datetime="{{value.date_iso}} {{value.time}}">
+		{{value.date}}
+		{% if value.time %}
+		<span>{{value.time}}</span> 
+		{% endif %}
+	</time>
+	{% endif %}
+</div>
+{% endfor %}

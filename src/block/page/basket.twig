@@ -1,0 +1,202 @@
+{% if view == "page" %}
+	<section class="{{content_prefix}}content">
+		<div class="{{content_prefix}}container container">			
+			<div class="{{content_prefix}}row  row  {{content_mod}}  is--heading">
+				<div class="cols">
+					{% include "../common/page-header/elem.twig" with {
+						prefix:"page-header__", 
+						mod:heading_mod,
+						attr:heading_attr, 
+						level:heading_level, 
+						heading:heading
+					} %}
+				</div>
+				<div class="cols  is--more  hidden--md">				
+					{% include "../common/button/btn.twig" with {
+						view:"more",
+						prefix:"btn__", 
+						mod:"is--right",  
+						link:"#",
+						list: [
+							{
+								"name":"Очистить", 
+								"tag":"a", 
+								"link":page.basket_empty,
+								"class":'btn__item  is--primary  is--sm',
+							},
+						]
+					} %}
+				</div>
+			</div>
+
+			<div class="{{content_prefix}}grid  grid__row  {{content_mod}}">	
+				{% include "../common/card/card.twig" with {
+					view:"basket",
+					prefix:"card__", 
+					mod:"is--basket", 
+					group:"is--view-card", 
+					list: [
+						{					
+							"link":"#",
+							"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+							"heading":"Услуги по ликвидации юридического лица",
+							"decs":'S, жёлтый',
+							"cost":'19 000 ₽',
+							"qty":"19",
+							"btn_attr":"data-del",
+						},
+						{					
+							"link":"#",
+							"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+							"heading":"Регистрация ИП",
+							"decs":'S, жёлтый',
+							"cost":'500 ₽',
+							"qty":"19",
+							"btn_attr":"data-del",
+						},
+						{					
+							"link":"#",
+							"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+							"heading":"Услуги по ликвидации юридического лица",
+							"decs":'S, жёлтый',
+							"cost":'19 000 ₽',
+							"qty":"19",
+							"btn_attr":"data-del",
+						},
+						{					
+							"link":"#",
+							"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+							"heading":"Регистрация ИП",
+							"decs":'S, жёлтый',
+							"cost":'500 ₽',
+							"qty":"19",
+							"btn_attr":"data-del",
+						},
+						{					
+							"link":"#",
+							"img": [path.img,"/default/catalog-lock.jpg"].join(""), 	 
+							"heading":"Регистрация ИП",
+							"decs":'S, жёлтый',
+							"cost":'500 ₽',
+							"qty":"19",
+							"btn_attr":"data-del",
+						},
+					]
+				} %}
+			</div>
+
+			{% include "../common/informer/tpl.twig" with {
+				prefix:"informer__", 
+				status:"",  
+				mod:"is--basket",  
+				name:"Итого: <span>21 580 ₽</span>",
+				btn_link:page.basket_order, 
+				btn_name:"Перейти к оформлению", 
+				btn_mod:"is--primary", 
+			} %}
+		</div>
+	</section>
+{% endif %}
+{% if view == "order" %}
+	<section class="{{content_prefix}}content">
+		<div class="{{content_prefix}}container container">			
+			<form class="{{content_prefix}}grid  grid__row  {{content_mod}}">
+				<div>
+					{% include "../common/button/btn.twig" with {
+						view:"link_back",
+						prefix:"btn__", 
+						mod:"",  
+						link:back_link,
+						name:back_name
+					} %}
+					{% include "../common/page-header/elem.twig" with {
+						prefix:"page-header__", 
+						mod:heading_mod,
+						attr:heading_attr, 
+						level:heading_level, 
+						heading:heading
+					} %}
+					<div class="{{content_prefix}}section  {{content_mod}}">
+						<h2 class="page-header__heading  is--page-default-sm">Плательщик</h2>
+
+						{% include "../common/tabs/tpl.twig" with {
+							view:"base", 
+							prefix:'tabs__', 
+							mod:"is--base",
+							group:content_mod,
+							list: [
+								{
+									"id":"tabs1",  
+									"status":"active", 
+									"name":"Физ. лицо",  
+									"type":"form",
+									"form_view":'order_payer',    
+									"form_id":'f_order',    
+									"form_mod":content_mod,    
+									"form_color":'',    
+								},
+								{
+									"id":"tabs2",  
+									"status":"", 
+									"name":"Юр. лицо",  
+									"type":"",   
+								},
+							]
+						} %}
+					</div>
+					<div class="{{content_prefix}}section  {{content_mod}}">
+						<h2 class="page-header__heading  is--page-default-sm">Доставка</h2>
+						{% include "../common/form/form.twig" with {
+							view: 			'order_delivery', 
+							prefix:			"form__",
+							ID: 			'f_order',
+							mod:			content_mod, 
+							color:			'', 
+						} %}
+					</div>
+					<div class="{{content_prefix}}section  {{content_mod}}">
+						<h2 class="page-header__heading  is--page-default-sm">Оплата</h2>
+						{% include "../common/form/form.twig" with {
+							view: 			'order_pay', 
+							prefix:			"form__",
+							ID: 			'f_order',
+							mod:			content_mod, 
+							color:			'', 
+						} %}
+					</div>
+				</div>
+				<div data-grid-order>
+
+					{% include "../common/modals/tpl.twig" with {
+						view: 			"basket_order",
+						prefix: 		"modal__", 
+						mod:			"is--inline", 
+						ID: 			"modal-order",	
+						heading: 		'Ваш заказ',
+						heading_level: 	'h2',
+						heading_mod: 	'is--h1  is--modal  is--page-basket-order',
+					} %} 
+					
+
+					{% include "../common/informer/tpl.twig" with {
+						prefix:"informer__", 
+						status:"",  
+						mod:"is--order",  
+						name:"Итого: <span>21 580 ₽</span>",
+						prefix_modal:"link__", 
+						modal:"Ваш заказ", 
+						modal_mod:"", 
+						modal_attr:'type="button" data-toggle="modal" data-target="#modal-order"',
+						btn_link:"#", 
+						btn_name:"Оформить заказ", 
+						btn_mod:"is--primary", 
+					} %}
+					
+				</div>
+			</form>
+	
+
+			
+		</div>
+	</section>
+{% endif %}

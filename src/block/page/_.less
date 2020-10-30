@@ -1,0 +1,226 @@
+.section__{
+	&wrap{
+		flex: 1 1 0;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+	}
+	&content{
+		overflow: hidden;
+		height: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    flex: 1 1 auto;
+	    position: relative;
+		&.is--page{
+			&-index{
+				&-header{
+					.media-breakpoint-up(@lg; {
+						margin-top: -@header_size;
+					});
+				}
+				&-blockquote{
+					color: @white;
+					text-align: center;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
+				&-adv{
+					background-color: @warning;
+					background-repeat: no-repeat;
+					background-position: center 45px;
+				}
+				&-about{
+					background-repeat: no-repeat;
+					background-position: center 57px;
+				}
+				&-promo{
+					color: @white;
+					background-repeat: no-repeat;
+					background-size: cover;
+					text-align: center;
+				}
+				&-services{
+					background-repeat: no-repeat;
+					background-position: center bottom;
+				}
+				&-step{
+					background-color: @warning;
+					background-repeat: no-repeat;
+					background-position: center 48px;
+				}
+			}
+		}
+		&.is--block{
+			&-promo{
+				text-align: center;
+				color: @white;
+			}
+		}
+	}
+	&container{
+		position: relative;
+		margin-top: 0;
+		margin-bottom: 0;
+		border: 0;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		flex: 1 1 100%;
+		.media-breakpoint-up(@lg; {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		});
+		&.is--page{
+			&-index{
+				&-header{
+					z-index: 2;
+					.media-breakpoint-up(@md; {
+						padding-bottom: 40px;
+					});
+					.media-breakpoint-up(@lg; {
+						padding-top: 13.4vw;
+						padding-bottom: 13.4vw;
+					});
+				}
+				&-blockquote{
+					padding-top: 40px;
+					padding-bottom: 40px;
+					.media-breakpoint-up(@lg; {
+						padding-top: 8vw;
+						padding-bottom: 8vw;
+						max-width: 1050px;
+					});
+				}
+				&-adv{
+					.media-breakpoint-up(@lg; {
+						padding-top: 6vw;
+						padding-bottom: 6vw;
+					});
+				}
+				&-about{
+					.media-breakpoint-up(@lg; {
+						padding-top: 6.5vw;
+						padding-bottom: 6.5vw;
+					});
+				}
+				&-promo{
+					.media-breakpoint-up(@lg; {
+						padding-top: 6.3vw;
+						padding-bottom: 6.3vw;
+						max-width: 1050px;
+					});
+				}
+				&-services{
+					.media-breakpoint-up(@lg; {
+						padding-top: 6.3vw;
+						padding-bottom: 6.3vw;
+					});
+				}
+				&-step{
+					.media-breakpoint-up(@lg; {
+						padding-top: 6vw;
+						padding-bottom: 6vw;
+					});
+				}
+				&-faq{
+					.media-breakpoint-up(@lg; {
+						padding-top: 6.3vw;
+						padding-bottom: 6.3vw;
+					});
+				}
+			}
+		}
+		&.is--block{
+			&-promo{
+				max-width: 1000px;
+				.media-breakpoint-up(@lg; {
+					padding-top: 6.5vw;
+					padding-bottom: 6.5vw;
+				});
+			}
+		}
+	}
+	&bg{
+		&.is--page{
+			&-index{
+				&-header{
+					margin-left: -50%;
+					.media-breakpoint-up(@md; {	
+						margin-left: 0;	
+						position: absolute;
+						z-index: 1;
+						top: 50%;				
+						transform: translate(100px,-50%);
+					});
+					.media-breakpoint-up(@lg; {						
+						transform: translate(130px,-50%);
+					});
+					.media-breakpoint-up(@xxl; {
+						transform: translate(0,-50%);
+					});
+				}
+			}
+		}
+	}
+	&section{
+	}
+	&grid{
+		&.is--page{
+			&-index{
+				&-services{
+					grid-template-columns: 100%;
+					.media-breakpoint-up(@lg; {
+						margin-top: -5px;
+						grid-template-columns: repeat(3, 1fr);
+					});
+				}
+			}
+		}
+	}
+	&row{
+		&.is--page{
+			&-index{
+				&-header{
+					.media-breakpoint-down(@sm; {
+						& > .cols{
+							flex: 1 1 100%;
+						}
+					});
+				}
+			}
+		}
+	}
+	&slick{
+		opacity: 0!important;
+		display: none!important;
+		visibility: hidden!important;
+		transition: opacity 0.35s 0.5s;
+
+		&.slick-initialized{ 
+			opacity: 1!important;
+			display: block!important;
+			visibility: visible!important; 
+		}
+	}
+	&card{
+	}
+	&img{
+	}
+	&hr{
+	}
+	&btn{
+		&.is--page{
+			&-index{
+				&-faq{
+					text-align: center;
+					margin-top: 30px;
+					.media-breakpoint-up(@md; {
+						margin-top: 60px;
+					});
+				}
+			}
+		}
+	}
+}

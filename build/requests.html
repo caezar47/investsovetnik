@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	<meta charset="utf-8">	
+<title>Мои обращения | investsovetnik.net</title>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#F24F00">
+<link rel="shortcut icon" href="./favicon/favicon.ico">
+<meta name="msapplication-config" content="./favicon/browserconfig.xml">
+<meta name="apple-mobile-web-app-title" content="investsovetnik.net">
+<meta name="application-name" content="investsovetnik.net">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<link href="./css/style.css" rel="stylesheet">	</head>
+	<body>
+        	<header class="navbar__header">
+		<div class="navbar__header-container container">
+			<div class="navbar__header-row row">
+				<div class="navbar__header-cols cols  is--hamburger">
+					<button class="navbar__header-hamburger" data-hamburger>
+						<span class="navbar__header-hamburger-line  is--left"></span>
+						<span class="navbar__header-hamburger-line  is--center"></span>
+						<span class="navbar__header-hamburger-line  is--right"></span>
+					</button>
+				</div>
+				<div class="navbar__header-cols cols  is--logotip">
+					<a class="navbar__header-logotip" href="./">MWS Agency</a>
+				</div>
+				<div class="navbar__header-cols cols  is--right">
+					<div class="navbar__header-flex-row row">
+						<div class="navbar__header-flex-cols cols">
+							<div class="navbar__header-user  dropdown">
+								<a class="navbar__header-user-dropdown" data-toggle="dropdown" href="#">
+									<span>Семён Вишневский</span>
+									<svg class="icon-svg icon-icon-user" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-user"></use>
+</svg>								</a>
+								<ul class="navbar__header-user-menu  dropdown-menu">
+									<li><a href="./profile.html">Мой профиль</a></li>
+									<li><a href="#" class="is--logout">Выйти</a></li>
+								</ul>
+							</div>
+						</div>
+												<div class="navbar__header-flex-cols cols">
+							<a class="navbar__header-basket" href="./basket.html">
+								<span class="navbar__header-basket-name">Корзина</span>
+								<span class="navbar__header-basket-icon">
+									<svg class="icon-svg icon-icon-basket" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-basket"></use>
+</svg>								</span>
+																<span class="navbar__header-basket-qty">999</span>
+																								<span class="navbar__header-basket-cost">15 900 ₽</span>
+															</a>
+						</div>
+												<div class="navbar__header-flex-cols cols  is--resize">
+							<button type="button" class="navbar__header-resize" data-resize></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+        	<aside class="navbar__aside">
+		<div class="navbar__aside-inner">
+			<div class="navbar__aside-container container">
+				<div class="navbar__aside-row row">
+					<div class="navbar__aside-wrap-cols  is--nav" data-aside-nav>
+						<div class="navbar__aside-cols cols  is--nav">
+							<nav class="navbar__aside-nav">
+								<li class="navbar__aside-nav-item      ">
+	<a href="./project.html" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-projects" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-projects"></use>
+</svg>			</div>
+				<span>Мои проекты</span>		
+	</a>  
+	</li>
+<li class="navbar__aside-nav-item      ">
+	<a href="./orders.html" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-orders" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-orders"></use>
+</svg>			</div>
+				<span>Мои заказы</span>		
+	</a>  
+	</li>
+<li class="navbar__aside-nav-item      ">
+	<a href="./company-card.html" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-company" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-company"></use>
+</svg>			</div>
+				<span>Мои компании</span>		
+	</a>  
+	</li>
+<li class="navbar__aside-nav-item      is--active">
+	<a href="./requests.html" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-requests" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-requests"></use>
+</svg>			</div>
+				<span>Мои обращения</span>		
+	</a>  
+	</li>
+<li class="navbar__aside-nav-item dropdown     ">
+	<a data-toggle="collapse" href="#page-catalog" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-catalog" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-catalog"></use>
+</svg>			</div>
+				<span>Каталог</span>		
+	</a>  
+		<div id="page-catalog" class="collapse  ">		
+		<ul class="navbar__aside-nav-sublist">
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="./catalog-cat.html" class="navbar__aside-nav-sublist-link  "><span>Регистрационные услуги</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Внесение изменений</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Бухгалтерские услуги</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Услуги по ликвидации юридического лица</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Юридические услуги</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Товары Instagram</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Композитные панели Mattisto</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Hyndai</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Timberk</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Scarlett</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Ортопедия</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>Туторы</span>
+				</a>
+			</li>
+		    			<li class="navbar__aside-nav-sublist-item  ">
+				<a href="#" class="navbar__aside-nav-sublist-link  "><span>DPK</span>
+				</a>
+			</li>
+		    		</ul>
+	</div>
+	</li>
+<li class="navbar__aside-nav-item      ">
+	<a href="./settings.html" class="navbar__aside-nav-link  ">
+					<div class="navbar__aside-nav-icon">
+				<svg class="icon-svg icon-icon-settings" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-settings"></use>
+</svg>			</div>
+				<span>Настройки</span>		
+	</a>  
+	</li>
+							</nav> 	
+						</div>
+					</div>
+					<div class="navbar__aside-cols cols  is--manager" data-aside-manager>
+						<div class="manager__panel  is--aside">
+	<div class="manager__group  is--aside">
+		<picture class="manager__preview  is--aside"><img src="./img/default/catalog-lock.jpg" class="img-responsive" alt="Максим Грудев"></picture>
+		<div>			
+			<p class="manager__heading  is--aside">Ваш менеджер</p>
+			<p class="manager__name  is--aside">Максим Грудев</p>
+		</div>
+	</div>
+	<p class="manager__contacts  is--aside"><a href="tel:+79636925026">+79636925026</a></p>
+	<p class="manager__contacts  is--aside"><a href="email:m.grudev@playhard.agency">m.grudev@playhard.agency</a></p>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+ 
+
+        <main class="section__wrap">
+            	<section class="section__content">
+		<div class="section__container container">	
+			<div class="section__row  row  is--page-default  is--heading">
+				<div class="cols">		
+					<h1 class="page-header__heading    " >Мои обращения</h1>				</div>
+				<div class="cols  is--add">
+					
+<button type="" class="btn__item  is--add" data-toggle="modal">
+			<svg class="icon-svg icon-icon-add" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-add"></use>
+</svg>		<span>Создать</span>
+</button>
+
+
+				</div>		
+			</div>
+			<div class="table-responsive  ">
+	<table class="table  ">
+				<thead>
+			<tr>
+								<th  style="width: 19.3%">
+					Название
+										<button type="button" class="btn__sort  is--xs"><svg class="icon-svg icon-icon-sort" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-sort"></use>
+</svg></button>
+									</th>
+								<th  style="width: 23%">
+					Статус
+										<button type="button" class="btn__sort  is--xs"><svg class="icon-svg icon-icon-sort" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-sort"></use>
+</svg></button>
+									</th>
+								<th  style="width: 14.3%">
+					Менеджер
+										<button type="button" class="btn__sort  is--xs"><svg class="icon-svg icon-icon-sort" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-sort"></use>
+</svg></button>
+									</th>
+								<th  style="width: 12.2%">
+					Дата создания
+										<button type="button" class="btn__sort  is--xs"><svg class="icon-svg icon-icon-sort" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-sort"></use>
+</svg></button>
+									</th>
+								<th  >
+					Текст обращения
+										<button type="button" class="btn__sort  is--xs"><svg class="icon-svg icon-icon-sort" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-sort"></use>
+</svg></button>
+									</th>
+							</tr>
+		</thead> 
+				<tbody> 
+				
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Jenny Wilson
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Leslie Alexander
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Leslie Alexander
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Leslie Alexander
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Leslie Alexander
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Leslie Alexander
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Leslie Alexander
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Leslie Alexander
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Leslie Alexander
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Leslie Alexander
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+								
+					
+				<tr > 
+										<td>
+						Проект №13-10/2020
+											</td>
+										<td>
+						
+													<div class="progress__panel  is--table  ">
+	<progress max="100" value="50"></progress>
+		<div class="progress__item  is--table" data-completed="50">
+		<div class="progress__bar" style="width: 50%"></div>
+		<span class="sr-only">Выполнено на 50%</span>
+			</div>
+	</div>											</td>
+										<td>
+						Leslie Alexander
+											</td>
+										<td>
+						30.10.2020
+											</td>
+										<td>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollittecd...
+											</td>
+									</tr>
+									</tbody>
+	</table>
+</div>
+		</div>
+	</section>
+        </main>
+
+        <div class="modal__block modals  fade  " id="modal-edit" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  ">
+		<div class="modal__body  " >
+			<button type="button" class="modal__btn-close  " data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>			</button>
+			
+										<form action="#" class="form__panel  is--modal">
+		<h2 class="page-header__heading  is--h1  is--modal  " >Расчётный счёт</h2>		<div class="form__grid  grid__row  is--modal">
+			
+
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Название</p>
+				<input type="text" class="form__control            "   required placeholder="Название"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Наименование банка</p>
+				<input type="text" class="form__control            "   required placeholder="Наименование банка"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Адрес банка</p>
+				<input type="text" class="form__control            "   required placeholder="Адрес банка"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Расчётный счёт</p>
+				<input type="text" class="form__control            "   required placeholder="Расчётный счёт"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Валюта счёта</p>
+				<input type="text" class="form__control            "   required placeholder="Валюта счёта"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">БИК</p>
+				<input type="text" class="form__control            "   required placeholder="БИК"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Кор. счёт</p>
+				<input type="text" class="form__control            "   required placeholder="Кор. счёт"  >
+	</label>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<div class="form__row  row  is--gutter-sm  is--gap-lg  is--modal">
+			<div class="cols">				
+				
+<button type="submit" class="btn__item  is--full  is--primary" >
+		<span>Сохранить</span>
+</button>
+
+
+			</div>
+			<div class="cols">				
+				
+<button type="button" class="btn__item  is--full" >
+		<span>Отменить</span>
+</button>
+
+
+			</div>
+		</div>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+																							
+		</div>
+	</div>
+</div> 
+<div class="modal__block modals  fade  " id="modal-profile-edit" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  ">
+		<div class="modal__body  " >
+			<button type="button" class="modal__btn-close  " data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>			</button>
+			
+										<form action="#" class="form__panel  is--modal">
+		<h2 class="page-header__heading  is--h1  is--modal  " >Ваши данные</h2>		<div class="form__grid  grid__row  is--modal">
+			
+
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Имя</p>
+				<input type="text" class="form__control            "   required placeholder="Имя"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Фамилия</p>
+				<input type="text" class="form__control            "   required placeholder="Фамилия"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Название компании</p>
+				<input type="text" class="form__control            "   required placeholder="Название компании"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Телефон</p>
+				<input type="text" class="form__control            "   required placeholder="Телефон"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Email</p>
+				<input type="text" class="form__control            "   required placeholder="Email"  >
+	</label>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<div class="form__row  row  is--gutter-sm  is--gap-lg  is--modal">
+			<div class="cols">				
+				
+<button type="submit" class="btn__item  is--full  is--primary" >
+		<span>Сохранить</span>
+</button>
+
+
+			</div>
+			<div class="cols">	
+			</div>
+		</div>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+																							
+		</div>
+	</div>
+</div> 
+<div class="modal__block modals  fade  " id="modal-pass-edit" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  ">
+		<div class="modal__body  " >
+			<button type="button" class="modal__btn-close  " data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>			</button>
+			
+										<form action="#" class="form__panel  is--modal">
+		<h2 class="page-header__heading  is--h1  is--modal  " >Смена пароля</h2>		<div class="form__grid  grid__row  is--modal">
+			
+
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Новый пароль</p>
+				<input type="password" class="form__control            "   required placeholder="Новый пароль"  >
+	</label>
+		
+	<label class="form__item    "  data-error="Обязательно к заполнению">
+					<p class="form__label    ">Повторите новый пароль</p>
+				<input type="password" class="form__control            "   required placeholder="Повторите новый пароль"  >
+	</label>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<div class="form__row  row  is--gutter-sm  is--gap-lg  is--modal">
+			<div class="cols">				
+				
+<button type="submit" class="btn__item  is--full  is--primary" >
+		<span>Сохранить</span>
+</button>
+
+
+			</div>
+			<div class="cols">	
+			</div>
+		</div>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+																							
+		</div>
+	</div>
+</div> 
+<div class="modal__block modals  fade  " id="modal-add-basket" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  ">
+		<div class="modal__body  " >
+			<button type="button" class="modal__btn-close  " data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>			</button>
+			
+													<h2 class="page-header__heading  is--h1  is--modal  " >Услуги по ликвидации юридического лица</h2>					
+
+
+
+
+
+		
+	<div class="card__item  is--catalog  is--view-modal">
+				<div class="card__size-wrap  is--catalog">
+			<p class="card__size-heading  is--catalog">Выберите размер</p>
+			<ul class="card__size-list  is--catalog">
+							<li class="card__size-item  is--catalog">
+					<label class="card__size-radio  is--catalog">
+						<input type="radio" name="size_" id="S" class="card__size-input  is--catalog">
+						<span class="card__size-radio-name  is--catalog">S</span>
+					</label>
+				</li>
+							<li class="card__size-item  is--catalog">
+					<label class="card__size-radio  is--catalog">
+						<input type="radio" name="size_" id="M" class="card__size-input  is--catalog">
+						<span class="card__size-radio-name  is--catalog">M</span>
+					</label>
+				</li>
+							<li class="card__size-item  is--catalog">
+					<label class="card__size-radio  is--catalog">
+						<input type="radio" name="size_" id="L" class="card__size-input  is--catalog">
+						<span class="card__size-radio-name  is--catalog">L</span>
+					</label>
+				</li>
+							<li class="card__size-item  is--catalog">
+					<label class="card__size-radio  is--catalog">
+						<input type="radio" name="size_" id="XL" class="card__size-input  is--catalog">
+						<span class="card__size-radio-name  is--catalog">XL</span>
+					</label>
+				</li>
+							<li class="card__size-item  is--catalog">
+					<label class="card__size-radio  is--catalog">
+						<input type="radio" name="size_" id="XXL" class="card__size-input  is--catalog">
+						<span class="card__size-radio-name  is--catalog">XXL</span>
+					</label>
+				</li>
+						</ul>
+		</div>
+						<div class="card__color-wrap  is--catalog">
+			<p class="card__color-heading  is--catalog">Выберите цвет</p>
+			<ul class="card__color-list  is--catalog">
+							<li class="card__color-item  is--catalog">
+					<label class="card__color-radio  is--catalog" title="Orange">
+						<input type="radio" name="color_" id="Orange" class="card__color-input  is--catalog">
+						<span class="card__color-radio-view  is--catalog" style="background-color: orange"></span>
+					</label>
+				</li>
+							<li class="card__color-item  is--catalog">
+					<label class="card__color-radio  is--catalog" title="Yellow">
+						<input type="radio" name="color_" id="Yellow" class="card__color-input  is--catalog">
+						<span class="card__color-radio-view  is--catalog" style="background-color: yellow"></span>
+					</label>
+				</li>
+							<li class="card__color-item  is--catalog">
+					<label class="card__color-radio  is--catalog" title="Green">
+						<input type="radio" name="color_" id="Green" class="card__color-input  is--catalog">
+						<span class="card__color-radio-view  is--catalog" style="background-color: green"></span>
+					</label>
+				</li>
+							<li class="card__color-item  is--catalog">
+					<label class="card__color-radio  is--catalog" title="Blue">
+						<input type="radio" name="color_" id="Blue" class="card__color-input  is--catalog">
+						<span class="card__color-radio-view  is--catalog" style="background-color: blue"></span>
+					</label>
+				</li>
+							<li class="card__color-item  is--catalog">
+					<label class="card__color-radio  is--catalog" title="Purple">
+						<input type="radio" name="color_" id="Purple" class="card__color-input  is--catalog">
+						<span class="card__color-radio-view  is--catalog" style="background-color: purple"></span>
+					</label>
+				</li>
+						</ul>
+		</div>
+				<div class="card__group  is--btn  is--catalog">
+			<button type="button" class="btn__item  is--primary">В корзину</button>
+						<p class="card__qty  is--catalog" style="color: #EB5757">
+				В наличие 5 шт.
+			</p>
+					</div>
+	</div>
+	
+
+																			
+		</div>
+	</div>
+</div> 
+<div class="modal__block modals  fade  " id="modal-select-basket" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  ">
+		<div class="modal__body  " >
+			<button type="button" class="modal__btn-close  " data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-icon-close" role="img">
+	<use xlink:href="./img/svg/sprite.svg#icon-close"></use>
+</svg>			</button>
+			
+																							
+		</div>
+	</div>
+</div> 
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="./js/jquery-3.2.1.min.js" ></script>
+<script src="./js/document-ready.js" ></script>
+<script src="./js/svg4everybody.min.js" ></script>
+<script>
+svg4everybody();
+document.createElement("picture");
+</script> 	</body>
+</html> 

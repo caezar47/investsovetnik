@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	{% include "../block/common/head/head.twig" with {title:"Карточка каталога"}  %}
+	</head>
+	<body>
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "header",
+            prefix:"navbar__", 
+            mod:"",
+            basket:"Корзина",
+            basket_qty:"999",
+            basket_cost:"15 900",
+        } %}
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "aside",
+            prefix:"navbar__",
+            collapse:"",  
+            mod:"",            
+            active:page.catalog_card,
+        } %} 
+
+        <main class="{{prefix.section}}wrap">
+            {% include "../block/page/catalog.twig" with {
+                view:"card", 
+
+                catalog_view: page.catalog_cat,
+                content_prefix:prefix.section, 
+                content_mod:"is--page-catalog-card", 
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"", 
+                heading_level:"h1", 
+                heading:"Смартфон Xiaomi Redmi Note 9S 4/64GB", 
+
+                bread_attr:"",
+                bread_mod:"",
+                bread:[
+                    {name:"Каталог", link:page.catalog},
+                    {name:"Мобильные телефоны", link:page.catalog_cat},
+                    {name:"Смартфон Xiaomi Redmi Note 9S 4/64GB"}
+                ], 
+                card_mod: 'is--catalog-card',
+                informer: "",
+                informer: "true",
+                informer_type: "",
+                informer_type: "is--catalog-fixed",
+                code: "Артикул: 051456",
+                note_short: "Global Version - глобальная международная версия смартфона. Android 9-ой версии, официальная глобальная прошивка на русском языке, обновляется по Wi-Fi. NFC работает!",
+                slider: [
+                    {"img": [path.img,"/default/catalog-card1.png"].join("")},
+                    {"img": [path.img,"/default/catalog-card2.jpg"].join("")},
+                    {"img": [path.img,"/default/catalog-card1.png"].join("")},
+                    {"img": [path.img,"/default/catalog-card2.jpg"].join("")},
+                    {"img": [path.img,"/default/catalog-card1.png"].join("")},
+                    {"img": [path.img,"/default/catalog-card2.jpg"].join("")},
+                ],
+                slider_nav: 'true',
+                tabs_group: 'is--visible-md',
+                tabs: [
+                    {
+                        "id":"tabs1",  
+                        "status":"active", 
+                        "name":"Описание", 
+                        "text": "<p>Профессиональное качество фото</p><p>Redmi Note&nbsp;8 Pro&nbsp;— один из&nbsp;редких смартфонов с&nbsp;камерой на&nbsp;64&nbsp;Мп, чья широкая диафрагма обеспечит высокую детализацию снимков даже в&nbsp;сумерках. Для получения реалистичных панорам в&nbsp;смартфоне предусмотрен модуль на&nbsp;8&nbsp;Мп с&nbsp;углом обзора 120&nbsp;градусов. Любители макроснимков по&nbsp;достоинству оценят камеру на&nbsp;2&nbsp;Мп с&nbsp;фокусировкой на&nbsp;расстоянии до&nbsp;2&nbsp;см. А&nbsp;с&nbsp;размытием фона на&nbsp;автопортретах поможет датчик на&nbsp;2&nbsp;Мп.</p><p>Не&nbsp;хотите путаться в&nbsp;многочисленных настройках яркости, контраста, тона и&nbsp;резкости? Просто включите в&nbsp;смартфоне AI-режим, и&nbsp;умные алгоритмы подберут все параметры снимка в&nbsp;зависимости от&nbsp;сцены.</p><p>Забыть о&nbsp;розетке на&nbsp;два дня</p><p>Redmi Note&nbsp;8 Pro имеет мощный аккумулятор на&nbsp;4&nbsp;500&nbsp;мАч. При комбинированных нагрузках он&nbsp;даёт до&nbsp;двух дней автономной работы. А&nbsp;быстрая зарядка заполнит ёмкость батареи всего за&nbsp;пару часов.</p>"
+                    },
+                    {
+                        "id":"tabs2",  
+                        "status":"", 
+                        "type":"card_desc", 
+                        "name":"Характеристики", 
+                        "view":"catalog_desc", 
+                        "mod":"is--catalog-card", 
+                        "list":[
+                            {
+                                "name":'Диагональ экрана, дюймы',
+                                "value":'6.53',
+                            },
+                            {
+                                "name":'Оперативная память',
+                                "value":'6 ГБ',
+                            },
+                            {
+                                "name":'Встроенная память',
+                                "value":'64 ГБ',
+                            },
+                            {
+                                "name":'Разрешение основной камеры, Мпикс',
+                                "value":'64',
+                            },
+                            {
+                                "name":'Процессор',
+                                "value":'Helio G90T (8 ядер), 2.1 ГГц',
+                            },
+                            {
+                                "name":'Беспроводные интерфейсы',
+                                "value":'Wi-Fi, NFC, Bluetooth',
+                            },
+                            {
+                                "name":'Стандарты связи',
+                                "value":'3G, LTE',
+                            },
+                            {
+                                "name":'Разрешение экрана',
+                                "value":'2340x1080',
+                            },
+                            {
+                                "name":'Емкость аккумулятора, мАч',
+                                "value":'4500',
+                            },
+                            {
+                                "name":'Материал корпуса',
+                                "value":'Пластик',
+                            },
+                        ],
+                    }
+                ],
+                size: '',
+                size: [
+                    {
+                        "mod":"", 
+                        "type":"panel", 
+                        "id":"radio1", 
+                        "form_id":"base", 
+                        "status":"checked", 
+                        "name":"Морской бриз, 64 GB", 
+                        "color":"orange", 
+                        "qty":"50 шт.", 
+                        "qty_color":"", 
+                    },
+                    {
+                        "mod":"", 
+                        "type":"panel", 
+                        "id":"radio2", 
+                        "form_id":"base", 
+                        "status":"checked", 
+                        "name":"Морской бриз, 128 GB", 
+                        "color":"orange", 
+                        "qty":"50 шт.", 
+                        "qty_color":"#EB5757", 
+                    },
+                    {
+                        "mod":"", 
+                        "type":"panel", 
+                        "id":"radio3", 
+                        "form_id":"base", 
+                        "status":"checked", 
+                        "name":"Красный продукт, 64 GB", 
+                        "color":"orange", 
+                        "qty":"50 шт.", 
+                        "qty_color":"#219653", 
+                    },
+                    {
+                        "mod":"", 
+                        "type":"panel", 
+                        "id":"radio4", 
+                        "form_id":"base", 
+                        "status":"checked", 
+                        "name":"Синий пантон, 64 GB", 
+                        "color":"orange", 
+                        "qty":"50 шт.", 
+                        "qty_color":"#219653", 
+                    },
+                    {
+                        "mod":"", 
+                        "type":"panel", 
+                        "id":"radio5", 
+                        "form_id":"base", 
+                        "status":"checked", 
+                        "name":"Красный продукт, 128 GB", 
+                        "color":"orange", 
+                        "qty":"50 шт.", 
+                        "qty_color":"#219653", 
+                    },
+                ],
+                options: [
+                    {                   
+                        "link":"#",
+                        "id":"1",
+                        "img": [path.img,"/default/catalog-lock.jpg"].join(""),      
+                        "heading":"Смартфон Honor 9C 4/64GB",
+                        "code":"051456",
+                        'color_selected':'Морской бриз, 64 GB',
+                        'color_selected_bg':'#5FD2CE',
+                        "cost_list":[
+                            {
+                                "name":"От 500 шт.",
+                                "value":"7 900 ₽",
+                            },
+                            {
+                                "name":"От 1 000 шт.",
+                                "value":"6 900 ₽",
+                            },
+                            {
+                                "name":"От 1 500 шт.",
+                                "value":"5 900 ₽",
+                            },
+                        ],
+                        "qty":"5",
+                        "qty_color":"#EB5757",
+                        "btn": "В корзину"
+                    },
+                    {                   
+                        "link":"#",
+                        "id":"2",
+                        "img": [path.img,"/default/catalog-lock.jpg"].join(""),      
+                        "heading":"Смартфон Honor 9C 4/64GB",
+                        "code":"051456",
+                        'color_selected':'Морской бриз, 64 GB',
+                        'color_selected_bg':'#5FD2CE',
+                        "cost_list":[
+                            {
+                                "name":"От 500 шт.",
+                                "value":"7 900 ₽",
+                            },
+                            {
+                                "name":"От 1 000 шт.",
+                                "value":"6 900 ₽",
+                            },
+                            {
+                                "name":"От 1 500 шт.",
+                                "value":"5 900 ₽",
+                            },
+                        ],
+                        "qty":"5",
+                        "qty_color":"#EB5757",
+                        "btn": "В корзину"
+                    },
+                    {                   
+                        "link":"#",
+                        "id":"3",
+                        "img": [path.img,"/default/catalog-lock.jpg"].join(""),      
+                        "heading":"Смартфон Honor 9C 4/64GB",
+                        "code":"051456",
+                        'color_selected':'Морской бриз, 64 GB',
+                        'color_selected_bg':'#5FD2CE',
+                        "cost_list":[
+                            {
+                                "name":"От 500 шт.",
+                                "value":"7 900 ₽",
+                            },
+                            {
+                                "name":"От 1 000 шт.",
+                                "value":"6 900 ₽",
+                            },
+                            {
+                                "name":"От 1 500 шт.",
+                                "value":"5 900 ₽",
+                            },
+                        ],
+                        "qty":"5",
+                        "qty_color":"#EB5757",
+                        "btn": "В корзину"
+                    },
+                ],  
+                options_table: '',
+                options_table: [
+                    {                   
+                        "link":"#",
+                        "id":"1",
+                        "heading":"Смартфон Honor 9C 4/64GB",
+                        "code":"051456",
+                        "cost_list":[
+                            {
+                                "name":"От 500 шт.",
+                                "value":"7 900 ₽",
+                            },
+                            {
+                                "name":"От 1 000 шт.",
+                                "value":"6 900 ₽",
+                            },
+                            {
+                                "name":"От 1 500 шт.",
+                                "value":"5 900 ₽",
+                            },
+                        ],
+                        "notes":[
+                            {
+                                "name":"Номинальная потребляемая мощность, Вт",
+                                "value":"1900",
+                            },
+                            {
+                                "name":"Класс электрозащиты",
+                                "value":"l class",
+                            },
+                            {
+                                "name":"Номинальная сила тока, А",
+                                "value":"8",
+                            },
+                            {
+                                "name":"Обслуживаемая площадь, м2",
+                                "value":"15-18",
+                            },
+                            {
+                                "name":"Класс влагозащиты",
+                                "value":"IP20",
+                            },
+                            {
+                                "name":"Количество секций",
+                                "value":"7",
+                            },
+                            {
+                                "name":"Номинальное напряжение питания, В/Гц",
+                                "value":"220-/50",
+                            },
+                            {
+                                "name":"Бренд",
+                                "value":"Hyundai",
+                            },
+                            {
+                                "name":"ean13",
+                                "value":"8806895631303",
+                            },
+                            {
+                                "name":"Размер прибора, мм",
+                                "value":"620х330х240",
+                            },
+                        ],
+                        "qty":"5",
+                        "qty_color":"#EB5757",
+                        "btn": "В корзину"
+                    },
+                    {                   
+                        "link":"#",
+                        "id":"2",
+                        "heading":"Смартфон Honor 9C 4/64GB",
+                        "code":"051456",
+                        "cost": "14 900 ₽",
+                        "notes":[
+                            {
+                                "name":"Номинальная потребляемая мощность, Вт",
+                                "value":"1900",
+                            },
+                            {
+                                "name":"Класс электрозащиты",
+                                "value":"l class",
+                            },
+                            {
+                                "name":"Номинальная сила тока, А",
+                                "value":"8",
+                            },
+                            {
+                                "name":"Обслуживаемая площадь, м2",
+                                "value":"15-18",
+                            },
+                            {
+                                "name":"Класс влагозащиты",
+                                "value":"IP20",
+                            },
+                            {
+                                "name":"Количество секций",
+                                "value":"7",
+                            },
+                            {
+                                "name":"Номинальное напряжение питания, В/Гц",
+                                "value":"220-/50",
+                            },
+                            {
+                                "name":"Бренд",
+                                "value":"Hyundai",
+                            },
+                            {
+                                "name":"ean13",
+                                "value":"8806895631303",
+                            },
+                            {
+                                "name":"Размер прибора, мм",
+                                "value":"620х330х240",
+                            },
+                        ],
+                        "qty":"5",
+                        "qty_color":"#EB5757",
+                        "btn": "В корзину"
+                    },
+                    {                   
+                        "link":"#",
+                        "id":"3",
+                        "heading":"Смартфон Honor 9C 4/64GB",
+                        "code":"051456",
+                        "cost_list":[
+                            {
+                                "name":"От 500 шт.",
+                                "value":"7 900 ₽",
+                            },
+                            {
+                                "name":"От 1 000 шт.",
+                                "value":"6 900 ₽",
+                            },
+                            {
+                                "name":"От 1 500 шт.",
+                                "value":"5 900 ₽",
+                            },
+                        ],
+                        "notes":[
+                            {
+                                "name":"Номинальная потребляемая мощность, Вт",
+                                "value":"1900",
+                            },
+                            {
+                                "name":"Класс электрозащиты",
+                                "value":"l class",
+                            },
+                            {
+                                "name":"Номинальная сила тока, А",
+                                "value":"8",
+                            },
+                            {
+                                "name":"Обслуживаемая площадь, м2",
+                                "value":"15-18",
+                            },
+                            {
+                                "name":"Класс влагозащиты",
+                                "value":"IP20",
+                            },
+                            {
+                                "name":"Количество секций",
+                                "value":"7",
+                            },
+                            {
+                                "name":"Номинальное напряжение питания, В/Гц",
+                                "value":"220-/50",
+                            },
+                            {
+                                "name":"Бренд",
+                                "value":"Hyundai",
+                            },
+                            {
+                                "name":"ean13",
+                                "value":"8806895631303",
+                            },
+                            {
+                                "name":"Размер прибора, мм",
+                                "value":"620х330х240",
+                            },
+                        ],
+                        "qty":"5",
+                        "qty_color":"#EB5757",
+                        "btn": "В корзину"
+                    },
+                    {                   
+                        "link":"#",
+                        "id":"4",
+                        "heading":"Смартфон Honor 9C 4/64GB",
+                        "code":"051456",
+                        "cost": "14 900 ₽",
+                        "notes":[
+                            {
+                                "name":"Номинальная потребляемая мощность, Вт",
+                                "value":"1900",
+                            },
+                            {
+                                "name":"Класс электрозащиты",
+                                "value":"l class",
+                            },
+                            {
+                                "name":"Номинальная сила тока, А",
+                                "value":"8",
+                            },
+                            {
+                                "name":"Обслуживаемая площадь, м2",
+                                "value":"15-18",
+                            },
+                            {
+                                "name":"Класс влагозащиты",
+                                "value":"IP20",
+                            },
+                            {
+                                "name":"Количество секций",
+                                "value":"7",
+                            },
+                            {
+                                "name":"Номинальное напряжение питания, В/Гц",
+                                "value":"220-/50",
+                            },
+                            {
+                                "name":"Бренд",
+                                "value":"Hyundai",
+                            },
+                            {
+                                "name":"ean13",
+                                "value":"8806895631303",
+                            },
+                            {
+                                "name":"Размер прибора, мм",
+                                "value":"620х330х240",
+                            },
+                        ],
+                        "qty":"5",
+                        "qty_color":"#EB5757",
+                        "btn": "В корзину"
+                    },
+                    {                   
+                        "link":"#",
+                        "id":"5",
+                        "heading":"Смартфон Honor 9C 4/64GB",
+                        "code":"051456",
+                        "cost_list":[
+                            {
+                                "name":"От 500 шт.",
+                                "value":"7 900 ₽",
+                            },
+                            {
+                                "name":"От 1 000 шт.",
+                                "value":"6 900 ₽",
+                            },
+                            {
+                                "name":"От 1 500 шт.",
+                                "value":"5 900 ₽",
+                            },
+                        ],
+                        "notes":[
+                            {
+                                "name":"Номинальная потребляемая мощность, Вт",
+                                "value":"1900",
+                            },
+                            {
+                                "name":"Класс электрозащиты",
+                                "value":"l class",
+                            },
+                            {
+                                "name":"Номинальная сила тока, А",
+                                "value":"8",
+                            },
+                            {
+                                "name":"Обслуживаемая площадь, м2",
+                                "value":"15-18",
+                            },
+                            {
+                                "name":"Класс влагозащиты",
+                                "value":"IP20",
+                            },
+                            {
+                                "name":"Количество секций",
+                                "value":"7",
+                            },
+                            {
+                                "name":"Номинальное напряжение питания, В/Гц",
+                                "value":"220-/50",
+                            },
+                            {
+                                "name":"Бренд",
+                                "value":"Hyundai",
+                            },
+                            {
+                                "name":"ean13",
+                                "value":"8806895631303",
+                            },
+                            {
+                                "name":"Размер прибора, мм",
+                                "value":"620х330х240",
+                            },
+                        ],
+                        "qty":"5",
+                        "qty_color":"#EB5757",
+                        "btn": "В корзину"
+                    },
+                    {                   
+                        "link":"#",
+                        "id":"6",
+                        "heading":"Смартфон Honor 9C 4/64GB",
+                        "code":"051456",
+                        "cost": "14 900 ₽",
+                        "notes":[
+                            {
+                                "name":"Номинальная потребляемая мощность, Вт",
+                                "value":"1900",
+                            },
+                            {
+                                "name":"Класс электрозащиты",
+                                "value":"l class",
+                            },
+                            {
+                                "name":"Номинальная сила тока, А",
+                                "value":"8",
+                            },
+                            {
+                                "name":"Обслуживаемая площадь, м2",
+                                "value":"15-18",
+                            },
+                            {
+                                "name":"Класс влагозащиты",
+                                "value":"IP20",
+                            },
+                            {
+                                "name":"Количество секций",
+                                "value":"7",
+                            },
+                            {
+                                "name":"Номинальное напряжение питания, В/Гц",
+                                "value":"220-/50",
+                            },
+                            {
+                                "name":"Бренд",
+                                "value":"Hyundai",
+                            },
+                            {
+                                "name":"ean13",
+                                "value":"8806895631303",
+                            },
+                            {
+                                "name":"Размер прибора, мм",
+                                "value":"620х330х240",
+                            },
+                        ],
+                        "qty":"5",
+                        "qty_color":"#EB5757",
+                        "btn": "В корзину"
+                    },
+                ]      
+            } %}
+        </main>
+
+        {% include "../block/common/modals/include.twig"%}
+    	{% include "../block/common/script/script.twig"%}
+	</body>
+</html> 

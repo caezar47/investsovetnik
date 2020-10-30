@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	{% include "../block/common/head/head.twig" with {title:"UiKit"}  %}
+	</head>
+	<body>
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "header",
+            prefix:"navbar__", 
+            mod:"",
+            basket:"Корзина",
+            basket_qty:"999",
+            basket_cost:"15 900",
+        } %}
+        {% include "../block/common/navbar/navbar.twig" with {
+            view: "aside",
+            prefix:"navbar__",
+            collapse:"",  
+            mod:"",            
+            active:page.projects,
+        } %} 
+
+        <main class="{{prefix.section}}wrap">
+            {% include "../block/page/uikit.twig" with {
+                view: "page",
+                content_prefix:prefix.section, 
+                content_mod:"", 
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"is--page-default", 
+                heading_level:"h1", 
+                heading:"UiKit",
+                bread:[
+                    {name:"Каталог", link:page.catalog},
+                    {name:"Регистрационные услуги"}
+                ],  
+                chat: [
+                    {                   
+                        'day': '8 Сентября',
+                        'message': [
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:26',
+                                'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                            },
+                            {
+                                'status':'to',
+                                'name':'Иван петров',
+                                'time':'15:27',
+                                'note':'Привет! Могу поставить 1',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:28',
+                                'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:26',
+                                'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                            },
+                            {
+                                'status':'to',
+                                'name':'Иван петров',
+                                'time':'15:27',
+                                'note':'Привет! Могу поставить 1',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:28',
+                                'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:26',
+                                'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                            },
+                            {
+                                'status':'to',
+                                'name':'Иван петров',
+                                'time':'15:27',
+                                'note':'Привет! Могу поставить 1',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:28',
+                                'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:26',
+                                'note':'Пожалуйста, оцените качество обслуживания. Отправьте: 1 – хорошо, 0 – плохо',
+                            },
+                            {
+                                'status':'to',
+                                'name':'Иван петров',
+                                'time':'15:27',
+                                'note':'Привет! Могу поставить 1',
+                            },
+                            {
+                                'status':'from',
+                                'name':'Максим грудев',
+                                'time':'15:28',
+                                'note':'Большое спасибо за оценку! Будем стараться и дальше поддерживать высокий уровень сервиса.',
+                            },
+                        ],
+                    }
+                ]            
+            } %}
+        </main>
+
+        {% include "../block/common/modals/include.twig"%}
+    	{% include "../block/common/script/script.twig"%}
+	</body>
+</html>
