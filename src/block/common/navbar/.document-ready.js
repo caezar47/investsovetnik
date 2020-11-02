@@ -1,5 +1,5 @@
 var humb = $("[data-hamburger]");
-var resize = $("[data-resize]");
+//var resize = $("[data-resize]");
 var collapse = $(".navbar__aside");
 var html = $("html");
 
@@ -8,10 +8,10 @@ humb.on('click',function() {
 	$(collapse).toggleClass("is--open");
 	$(html).toggleClass("is--open-navbar");
 });
-resize.on('click',function() {	
+/*resize.on('click',function() {	
 	$(this).toggleClass("is--full");
 	$(html).toggleClass("is--full-site");
-});
+});*/
 $(document.body).on('click', function(event) {
 	if($(event.target).closest('.navbar__aside-container').length == 0 && $(event.target).closest('[data-hamburger]').length == 0){	
 		humb.removeClass("is--active");

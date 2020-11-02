@@ -17,7 +17,7 @@
 			&:hover{
 				.btn__item{color: @white;}
 			}
-			.media-breakpoint-up(@lg; {
+			.media-breakpoint-up(@xxl; {
 				padding: 40px 50px 50px;
 			});
 		}
@@ -324,9 +324,12 @@
 			});
 		}
 		&.is--services-card{
-			.heading4();
+			.heading5();
 			font-weight: 700;
 			transition: @trs-site;
+			.media-breakpoint-up(@xl; {
+				.heading4();
+			});
 			.card__item:hover &{
 				color: @white;
 			}
@@ -386,9 +389,5 @@
 				padding-top: 35px;
 			});
 		}
-	}
-	&code{
-	}
-	&decs{
 	}
 }

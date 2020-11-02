@@ -1,1 +1,0 @@
-$('.breadcrumb__list').closest('.section__container').addClass('is--breadcrumb');

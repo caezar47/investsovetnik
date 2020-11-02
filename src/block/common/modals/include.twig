@@ -2,66 +2,33 @@
 	view: 			"form",
 	prefix: 		"modal__", 
 	mod: 			"", 
-	ID: 			"modal-edit",
-	heading: 		'Расчётный счёт',
+	ID: 			"modal-form",
+	form_id: 		"fm_base",
+	heading: 		'',
 	heading_level: 	'h2',
 	heading_mod: 	'is--h1  is--modal',
-	form_view: 		"infocard_edit",
+	form_view: 		"modal",
 } %} 
 {% include "tpl.twig" with {
 	view: 			"form",
 	prefix: 		"modal__", 
-	mod:			"", 
-	ID: 			"modal-profile-edit",	
-	heading: 		'Ваши данные',
+	mod: 			"", 
+	ID: 			"modal-form-note",
+	form_id: 		"fm_basen",
+	heading: 		'',
 	heading_level: 	'h2',
 	heading_mod: 	'is--h1  is--modal',
-	form_view: 		"profile_edit",
-	form_id: 		"fm_profile_edit",
+	form_view: 		"modal_note",
 } %} 
 {% include "tpl.twig" with {
 	view: 			"form",
 	prefix: 		"modal__", 
-	mod:			"", 
-	ID: 			"modal-pass-edit",	
-	heading: 		'Смена пароля',
+	mod: 			"", 
+	ID: 			"modal-message",
+	heading: 		'Сообщение успешно отправлено',
 	heading_level: 	'h2',
-	heading_mod: 	'is--h1  is--modal',
-	form_view: 		"pass_edit",
-	form_id: 		"fm_pass_edit",
+	heading_mod: 	'is--h2  is--modal',
+	note_level: 	'p',
+	note_mod: 		'color--white',
+	note: 			'Мы свяжимся с Вами в ближайшее время.',
 } %} 
-{% include "tpl.twig" with {
-	prefix: 		"modal__", 
-	mod:			"", 
-	ID: 			"modal-add-basket",	
-	heading: 		'Услуги по ликвидации юридического лица',
-	heading_level: 	'h2',
-	heading_mod: 	'is--h1  is--modal',
-} %} 
-{% include "tpl.twig" with {
-	prefix: 		"modal__", 
-	mod:			"", 
-	ID: 			"modal-select-basket",	
-	heading: 		'Услуги по ликвидации юридического лица',
-	heading_level: 	'h2',
-	heading_mod: 	'is--h1  is--modal',
-} %} 
-{# {% include "tpl.twig" with {
-	prefix:"modal__", 
-	mod:"", 
-	ID: "modal-events", 
-	list: events_list,
-	heading_level: 'h2',
-	heading_mod: 'is--h1  is--modal',
-	heading: 'Лента событий',
-} %}
-{% include "tpl.twig" with {
-	prefix:"modal__", 
-	mod:"is--chat", 
-	ID: "modal-chat", 
-	heading_level: 'h2',
-	heading_mod: 'is--h1  is--modal',
-	heading: 'Чат с менеджером',
-	chat: chat
-} %} 
-#}

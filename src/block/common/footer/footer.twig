@@ -1,0 +1,36 @@
+<footer class="{{prefix}}block">	
+	<div class="{{prefix}}container container">
+		<div class="{{prefix}}row  row">
+			<div class="{{prefix}}cols  cols  is--logotip">
+				<a href="{{link}}#{{block.header}}" class="{{prefix}}logotip">
+					<span>My</span> Invest
+				</a>
+			</div>
+			<div class="{{prefix}}cols  cols  is--soc">
+				{% include "../social/tpl.twig" with {
+					prefix:"social__", 
+					attr:"", 
+					mod:"", 
+					list: [
+						{"name":"soc-inst", "link":soc.inst},
+						{"name":"soc-vk", "link":soc.vk},
+						{"name":"soc-tg", "link":soc.tg},
+					]
+				} %}
+			</div>
+			<div class="{{prefix}}cols  cols  is--nav">
+				<ul class="{{prefix}}nav">
+					{% for n in nav %}
+					<li class="{{prefix}}nav-item">
+						<a href="{{link}}#{{n.link}}" {{n.attr}} class="{{prefix}}nav-link" {% if n.diff %}data-scrollto-diff="{{n.diff}}"{% endif %}>{{n.name}}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<div class="{{prefix}}cols  cols  is--email">
+				<a href="mailto:{{contacts.email}}" class="{{prefix}}email">{{contacts.email}}</a>
+			</div>
+		</div>	
+	</div>
+</footer>

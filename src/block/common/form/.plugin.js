@@ -6,7 +6,7 @@ var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';
 var Azbn7__API__Request = function(data, cb) {	
 	var ctrl = this;
 	$.ajax({
-		url : '/api/',
+		url : 'formsave.php',
 		type : 'POST',
 		dataType : 'json',
 		data : data,
@@ -37,25 +37,28 @@ $(function(){
 					name : 'method',
 					value : method,
 				}))
-			;			
+			;	
 			new Azbn7__API__Request(_form.serialize(), function(resp){	
 
-				_form
+				/*_form
 					.trigger('reset')
-					//.empty()
-					//.remove()
-				;				
+					.empty()
+					.remove()
+				;*/
+				
 				form
 					.trigger('reset')
-				;				
+				;
+							
 				form
-					.closest('.modal')
+					.closest('.modals')
 						.modal('hide');									
 				$(form_mess).modal();					
 			});				
 		}			
 	});
 });
+
 /*
  * Inline Form Validation Engine 2.6.2, jQuery plugin
  *

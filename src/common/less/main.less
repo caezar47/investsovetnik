@@ -1,7 +1,5 @@
 *::selection{background: darken(@white, 20%);}
-html{	
-	
-}
+html{}
 body {
 	position: relative;
 	color: @site_color;
@@ -23,6 +21,7 @@ body {
 		width: 100%;
 	});
 	.media-breakpoint-down(@xl; {
+		padding-top: @header_size_xs;
 		&::before{
 			content: '';
 			position: fixed;

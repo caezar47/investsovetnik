@@ -14,6 +14,10 @@
 	    flex: 1 1 auto;
 	    position: relative;
 		&.is--page{
+			&-default{
+				background-repeat: no-repeat;
+				background-position: center -5px;
+			}
 			&-index{
 				&-header{
 					.media-breakpoint-up(@lg; {
@@ -73,6 +77,9 @@
 			padding-bottom: 60px;
 		});
 		&.is--page{
+			&-default{
+				max-width: @container_default;
+			}
 			&-index{
 				&-header{
 					z-index: 2;
@@ -177,6 +184,12 @@
 					});
 				}
 			}
+			&-docs{
+				margin-bottom: 30px;
+				.media-breakpoint-up(@md; {
+					grid-template-columns: repeat(2, 1fr);
+				});
+			}
 		}
 	}
 	&row{
@@ -206,7 +219,39 @@
 	}
 	&card{
 	}
-	&img{
+	&preview{
+		display: block;
+		position: relative;
+		&.is--page{
+			&-services-card{
+				margin-bottom: 40px;
+				&::before,
+				&::after{
+					content: '';
+					position: absolute;
+					z-index: 1;
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+				}
+				&::before{
+					bottom: -16%;
+					left: -7%;
+					width: 28.275%;
+					height: 54.8%;
+					background-image: url("@{url-path-img}/default/services-preview-bg-bottom.png");
+				}
+				&::after{
+					top: -3.5%;
+					right: -3.5%;
+					width: 157px;
+					height: 156px;
+					width: 16.05%;
+					height: 31.2%;
+					background-image: url("@{url-path-img}/default/services-preview-bg-top.png");
+				}
+			}
+		}
 	}
 	&hr{
 	}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	{% include "../block/common/head/head.twig" with {title:"Раскрытие информации"}  %}
+	</head>
+	<body>
+        {% include "../block/common/navbar/navbar.twig" with {
+            prefix:"navbar__", 
+            link:page.index,
+            nav: [
+                {
+                    "name":"Кто мы", 
+                    "link": block.about, 
+                    attr:''
+                },
+                {
+                    "name":"Наши услуги", 
+                    "link": block.services, 
+                    attr:''
+                },
+                {
+                    "name":"Порядок работы", 
+                    "link": block.step, 
+                    attr:''
+                },
+                {
+                    "name":"Вопрос-ответ", 
+                    "link": block.faq, 
+                    attr:''
+                },
+            ],
+        } %}
+        
+        <main class="{{prefix.section}}wrap">
+            {% include "../block/page/page.twig" with {
+                page:"docs", 
+                prefix:prefix.section, 
+                mod:"is--page-docs",
+                
+                bg: [path.img,"/default/page-default-bg.png"].join(""),
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"is--h1  ff--custom  is--line-bottom", 
+                heading_level:"h1", 
+                heading:"Раскрытие информации",
+
+                note_group:"", 
+                note_attr:"",
+                note_mod:"", 
+                note_level:"p", 
+                note:"Дата раскрытия: 05.10.2020. Сведения актуальны по настоящее время.",
+                docs_list:[
+                    {
+                        "name":"Декларация о рисках",
+                        "link":[path.docs,"/risk-declaration.pdf"].join(""),
+                        "attr":'target="_blank"',
+                    },
+                    {
+                        "name":"Договор об инвестиционном консультирования",
+                        "link":[path.docs,"/investment-agreement.pdf"].join(""),
+                        "attr":'target="_blank"',
+                    },
+                    {
+                        "name":"Правила выявления и контроля конфликта интересов",
+                        "link":[path.docs,"/rules-conflicts-interest.pdf"].join(""),
+                        "attr":'target="_blank"',
+                    },
+                    {
+                        "name":"Положение об определении инвестиционного профиля",
+                        "link":[path.docs,"/regulation-determining.pdf"].join(""),
+                        "attr":'target="_blank"',
+                    },
+                    {
+                        "name":"Положение об обработке персональных данных",
+                        "link":[path.docs,"/personal-data.pdf"].join(""),
+                        "attr":'target="_blank"',
+                    },
+                ]
+            } %}
+
+
+            {% include "../block/common/footer/footer.twig" with {
+                prefix:"footer__",
+                link:page.index,
+                nav: [
+                    {
+                        "name":"Кто мы", 
+                        "link": block.about, 
+                        attr:''
+                    },
+                    {
+                        "name":"Наши услуги", 
+                        "link": block.services, 
+                        attr:''
+                    },
+                    {
+                        "name":"Порядок работы", 
+                        "link": block.step, 
+                        attr:''
+                    },
+                    {
+                        "name":"Вопрос-ответ", 
+                        "link": block.faq, 
+                        attr:''
+                    },
+                ],
+            } %}
+
+            
+        </main>
+
+
+        {% include "../block/common/modals/include.twig"%}
+    	{% include "../block/common/script/script.twig"%}
+	</body>
+</html> 

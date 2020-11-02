@@ -13,11 +13,13 @@ form_panel.validationEngine(
 		scroll: false
 }); 
 input.on("input", function () {
-	$(this).siblings('.form__result').addClass('is--open');
-	$(this).siblings('.form__clear').addClass('is--active');
+	$(this).siblings('.form__label').addClass('is--focus');
+});
+phone.on("focusin", function () {
+	$(this).siblings('.form__label').addClass('is--focus');
 });
 file.on('change', function(e) {
-	console.log($(this).val());
+	//console.log($(this).val());
     $(this).siblings('.form__file-name').html($(this).val().replace(/.*(\/|\\)/, ''));
 });
 reset.on('click', function(e) {

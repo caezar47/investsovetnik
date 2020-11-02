@@ -1,86 +1,26 @@
 .docs__{
-	&card{		
-		margin-bottom: 10px;
-		&:last-child{
-			margin-bottom: 0;
-		}
-	}
-	&item{
+	&card{
 		display: flex;
-		color: @default;
+		align-items: center;
+		color: @info;
 		.heading6();
+		font-weight: 700;
 		transition: @trs-site;	
-		.chat__message.is--to &{
-			color: @white;
-		}
-		&:hover{
-			//color: @primary;
-		}	
 	}
 	&icon{
 		display: block;
 		min-width: 32px;
 		width: 32px;
-		height: 40px;
+		height: 32px;
 		margin-right: 10px;
-		color: @danger;
-		.chat__message.is--to &{
-			color: @white;
-		}
+		.media-breakpoint-up(@xl; {
+			min-width: 80px;
+			width: 80px;
+			height: 80px;	
+			margin-right: 25px;		
+		});
 		svg{
 			display: block;
-		}
-	}
-	&name{
-		display: flex;
-		margin-bottom: 5px;
-		min-width: 195px;
-		width: ~"calc(100vw - 40px - 40px - 2px - 42px)";
-		color: inherit;
-		&:hover{
-			color: inherit;
-		}
-		.chat__message &{
-			max-width: 160px;
-			min-width: 145px;
-		}
-		.media-breakpoint-up(@lg; {
-			width: 20vw;
-			max-width: 350px; 
-			.chat__control-docs &{
-				max-width: 274px; 
-			}
-			.chat__message &{
-				max-width: 205px;
-			}
-		});
-		span{
-			display: block;
-			overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-		}
-		i{
-			font-style: normal;
-		}
-	}
-	&size{
-		color: fadeout(@default, 50%);
-		.chat__message.is--to &{
-			color: fadeout(@white, 50%);
-		}
-	}
-	&progress{
-		padding-top: 8px;
-	}
-	&del{
-		.btn-clearfix();
-		margin-left: auto;
-		width: 8px;
-		height: 8px;
-		color: @danger;
-		&:hover{
-			color: @default;
 		}
 	}
 }

@@ -1,3 +1,33 @@
+{% if view == "input" %}
+	{% for value in list %}	
+	<label class="{{prefix}}item  {{mod}}  {{value.mod}}">
+		<input 
+			type="{{value.type}}" 
+			class="{{prefix}}control  {{value.validate}}" 
+			name="f[{{value.name}}]"
+			{% if value.placeholder %}
+				placeholder="{{value.placeholder}}"
+			{% endif %}  
+			{% if value.value %}
+				value="{{value.value}}"
+			{% endif %}
+		>
+		{% if value.label %}
+			<p class="{{prefix}}label  {{mod}}  {{value.mod}}">{{value.label}}</p>
+		{% endif %}
+	</label>
+	{% endfor %}
+{% endif %}
+
+{% if view == "textarea" %}	
+	<label class="{{prefix}}item  {{mod}}">
+		<textarea class="{{prefix}}control  {{validate}}  {{mod}}" name="f[{{name}}]" {% if placeholder %}placeholder="{{placeholder}}"{% endif %}></textarea>
+		{% if label %}
+			<p class="{{prefix}}label  {{mod}} ">{{label}}</p>
+		{% endif %}
+	</label>
+{% endif %}
+
 {% if view == "checkbox" %}
 	{% for value in list %}
 	<div class="{{prefix}}item  {{mod}}  {{group}}">
@@ -36,17 +66,6 @@
 			</p>
 		</label>
 	</div>
-	{% endfor %}
-{% endif %}
-
-{% if view == "input" %}
-	{% for value in list %}	
-	<label class="{{prefix}}item  {{mod}}  {{value.mod}}"  {% if value.required == "required" %}data-error="{{value.error}}"{% endif %}>
-		{% if value.label %}
-			<p class="{{prefix}}label  {{mod}}  {{value.mod}}">{{value.label}}</p>
-		{% endif %}
-		<input type="{{value.type}}" class="{{prefix}}control  {{value.validate}}  {{mod}}  {{color}}  {{value.mod}}  {% if value.view == "date" %}datepicker-here{% endif %}  {% if value.view == "time" %}datepicker-here{% endif %}" {{value.status}}  {{value.required}} placeholder="{{value.placeholder}}" {% if value.view == "time" %}data-timepicker="true"{% endif %} {% if value.value %}value="{{value.value}}"{% endif %}>
-	</label>
 	{% endfor %}
 {% endif %}
 
@@ -155,11 +174,6 @@
 	</div>
 {% endif %}
 
-{% if view == "textarea" %}	
-	<div class="{{prefix}}item  {{mod}}  {{mod_elem}}">
-		<textarea class="{{prefix}}control form-control {{validate}}  {{mod}}  {{color}}" id="{{form_id}}[{{id}}]" name="f[{{name}}]" placeholder="{{placeholder}}"></textarea>
-	</div>
-{% endif %}
 
 {% if view == "file" %}
 	<label class="{{prefix}}file  {{mod}}  {{color}}">

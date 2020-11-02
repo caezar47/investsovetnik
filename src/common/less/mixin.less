@@ -41,6 +41,20 @@
 	font-size: @site_fs;
 	line-height: @site_lh;
 }
+.logotip(){
+	text-transform: uppercase;
+	font-family: @site_ff_custom;
+	font-weight: 700;
+	.heading4();
+	letter-spacing: 0.1em;
+	&,
+	&:hover{
+		color: @default;
+	}
+	span{
+		color: @primary;
+	}
+}
 //===== btn clearfix =====//
 .btn-clearfix(){
 	outline: none;

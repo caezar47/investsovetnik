@@ -1,0 +1,47 @@
+{% if page == "docs" %}
+	<section class="{{prefix}}content  {{mod}}  is--page-default" {% if bg %} style="background-image: url({{bg}})"{% endif %}>
+		<div class="{{prefix}}container container  {{mod}}  is--page-default">
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}
+			<div class="{{prefix}}grid  grid__row  {{mod}}">
+				{% include "../common/docs/tpl.twig" with {
+					prefix:"docs__", 
+					list: docs_list
+				} %}
+			</div>
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:note_mod,
+				attr:note_attr, 
+				level:note_level, 
+				heading:note
+			} %}
+		</div>
+	</section>
+{% endif %}
+{% if page == "services_card" %}
+	<section class="{{prefix}}content  {{mod}}  is--page-default" {% if bg %} style="background-image: url({{bg}})"{% endif %}>
+		<div class="{{prefix}}container container  {{mod}}  is--page-default">
+			{% include "../common/page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:heading_mod,
+				attr:heading_attr, 
+				level:heading_level, 
+				heading:heading
+			} %}			
+			{% if preview %}
+			<picture class="{{prefix}}preview  {{mod}}">
+				<img src="{{preview}}" class="img-responsive" alt="{{heading}}">
+			</picture>
+			{% endif %}
+			{% if note %}
+				<div class="text__block  {{mod}}">{{note}}</div>
+			{% endif %}
+		</div>
+	</section>
+{% endif %}

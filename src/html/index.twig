@@ -4,14 +4,41 @@
     	{% include "../block/common/head/head.twig" with {title:"Главная страница"}  %}
 	</head>
 	<body>
-       {#  {% include "../block/common/navbar/navbar.twig" with {
-            view: "header",
+        {% include "../block/common/navbar/navbar.twig" with {
             prefix:"navbar__", 
-            mod:"",
-        } %} #}
+            mod:"is--scroll",
+            link:"",
+            nav: [
+                {
+                    "name":"Кто мы", 
+                    "link": block.about, 
+                    "attr":'data-scrollto-item',
+                    "diff":'-66'
+                },
+                {
+                    "name":"Наши услуги", 
+                    "link": block.services, 
+                    "attr":'data-scrollto-item',
+                    "diff":'-66'
+                },
+                {
+                    "name":"Порядок работы", 
+                    "link": block.step, 
+                    "attr":'data-scrollto-item',
+                    "diff":'-66'
+                },
+                {
+                    "name":"Вопрос-ответ", 
+                    "link": block.faq, 
+                    "attr":'data-scrollto-item',
+                    "diff":'-66'
+                },
+            ],
+        } %}
         
         <main class="{{prefix.section}}wrap">
             {% include "../block/page/index.twig" with {
+                id:block.header, 
                 view:"header", 
                 prefix:prefix.section, 
                 mod:"is--page-index-header",
@@ -30,20 +57,21 @@
 
                 bg: [path.img,"/default/index-header-bg.png"].join(""),
 
-                btn_view:"btn", 
-                btn_attr:'',
+                btn_view:"link", 
+                btn_attr:'data-scrollto-item data-scrollto-diff="-66"',
                 btn_mod:'', 
-                btn_link:'',
+                btn_link:['#',block.services].join(""),
                 btn_name:"Наши услуги",
 
-                btn_def_view:"btn", 
+                btn_def_view:"link", 
                 btn_def_attr:'',
                 btn_def_mod:'is--primary', 
-                btn_def_link:'',
+                btn_def_link:page.docs, 
                 btn_def_name:"Раскрытие информации"
             } %}
 
             {% include "../block/page/index.twig" with {
+                id:block.blockquote, 
                 view:"blockquote", 
                 prefix:prefix.section, 
                 mod:"is--page-index-blockquote",
@@ -64,6 +92,7 @@
             } %}
 
             {% include "../block/page/index.twig" with {
+                id:block.adv, 
                 view:"adv", 
                 prefix:prefix.section, 
                 mod:"is--page-index-adv",
@@ -79,6 +108,7 @@
             } %}
 
             {% include "../block/page/index.twig" with {
+                id:block.about, 
                 view:"about", 
                 prefix:prefix.section, 
                 mod:"is--page-index-about",
@@ -178,6 +208,7 @@
             } %}
 
             {% include "../block/page/index.twig" with {
+                id:block.promo, 
                 view:"promo", 
                 prefix:prefix.section, 
                 mod:"is--page-index-promo",
@@ -189,7 +220,7 @@
                 heading:"Мы можем, сделать так, чтобы Ваши деньги работали на вас!",
 
                 btn_view:"btn", 
-                btn_attr:'',
+                btn_attr:'data-toggle="modal" data-target="#modal-form" data-modal-heading="Начать работать"',
                 btn_mod:'', 
                 btn_link:'',
                 btn_name:"Начать работать",
@@ -198,6 +229,7 @@
             } %}
 
             {% include "../block/page/index.twig" with {
+                id:block.services, 
                 view:"services", 
                 prefix:prefix.section, 
                 mod:"is--page-index-services",
@@ -214,27 +246,28 @@
                 card_mod:'is--services-card',
                 card_list:[
                     {
-                        link: '',
+                        link: page.services_card1,
                         num: '01.',
                         name: 'Персональный финансовый план',
                         img: [path.img,"/default/services-item1.jpg"].join(""),
                     },
                     {
-                        link: '',
+                        link: page.services_card2,
                         num: '02.',
-                        name: 'Создание и сопровождение инвестиционного портфеля ',
+                        name: 'Создание и сопровождение инвестиционного портфеля',
                         img: [path.img,"/default/services-item2.jpg"].join(""),
                     },
                     {
-                        link: '',
+                        link: page.services_card3,
                         num: '03.',
-                        name: 'Налоговое консультирование',
+                        name: 'Налоговое консультирование', 
                         img: [path.img,"/default/services-item3.jpg"].join(""),
                     },
                 ]
             } %}
 
             {% include "../block/page/index.twig" with {
+                id:block.step, 
                 view:"step", 
                 prefix:prefix.section, 
                 mod:"is--page-index-step",
@@ -290,15 +323,16 @@
                 promo:"Подайте заявку и начните зарабатывать прямо сейчас!",
 
                 promo_btn_view:"btn", 
-                promo_btn_attr:'',
                 promo_btn_mod:'', 
                 promo_btn_link:'',
+                promo_btn_attr:'data-toggle="modal" data-target="#modal-form" data-modal-heading="Подать заявку"',
                 promo_btn_name:"Подать заявку",
 
                 promo_bg: [path.img,"/default/index-promo-bg.jpg"].join(""),
             } %}
 
             {% include "../block/page/index.twig" with {
+                id:block.faq, 
                 view:"faq", 
                 prefix:prefix.section, 
                 mod:"is--page-index-faq",
@@ -312,7 +346,7 @@
                 bg: [path.img,"/default/index-faq-bg.png"].join(""),
                 
                 btn_view:"btn", 
-                btn_attr:'',
+                btn_attr:'data-toggle="modal" data-target="#modal-form-note" data-modal-heading="Задать вопрос"',
                 btn_mod:'', 
                 btn_link:'',
                 btn_name:"Больше ответов",
@@ -361,6 +395,65 @@
                     },
                 ]
             } %}
+
+            {% include "../block/common/form/form.twig" with {
+                view:           'base', 
+                prefix:         "form__",
+                ID:             'f_base',
+                mod:            'is--form-base', 
+                color:          '', 
+
+                bg: [path.img,"/default/form-bg.png"].join(""),
+
+                heading_group:  "", 
+                heading_attr:   "",
+                heading_mod:    "is--block-form  ff--custom  color--white", 
+                heading_level:  "h2", 
+                heading:        "Задайте свои вопросы на&nbsp;Online встрече",
+                note_group:  "", 
+                note_attr:   "",
+                note_mod:    "is--block-form-note  is--h5  color--white", 
+                note_level:  "p", 
+                note:        "Запишитесь на online встречу, отправив свои: имя, номер телефона и E-mail",
+                agreement_group:  "", 
+                agreement_attr:   "",
+                agreement_mod:    "is--block-form-agreement  color--white", 
+                agreement_level:  "p", 
+                agreement:        'Отправляя свои данные, вы даете согласие <a href="#">на обработку персональных данных</a>',
+            } %}
+
+            {% include "../block/common/footer/footer.twig" with {
+                prefix:"footer__",
+                link:"",                
+                nav: [
+                    {
+                        "name":"Кто мы", 
+                        "link": block.about, 
+                        "attr":'data-scrollto-item',
+                        "diff":'-66'
+                    },
+                    {
+                        "name":"Наши услуги", 
+                        "link": block.services, 
+                        "attr":'data-scrollto-item',
+                        "diff":'-66'
+                    },
+                    {
+                        "name":"Порядок работы", 
+                        "link": block.step, 
+                        "attr":'data-scrollto-item',
+                        "diff":'-66'
+                    },
+                    {
+                        "name":"Вопрос-ответ", 
+                        "link": block.faq, 
+                        "attr":'data-scrollto-item',
+                        "diff":'-66'
+                    },
+                ],
+            } %}
+
+            
         </main>
 
 

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	{% include "../block/common/head/head.twig" with {title:"Налоговое консультирование"}  %}
+	</head>
+	<body>
+        {% include "../block/common/navbar/navbar.twig" with {
+            prefix:"navbar__", 
+            link:page.index,
+            nav: [
+                {
+                    "name":"Кто мы", 
+                    "link": block.about, 
+                    attr:''
+                },
+                {
+                    "name":"Наши услуги", 
+                    "link": block.services, 
+                    attr:''
+                },
+                {
+                    "name":"Порядок работы", 
+                    "link": block.step, 
+                    attr:''
+                },
+                {
+                    "name":"Вопрос-ответ", 
+                    "link": block.faq, 
+                    attr:''
+                },
+            ],
+        } %}
+        
+        <main class="{{prefix.section}}wrap">
+            {% include "../block/page/page.twig" with {
+                page:"services_card", 
+                prefix:prefix.section, 
+                mod:"is--page-services-card",
+                
+                bg: [path.img,"/default/page-default-bg.png"].join(""),
+
+                heading_group:"", 
+                heading_attr:"",
+                heading_mod:"is--h1  ff--custom  is--line-bottom", 
+                heading_level:"h1", 
+                heading:"Налоговое консультирование",
+                preview: [path.img,"/default/services-item1-full.jpg"].join(""),
+                note: '
+                    <h5>Налоги</h5>
+                    <p>Желая увеличить свой доход, сохранить или преумножить свой капитал, необходимо учитывать такую неотъемлемую часть современной жизни как налоги.</p>
+                    <p>Мы&nbsp;поможем вам разобраться в&nbsp;налоговой составляющей вашей инвестиционной деятельности, ведь оптимизация налогов и&nbsp;получение вычетов увеличивают доходность инвестиций!</p>
+                    <br>
+                    <h6>Мы&nbsp;готовы подготовить для вас:</h6>
+                    <ul> 
+                        <li>декларацию, которую вы&nbsp;сможете подать в&nbsp;ФНС, не&nbsp;выходя из&nbsp;дома.</li>
+                        <li>декларацию по&nbsp;результатам брокерских операций на&nbsp;зарубежных рынках</li>
+                        <li>содействие в&nbsp;оформлении налоговых вычетов</li>
+                        <li>расчет НДФЛ к&nbsp;уплате,</li>
+                        <li>зачет убытков прошлых лет,</li>
+                        <li>учет сальдирования результатов у&nbsp;разных брокеров.</li>
+                    </ul>
+                '
+
+            } %}
+
+
+            {% include "../block/common/footer/footer.twig" with {
+                prefix:"footer__",
+                link:page.index,
+                nav: [
+                    {
+                        "name":"Кто мы", 
+                        "link": block.about, 
+                        attr:''
+                    },
+                    {
+                        "name":"Наши услуги", 
+                        "link": block.services, 
+                        attr:''
+                    },
+                    {
+                        "name":"Порядок работы", 
+                        "link": block.step, 
+                        attr:''
+                    },
+                    {
+                        "name":"Вопрос-ответ", 
+                        "link": block.faq, 
+                        attr:''
+                    },
+                ],
+            } %}
+
+            
+        </main>
+
+
+        {% include "../block/common/modals/include.twig"%}
+    	{% include "../block/common/script/script.twig"%}
+	</body>
+</html> 
