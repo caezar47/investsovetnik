@@ -109,7 +109,14 @@
 						"label":"E-mail",
 					}
 			]} %}
-		</div>
+			{% include "../page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:agreement_mod,
+				attr:agreement_attr, 
+				level:agreement_level, 
+				heading:agreement
+			} %}
+		</div>	
 		{% include "../button/btn.twig" with {
 			view:"btn", 
 			type:"submit", 
@@ -165,7 +172,14 @@
 				validate: "validate[required]",
 				label:"Ваш вопрос",					
 			} %}
-		</div>
+			{% include "../page-header/elem.twig" with {
+				prefix:"page-header__", 
+				mod:agreement_mod,
+				attr:agreement_attr, 
+				level:agreement_level, 
+				heading:agreement
+			} %}
+		</div>	
 		{% include "../button/btn.twig" with {
 			view:"btn", 
 			type:"submit", 

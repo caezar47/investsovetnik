@@ -77,7 +77,8 @@
 			} %}
 			{% if img %}
 			<picture class="{{prefix}}img  {{mod}}">
-				<img src="{{img}}" class="img-responsive" alt="{{heading}}">
+				<source media="(min-width: 451px)" srcset="{{img}}">
+				<img src="{{img_xs}}" class="img-responsive" alt="{{heading}}">
 			</picture>
 			{% endif %}
 		</div>

@@ -2,7 +2,7 @@ var modal_btn_show = $('[data-toggle="modal"]');
 modal_btn_show.on('click', function(e) {
 
 	var modal = $(this).attr('data-target');
-	var modal_heading = $(modal).find(".page-header__heading");
+	var modal_heading = $(modal).find("[data-modal-heading]");
 	var modal_heading_value = $(this).attr('data-modal-heading');
 	modal_heading.text(modal_heading_value);
 	var modal_form_heading = $(modal).find("[data-form-name]");

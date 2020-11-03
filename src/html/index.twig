@@ -104,7 +104,8 @@
                 heading:"Когда нужен инвестиционный советник?",
 
                 bg: [path.img,"/default/index-adv-bg.png"].join(""),
-                img: [path.img,"/default/index-adv.svg"].join(""),
+                img: [path.img,"/default/index-adv.png"].join(""),
+                img_xs: [path.img,"/default/index-adv-xs.png"].join(""),
             } %}
 
             {% include "../block/page/index.twig" with {
@@ -419,7 +420,7 @@
                 agreement_attr:   "",
                 agreement_mod:    "is--block-form-agreement  color--white", 
                 agreement_level:  "p", 
-                agreement:        'Отправляя свои данные, вы даете согласие <a href="#">на обработку персональных данных</a>',
+                agreement:        ['Отправляя свои данные, вы даете согласие <a href="',contacts.agreement,'" target="_blank">на обработку персональных данных</a>'].join(""),
             } %}
 
             {% include "../block/common/footer/footer.twig" with {

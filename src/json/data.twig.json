@@ -4,7 +4,8 @@
 		"domain":"investsovetnik.net",
 		"domain_link":"http://investsovetnik.net/",
 		"color":"#5ab0ff",
-		"email":"help@investsovetnik.net"
+		"email":"help@investsovetnik.net",
+		"agreement":"./docs/agreement.pdf"
 	},
 	"soc":{
 		"vk":"https://vk.com/",
