@@ -52,42 +52,63 @@
                     <p>Грамотное составление финансового плана позволяет выявить будущие финансовые трудности и&nbsp;найти способы избежать&nbsp;их.</p>
                     <p>Чтобы ответить на&nbsp;вопрос&nbsp;— куда вложить деньги, чтобы было надежно и&nbsp;доходно&nbsp;— необходим профессионально составленный персональный финансовый план.</p>
                 ',
+            } %} 
 
-            } %}
+            {% include "../block/common/form/form.twig" with {
+                view:           'base', 
+                prefix:         "form__",
+                ID:             'f_base',
+                mod:            'is--form-base', 
+                color:          '', 
 
+                bg: [path.img,"/default/form-bg.png"].join(""),
 
-            {% include "../block/common/footer/footer.twig" with {
-                prefix:"footer__",
-                link:page.index,
-                nav: [
-                    {
-                        "name":"Кто мы", 
-                        "link": block.about, 
-                        attr:''
-                    },
-                    {
-                        "name":"Наши услуги", 
-                        "link": block.services, 
-                        attr:''
-                    },
-                    {
-                        "name":"Порядок работы", 
-                        "link": block.step, 
-                        attr:''
-                    },
-                    {
-                        "name":"Вопрос-ответ", 
-                        "link": block.faq, 
-                        attr:''
-                    },
-                ],
-            } %}
-
-            
+                heading_group:  "", 
+                heading_attr:   "",
+                heading_mod:    "is--block-form  ff--custom  color--white", 
+                heading_level:  "h2", 
+                heading:        "Задайте свои вопросы на&nbsp;Online встрече",
+                note_group:  "", 
+                note_attr:   "",
+                note_mod:    "is--block-form-note  is--h5  color--white", 
+                note_level:  "p", 
+                note:        "Запишитесь на online встречу, отправив свои: имя, номер телефона и E-mail",
+                agreement_group:  "", 
+                agreement_attr:   "",
+                agreement_mod:    "is--block-form-agreement  color--white", 
+                agreement_level:  "p", 
+                agreement:        ['Отправляя свои данные, вы даете согласие <a href="',contacts.agreement,'" target="_blank">на обработку персональных данных</a>'].join(""),
+            } %}           
         </main>
 
+        {% include "../block/common/footer/footer.twig" with {
+            prefix:"footer__",
+            link:page.index,
+            nav: [
+                {
+                    "name":"Кто мы", 
+                    "link": block.about, 
+                    attr:''
+                },
+                {
+                    "name":"Наши услуги", 
+                    "link": block.services, 
+                    attr:''
+                },
+                {
+                    "name":"Порядок работы", 
+                    "link": block.step, 
+                    attr:''
+                },
+                {
+                    "name":"Вопрос-ответ", 
+                    "link": block.faq, 
+                    attr:''
+                },
+            ],
+        } %}
 
         {% include "../block/common/modals/include.twig"%}
     	{% include "../block/common/script/script.twig"%}
 	</body>
-</html> 
+</html>

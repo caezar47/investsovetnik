@@ -78,40 +78,36 @@
                     },
                 ]
             } %}
-
-
-            {% include "../block/common/footer/footer.twig" with {
-                prefix:"footer__",
-                link:page.index,
-                nav: [
-                    {
-                        "name":"Кто мы", 
-                        "link": block.about, 
-                        attr:''
-                    },
-                    {
-                        "name":"Наши услуги", 
-                        "link": block.services, 
-                        attr:''
-                    },
-                    {
-                        "name":"Порядок работы", 
-                        "link": block.step, 
-                        attr:''
-                    },
-                    {
-                        "name":"Вопрос-ответ", 
-                        "link": block.faq, 
-                        attr:''
-                    },
-                ],
-            } %}
-
-            
         </main>
 
+        {% include "../block/common/footer/footer.twig" with {
+            prefix:"footer__",
+            link:page.index,
+            nav: [
+                {
+                    "name":"Кто мы", 
+                    "link": block.about, 
+                    attr:''
+                },
+                {
+                    "name":"Наши услуги", 
+                    "link": block.services, 
+                    attr:''
+                },
+                {
+                    "name":"Порядок работы", 
+                    "link": block.step, 
+                    attr:''
+                },
+                {
+                    "name":"Вопрос-ответ", 
+                    "link": block.faq, 
+                    attr:''
+                },
+            ],
+        } %}
 
         {% include "../block/common/modals/include.twig"%}
     	{% include "../block/common/script/script.twig"%}
 	</body>
-</html> 
+</html>

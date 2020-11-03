@@ -422,43 +422,40 @@
                 agreement_level:  "p", 
                 agreement:        ['Отправляя свои данные, вы даете согласие <a href="',contacts.agreement,'" target="_blank">на обработку персональных данных</a>'].join(""),
             } %}
-
-            {% include "../block/common/footer/footer.twig" with {
-                prefix:"footer__",
-                link:"",                
-                nav: [
-                    {
-                        "name":"Кто мы", 
-                        "link": block.about, 
-                        "attr":'data-scrollto-item',
-                        "diff":'-66'
-                    },
-                    {
-                        "name":"Наши услуги", 
-                        "link": block.services, 
-                        "attr":'data-scrollto-item',
-                        "diff":'-66'
-                    },
-                    {
-                        "name":"Порядок работы", 
-                        "link": block.step, 
-                        "attr":'data-scrollto-item',
-                        "diff":'-66'
-                    },
-                    {
-                        "name":"Вопрос-ответ", 
-                        "link": block.faq, 
-                        "attr":'data-scrollto-item',
-                        "diff":'-66'
-                    },
-                ],
-            } %}
-
-            
         </main>
 
+        {% include "../block/common/footer/footer.twig" with {
+            prefix:"footer__",
+            link:"",                
+            nav: [
+                {
+                    "name":"Кто мы", 
+                    "link": block.about, 
+                    "attr":'data-scrollto-item',
+                    "diff":'-66'
+                },
+                {
+                    "name":"Наши услуги", 
+                    "link": block.services, 
+                    "attr":'data-scrollto-item',
+                    "diff":'-66'
+                },
+                {
+                    "name":"Порядок работы", 
+                    "link": block.step, 
+                    "attr":'data-scrollto-item',
+                    "diff":'-66'
+                },
+                {
+                    "name":"Вопрос-ответ", 
+                    "link": block.faq, 
+                    "attr":'data-scrollto-item',
+                    "diff":'-66'
+                },
+            ],
+        } %}
 
         {% include "../block/common/modals/include.twig"%}
     	{% include "../block/common/script/script.twig"%}
 	</body>
-</html> 
+</html>

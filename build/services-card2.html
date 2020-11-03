@@ -101,9 +101,83 @@
                 </div>
 					</div>
 	</section>
+ 
+
+            	<form action="#" class="form__panel  is--form-base  azbn7__api__form" data-form-validation>
+		<input data-form-name type="hidden" name="f[Форма]" value="Задайте свои вопросы на&nbsp;Online встрече">
+		<div class="form__inner  is--form-base"  style="background-image: url(./img/default/form-bg.png)">
+			<div class="form__container container  is--form-base">
+				<div class="form__grid  grid__row  is--form-base">
+					<div>					
+						<h2 class="page-header__heading  is--block-form  ff--custom  color--white  " >Задайте свои вопросы на&nbsp;Online встрече</h2>			
+						<p class="page-header__heading  is--block-form-note  is--h5  color--white  " >Запишитесь на online встречу, отправив свои: имя, номер телефона и E-mail</p>		
+						<p class="page-header__heading  is--block-form-agreement  color--white  " >Отправляя свои данные, вы даете согласие <a href="./docs/agreement.pdf" target="_blank">на обработку персональных данных</a></p>					</div>	
+					<div>	
+						<div class="form__grid  grid__row  is--form-base-inner">	
+									
+	<label class="form__item    ">
+		<input 
+			type="text" 
+			class="form__control  validate[required, custom[onlyLetterSp]]" 
+			name="f[Ваше имя]"
+			  
+					>
+					<p class="form__label    ">Ваше имя</p>
+			</label>
+		
+	<label class="form__item    ">
+		<input 
+			type="tel" 
+			class="form__control  validate[required, custom[phone]]" 
+			name="f[Телефон]"
+			  
+					>
+					<p class="form__label    ">Телефон</p>
+			</label>
+		
+	<label class="form__item    ">
+		<input 
+			type="email" 
+			class="form__control  validate[required, custom[email]]" 
+			name="f[email]"
+			  
+					>
+					<p class="form__label    ">E-mail</p>
+			</label>
+	
 
 
-            <footer class="footer__block">	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						</div>
+						
+<button type="submit" class="btn__item  " >
+		<span>Записаться</span>
+</button>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+           
+        </main>
+
+        <footer class="footer__block">	
 	<div class="footer__container container">
 		<div class="footer__row  row">
 			<div class="footer__cols  cols  is--logotip">
@@ -158,10 +232,6 @@
 		</div>	
 	</div>
 </footer>
-            
-        </main>
-
-
         <div class="modal__block modals  fade  " id="modal-form" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal__dialog  ">
 		<div class="modal__body  " >
@@ -350,4 +420,4 @@
 svg4everybody();
 document.createElement("picture");
 </script> 	</body>
-</html> 
+</html>
