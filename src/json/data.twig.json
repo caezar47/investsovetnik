@@ -8,9 +8,9 @@
 		"agreement":"./docs/agreement.pdf"
 	},
 	"soc":{
-		"vk":"https://vk.com/",
-		"tg":"https://www.facebook.com/",
-		"inst":"https://www.instagram.com/"
+		"vk":"https://vk.com/investsovetnik",
+		"tg":"https://t.me/investsovetniknet",
+		"inst":"https://www.instagram.com/polotovskiile/"
 	},
 	"page":{
 		"index":"./",
@@ -46,11 +46,5 @@
 		"js":"./js",
 		"favicon":"./favicon",
 		"docs":"./docs"
-	},                       
-	"url-path-css":"/css",
-	"url-path-img":"/img",
-	"url-path-js":"/js",
-	"url-path-plugins":"/plugins",
-	"url-path-favicon":"/favicon",
-	"url-path-docs":"/docs"
+	}
 }
