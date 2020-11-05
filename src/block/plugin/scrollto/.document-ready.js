@@ -1,7 +1,7 @@
 $(document.body).on('click.fecss.scrollto', '[data-scrollto-item]', {}, function(event){
 	event.preventDefault();
 	
-	console.log('body trigger:click.fecss.scrollto');
+	//console.log('body trigger:click.fecss.scrollto');
 	
 	var btn = $(this);
 	

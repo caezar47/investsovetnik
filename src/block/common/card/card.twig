@@ -3,10 +3,11 @@
 	<div class="{{prefix}}item  {{mod}}">
 		<div class="{{prefix}}row  grid__row  {{mod}}">
 			<div>
+				<p class="{{prefix}}heading  {{mod}}  visible--md">{{value.name}}</p>
 				<picture class="{{prefix}}preview  {{mod}}"><img src="{{value.img}}" class="img-responsive" alt=""></picture>
 			</div>
 			<div>
-				<p class="{{prefix}}heading  {{mod}}">{{value.name}}</p>
+				<p class="{{prefix}}heading  {{mod}}  hidden--md">{{value.name}}</p>
 				{% if value.position %}
 				<p class="{{prefix}}position  {{mod}}">{{value.position}}</p>
 				{% endif %}
