@@ -38,6 +38,9 @@
 		&-cols{
 			padding-left: @container_gap;
 			padding-right: @container_gap;
+			&.is--hamburger{
+				height: @header_humb_height;
+			}
 		}
 		&-logotip{
 			.logotip();
@@ -45,11 +48,14 @@
 		&-hamburger{
 			&{
 				.btn-clearfix();
+				display: block;
+			}
+			&-inner{
 				display: flex;
 		  		flex-direction: row;
-	    		flex-wrap: wrap;
+		  		flex-wrap: wrap;
 		 		align-content: space-between;
-				align-items: center;				
+				align-items: center;
 				width: @header_humb_width;
 				height: @header_humb_height;
 			}
@@ -73,6 +79,7 @@
 				&.is--center{
 					transform-origin: 100% 0;
 					transition: @trs-site 0.2s;
+					margin: auto;
 					.navbar__header-hamburger.is--active &{
 						transform: scale(0, 1);
 						transition: @trs-site;

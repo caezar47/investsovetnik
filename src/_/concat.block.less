@@ -1,6 +1,6 @@
 .section__{
 	&wrap{
-		flex: 1 1 0;
+		flex: 1 1 auto;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -1887,6 +1887,9 @@
 		&-cols{
 			padding-left: @container_gap;
 			padding-right: @container_gap;
+			&.is--hamburger{
+				height: @header_humb_height;
+			}
 		}
 		&-logotip{
 			.logotip();
@@ -1894,11 +1897,14 @@
 		&-hamburger{
 			&{
 				.btn-clearfix();
+				display: block;
+			}
+			&-inner{
 				display: flex;
 		  		flex-direction: row;
-	    		flex-wrap: wrap;
+		  		flex-wrap: wrap;
 		 		align-content: space-between;
-				align-items: center;				
+				align-items: center;
 				width: @header_humb_width;
 				height: @header_humb_height;
 			}
@@ -1922,6 +1928,7 @@
 				&.is--center{
 					transform-origin: 100% 0;
 					transition: @trs-site 0.2s;
+					margin: auto;
 					.navbar__header-hamburger.is--active &{
 						transform: scale(0, 1);
 						transition: @trs-site;
@@ -2332,7 +2339,11 @@
 }
 .tabs__{ 
 	&panel{
-		margin-bottom: 25px;
+		margin-bottom: 15px;
+		.media-breakpoint-up(@md; {
+			margin-bottom: 25px;
+		});
+
 	}
 	&nav{
 		margin: -10px 0px 0;
@@ -2354,7 +2365,7 @@
 	}
 	&link{
 		.btn-clearfix();
-		font-size: 0.66em;
+		font-size: 0.6em;
 		letter-spacing: 0.1em;	
 		line-height: 130%;
 
