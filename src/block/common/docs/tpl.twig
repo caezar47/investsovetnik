@@ -5,6 +5,9 @@
 	</div>
 	<div class="{{prefix}}group"> 
 		<p class="{{prefix}}name">{{d.name}}</p>
+		{% if d.note %}
+		<p class="{{prefix}}note">{{d.note}}</p>
+		{% endif %}
 	</div> 
 </a>
 {% endfor %}

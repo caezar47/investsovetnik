@@ -7,6 +7,7 @@
         {% include "../block/common/navbar/navbar.twig" with {
             prefix:"navbar__", 
             link:page.index,
+            logotip:"svg",
             nav: [
                 {
                     "name":"Кто мы", 
@@ -49,32 +50,37 @@
                 note_attr:"",
                 note_mod:"", 
                 note_level:"p", 
-                note:"Дата раскрытия: 05.10.2020. Сведения актуальны по настоящее время.",
+                note:"",
                 docs_list:[
                     {
                         "name":"Декларация о рисках",
                         "link":[path.docs,"/risk-declaration.pdf"].join(""),
                         "attr":'target="_blank"',
+                        "note":'Дата раскрытия: 05.10.2020. Сведения актуальны по настоящее время.',
                     },
                     {
                         "name":"Договор об инвестиционном консультирования",
                         "link":[path.docs,"/investment-agreement.pdf"].join(""),
                         "attr":'target="_blank"',
+                        "note":'Дата раскрытия: 05.10.2020. Сведения актуальны по настоящее время.',
                     },
                     {
                         "name":"Правила выявления и контроля конфликта интересов",
                         "link":[path.docs,"/rules-conflicts-interest.pdf"].join(""),
                         "attr":'target="_blank"',
+                        "note":'Дата раскрытия: 05.10.2020. Сведения актуальны по настоящее время.',
                     },
                     {
                         "name":"Положение об определении инвестиционного профиля",
                         "link":[path.docs,"/regulation-determining.pdf"].join(""),
                         "attr":'target="_blank"',
+                        "note":'Дата раскрытия: 05.10.2020. Сведения актуальны по настоящее время.',
                     },
                     {
                         "name":"Положение об обработке персональных данных",
                         "link":[path.docs,"/personal-data.pdf"].join(""),
                         "attr":'target="_blank"',
+                        "note":'Дата раскрытия: 05.10.2020. Сведения актуальны по настоящее время.',
                     },
                 ]
             } %}
@@ -83,6 +89,7 @@
         {% include "../block/common/footer/footer.twig" with {
             prefix:"footer__",
             link:page.index,
+            logotip:"svg",
             nav: [
                 {
                     "name":"Кто мы", 

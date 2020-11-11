@@ -3,8 +3,12 @@
 		position: relative;
 		@media print{display: none;}
 		background: @footer_bg;
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		.media-breakpoint-up(@xl; {
+			padding-top: 30px;
+			padding-bottom: 30px;			
+		});
 	}
 	&row{
 		display: flex;
@@ -29,6 +33,14 @@
 	}
 	&logotip{
 		.logotip();
+		&.is--svg{			
+			width: 120px;
+			height: 52px;
+		}
+		.media-breakpoint-up(@xl; {
+			&.is--svg{
+			}
+		});
 	}
 	&nav{
 		&{

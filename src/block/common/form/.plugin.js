@@ -2,11 +2,13 @@
 
 var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';
 //var CMS__TPL_PATH = '';
+//var form_url = '/api/';
+var form_url = 'formsave.php';
 
 var Azbn7__API__Request = function(data, cb) {	
 	var ctrl = this;
 	$.ajax({
-		url : 'formsave.php',
+		url : form_url,
 		type : 'POST',
 		dataType : 'json',
 		data : data,
@@ -38,13 +40,12 @@ $(function(){
 					value : method,
 				}))
 			;	
-			new Azbn7__API__Request(_form.serialize(), function(resp){	
-
-				/*_form
+			new Azbn7__API__Request(_form.serialize(), function(resp){
+				_form
 					.trigger('reset')
-					.empty()
-					.remove()
-				;*/
+					//.empty()
+					//.remove()
+				;
 				
 				form
 					.trigger('reset')

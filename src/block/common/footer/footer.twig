@@ -2,9 +2,15 @@
 	<div class="{{prefix}}container container">
 		<div class="{{prefix}}row  row">
 			<div class="{{prefix}}cols  cols  is--logotip">
+				{% if logotip == "svg" %}
+				<a href="{{link}}#{{block.header}}" class="{{prefix}}logotip  is--svg" {{link_attr}}>
+					{% include "../svg-sprite/svg.twig" with {icon:'logotip'} %}
+				</a>
+				{% else %}
 				<a href="{{link}}#{{block.header}}" class="{{prefix}}logotip" {{link_attr}}>
 					{{contacts.name}}
 				</a>
+				{% endif %}
 			</div>
 			<div class="{{prefix}}cols  cols  is--soc">
 				{% include "../social/tpl.twig" with {
